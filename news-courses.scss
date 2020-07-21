@@ -1,0 +1,117 @@
+// News Section Styles Start
+.news-programmes-container 
+{
+    margin: 55px auto;
+    display: flex;
+    padding: 0;
+    .courses-div 
+    {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        .blurb 
+        {
+            margin-right: 24px;
+            > a 
+            {
+                text-decoration: none;
+            }
+        }
+        .section-news-images-title 
+        {
+            position: relative;
+            bottom: 13%;
+            background-color: #1123479e;
+            color: white;
+            width: 100%;
+            height: 40px;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: OpenSans;
+            text-transform: uppercase;
+            text-align: center;
+            .news-title 
+            {
+                position: relative;
+                top: 25%;
+            }
+        }
+    }
+    .news-div 
+    {
+        height: fit-content;
+        background-color: #f3f3f3;
+        padding: 20px 15px;
+        .title-style 
+        {
+            font-family: none;
+            text-transform: uppercase;
+            font-size: 36px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.9px;
+            color: #021a4f;
+            &:after 
+            {
+                content: "";
+                border-bottom: 1px solid #271a4f;
+                width: 100%;
+                display: block;
+            }
+        }
+        .news 
+        {
+            padding: 20px 0;
+            position: relative;
+            > button 
+            {
+                float: right;
+                font-family: OpenSans;
+                font-size: 14px;
+                font-weight: bold;
+                color: #021a4f;
+                background: none;
+                border: none;
+            }
+            .news-date
+            {
+                font-family: OpenSans;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.64;
+                letter-spacing: normal;
+                color: #021a4f;
+            }
+            .news-title
+            {
+                font-family: OpenSans;
+                font-size: 16px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: 0.4px;
+                color: #021a4f;
+            }
+            .news-content
+            {
+                font-family: OpenSans;
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.63;
+                letter-spacing: normal;
+                color: #4a4a4a;
+            }
+        }
+    }
+}
+
+// News Section Styles End

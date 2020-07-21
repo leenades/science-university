@@ -1,0 +1,45 @@
+.events-section 
+{
+    margin: 4% 0;
+    .blurb-news
+    {
+        max-width: fit-content;
+        margin: auto;
+    }
+    .events-blurbs-description 
+    {
+        .v1 {
+            border-left: 1px solid #979797;
+            height: 19px;
+            position: absolute;
+            left: 43%;
+            top: 60%;
+        }
+        .events-blurb-description-time
+        {
+            font-size: 14px;
+            display: inline;
+        } 
+        .events-blurb-description-location 
+        {
+            float: right;
+            position: relative;
+            right: 20%;
+            font-size: 14px;
+        }
+        .events-blurb-description-btn
+        {
+            float: right;
+            border: none;
+            background: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #021a4f;
+            font-weight: 600;
+        }
+    }
+    .blurb-column-events 
+    {
+        border: 1px solid #cecece;
+    }
+}

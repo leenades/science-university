@@ -1,0 +1,84 @@
+// Secondary navbar styles start
+.sec-navbar-main
+{
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 9999999;
+    .secondary-navbar
+    {
+        width: 1500px;
+        margin: auto;
+    } 
+    .social-media-container
+    {
+        float: right;
+        position: relative;
+        bottom: -18px;
+
+        > a.social-media-icon {
+            margin: 0 5px;
+        }
+        .social-media-icon
+        {
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 3px 2px;
+            width: 23px;
+            background-color: #b6b6b6;
+        }
+        .social-media-icon-search
+        {
+            color: #b6b6b6;
+            display: flex;
+            justify-content: space-around;
+            padding: 3px 2px;
+            margin-left: 20px;
+            width: 23px;
+        }
+    }
+}
+// Secondary navbar styles end
+
+// Primary navbar styles start
+.primary-navbar 
+{
+    position: fixed;
+    background-color: #021a4e;
+    width: 100%;
+    top: 10%;
+    z-index: 9999999;
+    .primary-nav-div
+    {
+        display: flex;
+        justify-content: center;
+        width: 1195px;
+        margin: auto;
+        .nav-item
+        {
+            color: #fff;
+            .nav-link 
+            {
+                text-transform: uppercase;
+                font-size: 14px;
+                text-align: center;
+                color: #fff;
+                width: 200px;
+
+                &:hover 
+                {
+                    color: #b6b6b6;
+                }
+            }
+        }
+    }
+    .menu-btn-navbar
+    {
+        color: white;
+        position: relative;
+        left: 90%;
+    }
+}
+
+// Primary navbar styles end
