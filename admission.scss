@@ -1,0 +1,48 @@
+.admission-section
+{
+    width: 100%;
+    background-image: url('admission-background/admission-background.png');
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-color: beige;
+    background-position: center;
+    .addmission-row-title
+    {
+        .addmission-title
+        {
+            h2
+            {
+                font-size: 58px;
+                font-weight: 800;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.59;
+                letter-spacing: normal;
+                text-align: center;
+                color: #021a4f;
+                margin: 100px 0;
+            }
+        }
+    }
+    .admission-row-btn 
+    {
+        .admission-btn
+        {
+            text-align: center;
+            button
+            {           
+                background-color: #021a4e;              
+                font-size: 54px;   
+                font-weight: 800;
+                text-transform: uppercase;
+                text-align: center;
+                color: #e4c800;
+                border: none;
+                width: 40%;
+                padding: 1% 0;
+                margin: 0 0 100px 0;
+            }
+        }
+    }
+}

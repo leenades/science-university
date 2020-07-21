@@ -4,13 +4,22 @@
         <meta charser="utf-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="science-uni-general.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="news-courses.css">
+        <link rel="stylesheet" href="ticker.css">
+        <link rel="stylesheet" href="events.css">
+        <link rel="stylesheet" href="admission.css">
+        <link rel="stylesheet" href="form.css">
+
     </head>
     <body>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <!-- Secondary header Start -->
+        
         <nav class="navbar sec-navbar-main" aria-label="Secondary navbar">
             <div class="secondary-navbar">
                 <a class="navbar-brand navbar-left" href="#"><img src="sciences-uni-logo.png" alt="science-university-logo" class=""></a>
@@ -72,7 +81,8 @@
         <!-- Section news and programmes Start -->
         <section class="section-two">
             <div class="container news-programmes-container">
-                <!-- Courses and programmes column -->
+               
+                <!-- Courses and programmes column START -->
                 <div class="col courses-div">
                     <div class="blurb ug-courses">
                         <a href="#">
@@ -119,6 +129,8 @@
                         </a>
                     </div>
                 </div>
+                <!-- Courses and programmes column END  -->
+
                 <!-- News Column -->
                 <div class="col news-div">
                     <div class="blurb-news">
@@ -189,7 +201,7 @@
         <section class="events-section">
             <div class="container">
                 <div class="row  blurb-news"><h4 class="title-style">Events</h4></div>
-                <div class="row">
+                <div class="row blogs-styles">
                     <div class="col-sm blurb-column-events">
                         <div class="blurb blurb-container">
                             <div class="img-icon-container">
@@ -197,14 +209,20 @@
                                 src="postgrad-events/postgrad-event.png"
                                 alt="postgraduate drop-in evening"
                                 >
-                                <span><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
+                                <span class="icon-container">
+                                    <span class="icon-text"><h5>18</h5><h6>March</h6></span>
+                                    <!-- <i class="fa fa-calendar-o fa-4x" aria-hidden="true"></i> -->
+                                    <img 
+                                    src="icon-calendar/icon-calendar.png" 
+                                    alt="icon calendar">
+                                </span>
                             </div>
                             <div class="events-blurbs-description">
                                 <h6 class="events-blurb-description-time">2:00 P.M - 4:00 P.M.</h6>
                                 <div class="v1"></div>
                                 <h6 class="events-blurb-description-location">Ajlun Campus</h6>
-                                <span><h5>Postgraduate Drop-in Evening</h5></span>
-                                <span><p>Our Postgraduate Drop-in Evenings are an excellent opportunity for you to meet our staff and talk to current students…</p></span>
+                                <span class="events-description-title "><h5>Postgraduate Drop-in Evening</h5></span>
+                                <span><p class="events-description-paragraph">Our Postgraduate Drop-in Evenings are an excellent opportunity for you to meet our staff and talk to current students…</p></span>
                                 <button class="events-blurb-description-btn">Learn More</button>
                             </div>
                         </div>
@@ -213,17 +231,23 @@
                         <div class="blurb blurb-container">
                             <div class="img-icon-container">
                                 <img 
-                                src="postgrad-events/postgrad-event.png"
-                                alt="postgraduate drop-in evening"
+                                src="events-music-open-day/events-music-openday.png"
+                                alt="undergraduate music open day"
                                 >
-                                <span><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
+                                <span class="icon-container">
+                                    <span class="icon-text"><h5>07</h5><h6>May</h6></span>
+                                    <!-- <i class="fa fa-calendar-o fa-4x" aria-hidden="true"></i> -->
+                                    <img 
+                                    src="icon-calendar/icon-calendar.png" 
+                                    alt="icon calendar">
+                                </span>
                             </div>
                             <div class="events-blurbs-description">
                                 <h6 class="events-blurb-description-time">2:00 P.M - 4:00 P.M.</h6>
                                 <div class="v1"></div>
                                 <h6 class="events-blurb-description-location">Ajlun Campus</h6>
-                                <span><h5>Postgraduate Drop-in Evening</h5></span>
-                                <span><p>Our Postgraduate Drop-in Evenings are an excellent opportunity for you to meet our staff and talk to current students…</p></span>
+                                <span class="events-description-title "><h5>Undergraduate Music Open Day</h5></span>
+                                <span><p class="events-description-paragraph">Music open days are aimed at candidates who have made Kingston University one of their university choices…</p></span>
                                 <button class="events-blurb-description-btn">Learn More</button>
                             </div>
                         </div>
@@ -232,17 +256,23 @@
                         <div class="blurb blurb-container">
                             <div class="img-icon-container">
                                 <img 
-                                src="postgrad-events/postgrad-event.png"
-                                alt="postgraduate drop-in evening"
+                                src="making-nature-event/making-nature-event.png"
+                                alt="making nature' exhibition at welcome collection"
                                 >
-                                <span><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
+                                <span class="icon-container">
+                                    <span class="icon-text"><h5>20</h5><h6>August</h6></span>
+                                    <!-- <i class="fa fa-calendar-o fa-4x" aria-hidden="true"></i> -->
+                                    <img 
+                                    src="icon-calendar/icon-calendar.png" 
+                                    alt="icon calendar">
+                                </span>
                             </div>
                             <div class="events-blurbs-description">
                                 <h6 class="events-blurb-description-time">2:00 P.M - 4:00 P.M.</h6>
                                 <div class="v1"></div>
                                 <h6 class="events-blurb-description-location">Ajlun Campus</h6>
-                                <span><h5>Postgraduate Drop-in Evening</h5></span>
-                                <span><p>Our Postgraduate Drop-in Evenings are an excellent opportunity for you to meet our staff and talk to current students…</p></span>
+                                <span class="events-description-title"><h5>Making Nature’ Exhibition At Wellcome Collection</h5></span>
+                                <span><p class="events-description-paragraph">The question of how humans relate to other animals has captivated, scientists, ethicists and artists for centuries...</p></span>
                                 <button class="events-blurb-description-btn">Learn More</button>
                             </div>
                         </div>
@@ -253,12 +283,70 @@
         <!-- Section events End -->
 
         <!-- Section Admission Start -->
-        <section>
+        <section class="admission-section">
+            <div class="container">
+                <div class="row addmission-row-title">
+                    <div class="col addmission-title">  
+                        <h2>ADMISSIONS ARE NOW OPEN FOR 2017/2018 INTAKE</h2>
+                    </div>
+                </div>
+                <div class="row admission-row-btn">
+                    <div class="col admission-btn">
+                        <button>apply now</button>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Section Admission End -->
 
         <!-- Section Form Start -->
-        <section>
+        <section class="form-section">
+            <div class="container">
+                <div class="row justify-content-center form-row-contain">
+                    <div class="col form-col-container">
+                        <div class="row blurb-news justify-content-center">
+                            <h4 class="title-style">get in touch</h4>
+                        </div>
+                        <div class="row justify-content-center">
+                            <form class="form-style">
+                                <div class="form-group full-name-phone-number">
+
+                                    <div class="col d-inline">
+                                        <input 
+                                        type="text"
+                                        for="fullName" 
+                                        placeholder="Full Name">
+                                    </div>
+                                    <div class="col d-inline">
+                                        <input
+                                        type="text" 
+                                        for="phoneNumber" 
+                                        placeholder="Phone Number">
+                                    </div>
+                                </div>
+                                <div class="form-group email">
+                                    <input
+                                    type="email"
+                                    for="email"
+                                    placeholder="email">
+                                </div>
+                                <div class="form-group">
+                                    <textarea 
+                                    rows="" 
+                                    cols="" 
+                                    placeholder="Message">
+                                    </textarea>
+                                </div>
+                                <div class="form-group form-btn">
+                                    <button>
+                                        submit
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Section Form End -->
         

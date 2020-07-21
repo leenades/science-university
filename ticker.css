@@ -1,0 +1,17 @@
+.section-ticker {
+  background-color: #021a4e; }
+  .section-ticker .div-ticker > .ticker-col {
+    color: #e4c800;
+    text-align: center;
+    margin: 70px auto; }
+    .section-ticker .div-ticker > .ticker-col > * {
+      margin-bottom: 25px; }
+    .section-ticker .div-ticker > .ticker-col > h3 {
+      font-size: 60px;
+      font-weight: 700; }
+    .section-ticker .div-ticker > .ticker-col > h4 {
+      font-size: 24px;
+      font-weight: 600;
+      padding: 0 47px; }
+
+/*# sourceMappingURL=ticker.css.map */

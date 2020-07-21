@@ -1,0 +1,56 @@
+.sec-navbar-main {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  z-index: 9999999; }
+  .sec-navbar-main .secondary-navbar {
+    width: 1500px;
+    margin: auto; }
+  .sec-navbar-main .social-media-container {
+    float: right;
+    position: relative;
+    bottom: -18px; }
+    .sec-navbar-main .social-media-container > a.social-media-icon {
+      margin: 0 5px; }
+    .sec-navbar-main .social-media-container .social-media-icon {
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 3px 2px;
+      width: 23px;
+      background-color: #b6b6b6; }
+    .sec-navbar-main .social-media-container .social-media-icon-search {
+      color: #b6b6b6;
+      display: flex;
+      justify-content: space-around;
+      padding: 3px 2px;
+      margin-left: 20px;
+      width: 23px; }
+
+.primary-navbar {
+  position: fixed;
+  background-color: #021a4e;
+  width: 100%;
+  top: 8%;
+  z-index: 9999999; }
+  .primary-navbar .primary-nav-div {
+    display: flex;
+    justify-content: center;
+    width: 1195px;
+    margin: auto; }
+    .primary-navbar .primary-nav-div .nav-item {
+      color: #fff; }
+      .primary-navbar .primary-nav-div .nav-item .nav-link {
+        text-transform: uppercase;
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+        width: 200px; }
+        .primary-navbar .primary-nav-div .nav-item .nav-link:hover {
+          color: #b6b6b6; }
+  .primary-navbar .menu-btn-navbar {
+    color: white;
+    position: relative;
+    left: 90%; }
+
+/*# sourceMappingURL=navbar.css.map */
