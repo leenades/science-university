@@ -1,3 +1,4 @@
+@import 'variables.scss';
 // News Section Styles Start
 .news-programmes-container 
 {
@@ -14,6 +15,9 @@
         .blurb 
         {
             margin-right: 24px;
+            box-shadow: 10px 9px 5px #9a98985e;
+            margin-bottom: 16px;
+            position: relative;
             > a 
             {
                 text-decoration: none;
@@ -21,8 +25,7 @@
         }
         .section-news-images-title 
         {
-            position: relative;
-            bottom: 13%;
+            position: absolute;
             background-color: #1123479e;
             color: white;
             width: 100%;
@@ -32,6 +35,8 @@
             font-family: OpenSans;
             text-transform: uppercase;
             text-align: center;
+            bottom: 0%;
+            margin: 0;
             .news-title 
             {
                 position: relative;
@@ -45,6 +50,7 @@
         height: fit-content;
         background-color: #f3f3f3;
         padding: 20px 15px;
+        box-shadow: 10px 9px 5px #9a98985e;
         .news 
         {
             padding: 20px 0;
@@ -55,7 +61,7 @@
                 font-family: OpenSans;
                 font-size: 14px;
                 font-weight: bold;
-                color: #021a4f;
+                color: $greenVogue;
                 background: none;
                 border: none;
             }
@@ -68,7 +74,7 @@
                 font-style: normal;
                 line-height: 1.64;
                 letter-spacing: normal;
-                color: #021a4f;
+                color: $greenVogue;
             }
             .news-title
             {
@@ -79,7 +85,7 @@
                 font-style: normal;
                 line-height: normal;
                 letter-spacing: 0.4px;
-                color: #021a4f;
+                color: $greenVogue;
             }
             .news-content
             {
@@ -90,7 +96,7 @@
                 font-style: normal;
                 line-height: 1.63;
                 letter-spacing: normal;
-                color: #4a4a4a;
+                color: $eventsDescriptionParagraph;
             }
         }
     }
@@ -107,7 +113,7 @@
                 font-style: normal;
                 line-height: normal;
                 letter-spacing: 0.9px;
-                color: #021a4f;
+                color: $greenVogue;
                 display: inline-block;
                 &:after 
                 {

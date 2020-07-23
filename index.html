@@ -4,14 +4,17 @@
         <meta charser="utf-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="science-uni-general.css">
-        <link rel="stylesheet" href="navbar.css">
-        <link rel="stylesheet" href="header.css">
-        <link rel="stylesheet" href="news-courses.css">
-        <link rel="stylesheet" href="ticker.css">
-        <link rel="stylesheet" href="events.css">
-        <link rel="stylesheet" href="admission.css">
-        <link rel="stylesheet" href="form.css">
+        <link rel="stylesheet" href="themes/science-uni-general.css">
+        <link rel="stylesheet" href="themes/navbar.css">
+        <link rel="stylesheet" href="themes/header.css">
+        <link rel="stylesheet" href="themes/news-courses.css">
+        <link rel="stylesheet" href="themes/ticker.css">
+        <link rel="stylesheet" href="themes/events.css">
+        <link rel="stylesheet" href="themes/admission.css">
+        <link rel="stylesheet" href="themes/form.css">
+        <link rel="stylesheet" href="themes/footer.css">
+        <link rel="stylesheet" href="themes/animation.css">
+
 
     </head>
     <body>
@@ -22,7 +25,7 @@
         
         <nav class="navbar sec-navbar-main" aria-label="Secondary navbar">
             <div class="secondary-navbar">
-                <a class="navbar-brand navbar-left" href="#"><img src="sciences-uni-logo.png" alt="science-university-logo" class=""></a>
+                <a class="navbar-brand navbar-left" href="#"><img src="themes/sciences-uni-logo.png" alt="science-university-logo"></a>
                 <div class="d-flex social-media-container">
                     <a class="social-media-icon fa fa-linkedin" href="#"></a>
                     <a class="social-media-icon fa fa-youtube" href="#"></a>
@@ -220,7 +223,7 @@
                             <div class="events-blurbs-description">
                                 <h6 class="events-blurb-description-time">2:00 P.M - 4:00 P.M.</h6>
                                 <div class="v1"></div>
-                                <h6 class="events-blurb-description-location">Ajlun Campus</h6>
+                                <h6 class="events-blurb-description-location">Irbed Campus</h6>
                                 <span class="events-description-title "><h5>Postgraduate Drop-in Evening</h5></span>
                                 <span><p class="events-description-paragraph">Our Postgraduate Drop-in Evenings are an excellent opportunity for you to meet our staff and talk to current students…</p></span>
                                 <button class="events-blurb-description-btn">Learn More</button>
@@ -243,9 +246,9 @@
                                 </span>
                             </div>
                             <div class="events-blurbs-description">
-                                <h6 class="events-blurb-description-time">2:00 P.M - 4:00 P.M.</h6>
+                                <h6 class="events-blurb-description-time">4:00 P.M - 6:00 P.M.</h6>
                                 <div class="v1"></div>
-                                <h6 class="events-blurb-description-location">Ajlun Campus</h6>
+                                <h6 class="events-blurb-description-location">Amman Campus</h6>
                                 <span class="events-description-title "><h5>Undergraduate Music Open Day</h5></span>
                                 <span><p class="events-description-paragraph">Music open days are aimed at candidates who have made Kingston University one of their university choices…</p></span>
                                 <button class="events-blurb-description-btn">Learn More</button>
@@ -292,7 +295,7 @@
                 </div>
                 <div class="row admission-row-btn">
                     <div class="col admission-btn">
-                        <button>apply now</button>
+                        <button class="button-animation">apply now</button>
                     </div>
                 </div>
             </div>
@@ -311,13 +314,13 @@
                             <form class="form-style">
                                 <div class="form-group full-name-phone-number">
 
-                                    <div class="col d-inline">
+                                    <div class="d-inline-block form-name-phone">
                                         <input 
                                         type="text"
                                         for="fullName" 
                                         placeholder="Full Name">
                                     </div>
-                                    <div class="col d-inline">
+                                    <div class="d-inline-block form-name-phone">
                                         <input
                                         type="text" 
                                         for="phoneNumber" 
@@ -328,17 +331,17 @@
                                     <input
                                     type="email"
                                     for="email"
-                                    placeholder="email">
+                                    placeholder="Email">
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group txtarea">
                                     <textarea 
-                                    rows="" 
-                                    cols="" 
+                                    rows="5" 
+                                    cols="80" 
                                     placeholder="Message">
                                     </textarea>
                                 </div>
                                 <div class="form-group form-btn">
-                                    <button>
+                                    <button class="button-animation">
                                         submit
                                     </button>
                                 </div>
@@ -351,8 +354,102 @@
         <!-- Section Form End -->
         
         <!-- Footer Section Start -->
-        <footer>
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="v-line-divider"></div>
+                    <div class="col explore">
+                        <h6 class="footer-subtitles">Explore</h6>
+                        <ul class="footer-list">
+                            <li><a>Privacy and cookies</a></li>
+                            <li><a>Legal Information</a></li>
+                            <li><a>About the University</a></li>
+                            <li><a>News and Events</a></li>
+                            <li><a>Research</a></li>
+                            <li><a>Schools and Departmens</a></li>
+                            <li><a>International</a></li>
+                            <li><a>Job Vacancies</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="v-line-divider"></div>
+
+                    <div class="col quick-links-using-our-site">
+                        <h6 class="footer-subtitles">Quick Links</h6>
+                        <ul class="footer-list">
+                            <li><a>Online Payment</a></li>
+                            <li><a>Library</a></li>
+                            <li><a>Alumni</a></li>
+                            <li><a>Community Information</a></li>
+                        </ul>
+                        <h6 class="footer-subtitles">Using our Site</h6>
+                        <ul class="footer-list">
+                            <li><a>Accessibility</a></li>
+                            <li><a>Freedom of Information</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="v-line-divider"></div>
+
+                    <div class="col how-to-find-us">
+                        <h6 class="footer-subtitles">How to find us</h6>
+                        <ul class="footer-list">
+                            <li>
+                                <span><i class="fa fa-phone"></i></span>
+                                <a>+ 1 (408) 703 8738</a>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-phone"></i></span>
+                                <a>+ 962 6 581 7612</a>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-envelope"></i></span>
+                                <a>info@SciencesUniversity.edu</a>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-envelope"></i></span>
+                                <a>Contact Us</a>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-map-marker fa-lg"></i></span>
+                                <a>Find Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="v-line-divider"></div>
+
+                    <div class="col follow-us">
+                        <div class="row follow-us-row">
+                            <img 
+                            src="footer-icon/icon-footer.png"
+                            alt="Science University Logo"
+                            > <!-- logo image -->
+                        </div>
+                        <div class="row follow-us-row">
+                            <h6 class="d-inline-block w-100 footer-subtitles">Follow Us</h6>
+                            <div class="social-media-follow-us">
+                                <a href="#" class="social-media-icon"><i class="fa fa-linkedin"></i></a>
+                                <a href="#" class="social-media-icon"><i class="fa fa-youtube"></i></a>
+                                <a href="#" class="social-media-icon"><i class="fa fa-instagram"></i></a>
+                                <a href="#" class="social-media-icon"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="social-media-icon"><i class="fa fa-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
         <!-- Footer Section End -->
+        <!-- Secondary Footer Section Start -->
+        <section class="secondary-footer">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <span><i class="fa fa-copyright" aria-hidden="true"></i></span>
+                    <h6>2017 Sciences University. All Rights Reserved.</h6>
+                </div>
+            </div>
+        </section>
+        <!-- Secondary Footer Section End -->
     </body>
 </html>

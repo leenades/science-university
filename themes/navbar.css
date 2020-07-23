@@ -10,8 +10,6 @@
     float: right;
     position: relative;
     bottom: -18px; }
-    .sec-navbar-main .social-media-container > a.social-media-icon {
-      margin: 0 5px; }
     .sec-navbar-main .social-media-container .social-media-icon {
       color: white;
       display: flex;
@@ -26,6 +24,9 @@
       padding: 3px 2px;
       margin-left: 20px;
       width: 23px; }
+
+a.social-media-icon {
+  margin: 0 8px; }
 
 .primary-navbar {
   position: fixed;

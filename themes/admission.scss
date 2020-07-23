@@ -1,11 +1,12 @@
+@import 'variables.scss';
+
 .admission-section
 {
     width: 100%;
-    background-image: url('admission-background/admission-background.png');
+    background-image: url('admission-background.png');
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    background-color: beige;
     background-position: center;
     .addmission-row-title
     {
@@ -20,7 +21,7 @@
                 line-height: 1.59;
                 letter-spacing: normal;
                 text-align: center;
-                color: #021a4f;
+                color: $greenVogue;
                 margin: 100px 0;
             }
         }
@@ -30,18 +31,18 @@
         .admission-btn
         {
             text-align: center;
-            button
-            {           
-                background-color: #021a4e;              
+            .button-animation {          
+                background-color: $greenVogueMain;              
                 font-size: 54px;   
                 font-weight: 800;
                 text-transform: uppercase;
                 text-align: center;
-                color: #e4c800;
+                color: $corn;
                 border: none;
                 width: 40%;
                 padding: 1% 0;
                 margin: 0 0 100px 0;
+                transition: background-color .4s, color .4s;
             }
         }
     }

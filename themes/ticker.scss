@@ -1,11 +1,12 @@
+@import 'variables.scss';
 .section-ticker 
 {
-    background-color: #021a4e;
+    background-color: $greenVogueMain;
     .div-ticker 
     {
         > .ticker-col
         {
-            color: #e4c800;
+            color: $corn;
             text-align: center;
             margin: 70px auto;
             > * 

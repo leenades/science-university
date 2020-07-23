@@ -15,10 +15,6 @@
         float: right;
         position: relative;
         bottom: -18px;
-
-        > a.social-media-icon {
-            margin: 0 5px;
-        }
         .social-media-icon
         {
             color: white;
@@ -38,6 +34,9 @@
             width: 23px;
         }
     }
+}
+a.social-media-icon {
+    margin: 0 8px;
 }
 // Secondary navbar styles end
 

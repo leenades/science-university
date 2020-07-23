@@ -1,33 +1,21 @@
-.admission-section {
-  width: 100%;
-  background-image: url("admission-background/admission-background.png");
-  background-size: cover;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  background-color: beige;
-  background-position: center; }
-  .admission-section .addmission-row-title .addmission-title h2 {
-    font-size: 58px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.59;
-    letter-spacing: normal;
-    text-align: center;
-    color: #021a4f;
-    margin: 100px 0; }
-  .admission-section .admission-row-btn .admission-btn {
-    text-align: center; }
-    .admission-section .admission-row-btn .admission-btn button {
-      background-color: #021a4e;
-      font-size: 54px;
-      font-weight: 800;
-      text-transform: uppercase;
-      text-align: center;
-      color: #e4c800;
-      border: none;
-      width: 40%;
-      padding: 1% 0;
-      margin: 0 0 100px 0; }
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - admission.scss
 
-/*# sourceMappingURL=admission.css.map */
+Backtrace:
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:484:in `read'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:484:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:294:in `watch'
+/usr/lib/ruby/vendor_ruby/sass/plugin.rb:109:in `method_missing'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:356:in `watch_or_update'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:52:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:19:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - admission.scss"; }

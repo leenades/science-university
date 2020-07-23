@@ -1,0 +1,65 @@
+@import 'variables.scss';
+.form-section {
+    .form-row-contain {
+        margin: 6% 0;
+        .form-col-container {
+            background-color: #f7f7f7;
+            .blurb-news {
+                margin: 4% 0 7%;
+            }
+            .form-style {
+                width: 100%;
+                margin: 0 25%;
+                .full-name-phone-number {
+                    width: 100%;
+                    white-space: nowrap;
+                    .form-name-phone {
+                        width: 49.5%;
+                        &:nth-child(1) {
+                            > input {
+                                width: 100%;
+                                border: 1px solid #d4d4d4;
+                                outline: none;
+                            } 
+                        }
+                        &:nth-child(2) {
+                            > input {
+                                width: 100%;
+                                border: 1px solid #d4d4d4;
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+                .email {
+                    > input {
+                        width: 100%;
+                        border: 1px solid #d4d4d4;
+                        outline: none;
+                    }
+                }
+                .txtarea {
+                    > textarea {
+                        border: 1px solid #d4d4d4;
+                        outline: none;
+                    } 
+                }
+                .form-btn {
+                    text-align: center;
+                    > .button-animation {
+                        background-color: $greenVogueMain;
+                        color: $corn;
+                        border: none;
+                        text-transform: uppercase;
+                        width: 140px;
+                        height: 45px;
+                        outline: none;
+                        font-weight: 500;
+                        font-size: 18px;
+                        transition: background-color .4s, color .4s;
+                    }
+                }
+            }
+        }
+    }
+}

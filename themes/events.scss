@@ -1,3 +1,4 @@
+@import 'variables.scss';
 .events-section 
 {
     margin: 4% 0;
@@ -9,11 +10,12 @@
     }
     .blogs-styles
     {
-        column-gap: 30px;
         .blurb-column-events 
         {
             border: 1px solid #cecece;
             padding: 0;
+            margin-right: 30px;
+            box-shadow: 10px 9px 5px #9a98985e;
             .img-icon-container 
             {
                 position: relative;
@@ -23,17 +25,17 @@
                 }
                 .icon-container
                 {
-                    max-width: 100%;
-                    display: inline-block;
+                    // max-width: 100%;
+                    // display: inline-block;
                     position: absolute;
                     right: 4%;
                     top: 4%;
-                    color: #e4c800;
+                    color: $corn;
                     text-align: center;
                     .icon-text 
                     {
                         position: absolute;
-                        color: #021a4f;
+                        color: $greenVogue;
                         top: 35%;
                         left: 25%;
                         h5
@@ -58,12 +60,12 @@
                     position: absolute;
                     right: 4%;
                     top: 4%;
-                    color: #e4c800;
+                    color: $corn;
                     text-align: center;
                     .icon-text 
                     {
                         position: absolute;
-                        color: #021a4f;
+                        color: $greenVogue;
                         top: 35%;
                         left: 34%;
                         h5
@@ -81,14 +83,14 @@
             }
             .events-blurbs-description 
             {
-                color: #021a4f;
+                color: $greenVogue;
                 font-size: 14px !important; 
                 position: relative;
-                display: inline-block;
+                // display: inline-block;
                 margin: 5% 4%;
                 .v1 
                 {
-                    border-left: 1px solid #979797;
+                    border-left: 2px solid #979797a3;
                     height: 19px;
                     position: absolute;
                     left: 46%;
@@ -97,12 +99,16 @@
                 .events-blurb-description-time
                 {
                     display: inline-block;
+                    font-size: .9rem;
                 } 
                 .events-blurb-description-location 
                 {
-                    float: right;
                     position: relative;
                     right: 20%;
+                    font-size: .9rem;
+                    display: inline-block;
+                    left: 12%;
+
                 }
                 .events-description-title 
                 {
@@ -114,7 +120,7 @@
                 }
                 .events-description-paragraph
                 {
-                    color: #4a4a4a;
+                    color: $eventsDescriptionParagraph;
                     font-size: 16px;
                 }
                 .events-blurb-description-btn
@@ -123,7 +129,7 @@
                     border: none;
                     background: none;
                     text-transform: uppercase;
-                    color: #021a4f;
+                    color: $greenVogue;
                     font-weight: 600;
                 }
             }

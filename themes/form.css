@@ -1,0 +1,44 @@
+.form-section .form-row-contain {
+  margin: 6% 0; }
+  .form-section .form-row-contain .form-col-container {
+    background-color: #f7f7f7; }
+    .form-section .form-row-contain .form-col-container .blurb-news {
+      margin: 4% 0 7%; }
+    .form-section .form-row-contain .form-col-container .form-style {
+      width: 100%;
+      margin: 0 25%; }
+      .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number {
+        width: 100%;
+        white-space: nowrap; }
+        .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-name-phone {
+          width: 49.5%; }
+          .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-name-phone:nth-child(1) > input {
+            width: 100%;
+            border: 1px solid #d4d4d4;
+            outline: none; }
+          .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-name-phone:nth-child(2) > input {
+            width: 100%;
+            border: 1px solid #d4d4d4;
+            outline: none; }
+      .form-section .form-row-contain .form-col-container .form-style .email > input {
+        width: 100%;
+        border: 1px solid #d4d4d4;
+        outline: none; }
+      .form-section .form-row-contain .form-col-container .form-style .txtarea > textarea {
+        border: 1px solid #d4d4d4;
+        outline: none; }
+      .form-section .form-row-contain .form-col-container .form-style .form-btn {
+        text-align: center; }
+        .form-section .form-row-contain .form-col-container .form-style .form-btn > .button-animation {
+          background-color: #021a4e;
+          color: #e4c800;
+          border: none;
+          text-transform: uppercase;
+          width: 140px;
+          height: 45px;
+          outline: none;
+          font-weight: 500;
+          font-size: 18px;
+          transition: background-color .4s, color .4s; }
+
+/*# sourceMappingURL=form.css.map */

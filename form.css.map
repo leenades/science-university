@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEI,+BACA;EACI,MAAM,EAAE,IAAI;EACZ,mDACA;IACI,gBAAgB,EAAE,OAAO;IACzB,+DACA;MACI,MAAM,EAAE,OAAO;IAEnB,+DACA;MACI,KAAK,EAAE,GAAG",
-"sources": ["form.scss"],
-"names": [],
-"file": "form.css"
-}

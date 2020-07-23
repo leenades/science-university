@@ -9,12 +9,14 @@
     flex-wrap: wrap;
     padding: 0; }
     .news-programmes-container .courses-div .blurb {
-      margin-right: 24px; }
+      margin-right: 24px;
+      box-shadow: 10px 9px 5px #9a98985e;
+      margin-bottom: 16px;
+      position: relative; }
       .news-programmes-container .courses-div .blurb > a {
         text-decoration: none; }
     .news-programmes-container .courses-div .section-news-images-title {
-      position: relative;
-      bottom: 13%;
+      position: absolute;
       background-color: #1123479e;
       color: white;
       width: 100%;
@@ -23,14 +25,17 @@
       font-weight: bold;
       font-family: OpenSans;
       text-transform: uppercase;
-      text-align: center; }
+      text-align: center;
+      bottom: 0%;
+      margin: 0; }
       .news-programmes-container .courses-div .section-news-images-title .news-title {
         position: relative;
         top: 25%; }
   .news-programmes-container .news-div {
     height: fit-content;
     background-color: #f3f3f3;
-    padding: 20px 15px; }
+    padding: 20px 15px;
+    box-shadow: 10px 9px 5px #9a98985e; }
     .news-programmes-container .news-div .news {
       padding: 20px 0;
       position: relative; }

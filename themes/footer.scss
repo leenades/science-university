@@ -1,0 +1,77 @@
+// primary footer section styles START
+@import 'variables.scss';
+.footer-section 
+{
+    padding: 4% 0;
+    background-color: $greenVogueMain;
+    color: #fff;
+    .v-line-divider 
+    {
+        border-left: 1px solid #4d4d4d;
+
+    }
+    .footer-subtitles 
+    {
+        color: $corn;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2.6rem;
+    }
+    .footer-list 
+    {
+        list-style: none;
+        padding-left: 0;
+        > li 
+        {
+            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+    }
+    .social-media-icon 
+    {
+        color: #fff;
+    }
+    .how-to-find-us 
+    {
+        ul 
+        {
+            > li 
+            {
+                line-height: 2.6em;
+                > span 
+                {
+                    margin: 0 10px 0 15px;
+                    > i 
+                    {
+                        min-width: 1rem;
+                    }
+                }
+            }
+        } 
+    }
+    .follow-us {
+        > .follow-us-row {
+            margin: 25px 0 40px 0;
+        }
+    }
+}
+// primary footer section styles END
+
+// secondary footer section styles START
+.secondary-footer {
+    background-color: #223663;
+    color: #fff;
+    .row {
+        > * {
+            font-size: .7rem;
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+        > span {
+            margin-right: 5px;
+        }
+    }
+}
+// secondary footer section styles END
