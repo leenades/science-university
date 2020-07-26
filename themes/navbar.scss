@@ -46,14 +46,10 @@ a.social-media-icon {
     position: fixed;
     background-color: #021a4e;
     width: 100%;
-    top: 8%;
+    top: 7%;
     z-index: 9999999;
     .primary-nav-div
     {
-        display: flex;
-        justify-content: center;
-        width: 1195px;
-        margin: auto;
         .nav-item
         {
             color: #fff;
@@ -63,7 +59,7 @@ a.social-media-icon {
                 font-size: 14px;
                 text-align: center;
                 color: #fff;
-                width: 200px;
+                width: 180px;
 
                 &:hover 
                 {
@@ -80,4 +76,44 @@ a.social-media-icon {
     }
 }
 
+
 // Primary navbar styles end
+
+
+// Media queries
+    @media (min-width: 576px){
+        .primary-navbar {
+            top: 8%;
+            .primary-nav-div{
+                text-align: center;
+                .navbar-nav {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    @media (min-width: 768px){
+        .primary-nav-div{
+            .nav-item {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    @media (min-width: 992px){
+        .primary-navbar {
+            .primary-nav-div{
+                .nav-item {
+                    display: inline-block;
+                    .nav-link {
+                        width: 180px;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1200px){
+        .primary-navbar {
+            top: 8%;
+    }
+}

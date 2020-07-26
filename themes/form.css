@@ -3,7 +3,7 @@
   .form-section .form-row-contain .form-col-container {
     background-color: #f7f7f7; }
     .form-section .form-row-contain .form-col-container .blurb-news {
-      margin: 4% 0 7%; }
+      margin: 4% 0 3%; }
     .form-section .form-row-contain .form-col-container .form-style {
       width: 100%;
       margin: 0 25%; }
@@ -15,20 +15,25 @@
           .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-name-phone:nth-child(1) > input {
             width: 100%;
             border: 1px solid #d4d4d4;
-            outline: none; }
+            outline: none;
+            padding: 9px 0 9px 10px; }
           .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-name-phone:nth-child(2) > input {
             width: 100%;
             border: 1px solid #d4d4d4;
-            outline: none; }
+            outline: none;
+            padding: 9px 0 9px 10px; }
       .form-section .form-row-contain .form-col-container .form-style .email > input {
         width: 100%;
         border: 1px solid #d4d4d4;
-        outline: none; }
+        outline: none;
+        padding: 9px 0 9px 10px; }
       .form-section .form-row-contain .form-col-container .form-style .txtarea > textarea {
         border: 1px solid #d4d4d4;
-        outline: none; }
+        outline: none;
+        padding: 9px 0 9px 10px; }
       .form-section .form-row-contain .form-col-container .form-style .form-btn {
-        text-align: center; }
+        text-align: center;
+        margin-top: 3%; }
         .form-section .form-row-contain .form-col-container .form-style .form-btn > .button-animation {
           background-color: #021a4e;
           color: #e4c800;

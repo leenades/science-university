@@ -5,7 +5,7 @@
         .form-col-container {
             background-color: #f7f7f7;
             .blurb-news {
-                margin: 4% 0 7%;
+                margin: 4% 0 3%;
             }
             .form-style {
                 width: 100%;
@@ -20,6 +20,7 @@
                                 width: 100%;
                                 border: 1px solid #d4d4d4;
                                 outline: none;
+                                padding: 9px 0 9px 10px;
                             } 
                         }
                         &:nth-child(2) {
@@ -27,6 +28,7 @@
                                 width: 100%;
                                 border: 1px solid #d4d4d4;
                                 outline: none;
+                                padding: 9px 0 9px 10px;
                             }
                         }
                     }
@@ -36,16 +38,19 @@
                         width: 100%;
                         border: 1px solid #d4d4d4;
                         outline: none;
+                        padding: 9px 0 9px 10px;
                     }
                 }
                 .txtarea {
                     > textarea {
                         border: 1px solid #d4d4d4;
                         outline: none;
+                        padding: 9px 0 9px 10px;
                     } 
                 }
                 .form-btn {
                     text-align: center;
+                    margin-top: 3%;
                     > .button-animation {
                         background-color: $greenVogueMain;
                         color: $corn;

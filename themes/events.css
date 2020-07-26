@@ -8,11 +8,13 @@
     border: 1px solid #cecece;
     padding: 0;
     margin-right: 30px;
-    box-shadow: 10px 9px 5px #9a98985e; }
+    box-shadow: 10px 9px 5px #9a98985e;
+    transition: all .4s ease-in-out; }
     .events-section .blogs-styles .blurb-column-events .img-icon-container {
       position: relative; }
       .events-section .blogs-styles .blurb-column-events .img-icon-container > img {
-        max-width: 100%; }
+        max-width: 100%;
+        width: 100%; }
       .events-section .blogs-styles .blurb-column-events .img-icon-container .icon-container {
         position: absolute;
         right: 4%;
@@ -53,7 +55,7 @@
       color: #021a4f;
       font-size: 14px !important;
       position: relative;
-      margin: 5% 4%; }
+      margin: 8% 4%; }
       .events-section .blogs-styles .blurb-column-events .events-blurbs-description .v1 {
         border-left: 2px solid #979797a3;
         height: 19px;
@@ -75,12 +77,32 @@
       .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-description-paragraph {
         color: #4a4a4a;
         font-size: 16px; }
-      .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-blurb-description-btn {
-        float: right;
-        border: none;
-        background: none;
-        text-transform: uppercase;
-        color: #021a4f;
-        font-weight: 600; }
+    .events-section .blogs-styles .blurb-column-events .events-blurb-description-btn {
+      float: right;
+      border: none;
+      background: none;
+      text-transform: uppercase;
+      color: #021a4f;
+      font-weight: 600;
+      font-size: 0.9rem;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin: 3% 4%; }
+
+@media (min-width: 576px) {
+  .events-section .blogs-styles {
+    flex-direction: column; }
+    .events-section .blogs-styles .blurb-column-events {
+      margin-bottom: 7%; }
+      .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-blurb-description-location {
+        left: calc(30% + 5%); } }
+@media (min-width: 992px) {
+  .events-section .blogs-styles {
+    flex-direction: unset; }
+    .events-section .blogs-styles .blurb-column-events {
+      margin-bottom: 0; }
+      .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-blurb-description-location {
+        left: 12%; } }
 
 /*# sourceMappingURL=events.css.map */

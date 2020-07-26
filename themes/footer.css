@@ -38,4 +38,32 @@
   .secondary-footer .row > span {
     margin-right: 5px; }
 
+@media (min-width: 576px) {
+  .footer-section .footer-row {
+    flex-direction: column;
+    text-align: center; }
+    .footer-section .footer-row .footer-list > li {
+      font-size: 11px; }
+    .footer-section .footer-row .follow-us > .follow-us-row {
+      justify-content: center; } }
+@media (min-width: 768px) {
+  .footer-section .footer-row {
+    flex-direction: row;
+    text-align: start; }
+    .footer-section .footer-row .footer-list > li {
+      font-size: 11px; }
+      .footer-section .footer-row .footer-list > li > span {
+        margin: 0; }
+    .footer-section .footer-row .follow-us > .follow-us-row {
+      justify-content: start; }
+    .footer-section .footer-row .tablet-footer-width {
+      width: 100%; } }
+@media (min-width: 992px) {
+  .footer-section .footer-row .footer-list > li {
+    font-size: 14px; }
+    .footer-section .footer-row .footer-list > li > span {
+      margin: 0 10px 0 15px; }
+  .footer-section .footer-row .tablet-footer-width {
+    width: 0; } }
+
 /*# sourceMappingURL=footer.css.map */

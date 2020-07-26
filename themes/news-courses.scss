@@ -18,9 +18,15 @@
             box-shadow: 10px 9px 5px #9a98985e;
             margin-bottom: 16px;
             position: relative;
+            transition: all .4s ease-in-out;
+            // transition: all .4s;
             > a 
             {
                 text-decoration: none;
+                > img {
+                    width: 253px;
+                    height: 253px;
+                }
             }
         }
         .section-news-images-title 
@@ -126,3 +132,32 @@
         }
 
 // News Section Styles End
+
+// Media Queries
+
+@media (min-width: 576px){
+    .news-programmes-container{
+        display: flex;
+        flex-direction: column;
+        .courses-div{
+            justify-content: center;
+            .blurb 
+            {
+                > a {
+                    > img {
+                        width: 225px;
+                        height: 210px;
+                    }
+                    .section-news-images-title {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .news-programmes-container{
+        flex-direction: unset;
+    }
+}

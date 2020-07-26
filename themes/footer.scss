@@ -75,3 +75,68 @@
     }
 }
 // secondary footer section styles END
+
+
+// Media queries
+
+@media (min-width: 576px) {
+    .footer-section{
+        .footer-row{
+            flex-direction: column;
+            text-align: center;
+            .footer-list {
+                > li {
+                    font-size: 11px;
+                }
+            }
+            .follow-us{
+                > .follow-us-row {
+                    justify-content: center;
+
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    .footer-section{
+        .footer-row{
+            flex-direction: row;
+            text-align: start;
+            .footer-list{
+                > li {
+                        font-size: 11px;
+                        > span {
+                            margin: 0;
+                        }
+                }
+            }
+            .follow-us{
+                > .follow-us-row {
+                    justify-content: start;
+
+                }
+            }
+            .tablet-footer-width{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (min-width: 992px){
+    .footer-section{
+        .footer-row{
+            .footer-list{
+                > li {
+                    font-size: 14px;
+                    > span {
+                        margin: 0 10px 0 15px;
+                    }
+                }
+            }
+            .tablet-footer-width{
+                width: 0;
+            }
+        }
+    }
+}

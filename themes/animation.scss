@@ -6,3 +6,22 @@
         color: $greenVogueMain !important;
     }
 }
+.courses-div{
+    .blurb {
+        &:hover {
+            transform: scale(1.1);
+            z-index: 9;
+        }   
+    }
+}
+
+.events-section{
+    .blogs-styles{
+        .blurb-column-events{
+            &:hover {
+                transform: scale(1.1);
+                z-index: 9;
+            }
+        }
+    }
+}
