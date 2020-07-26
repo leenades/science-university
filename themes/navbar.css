@@ -49,6 +49,9 @@ a.social-media-icon {
     position: relative;
     left: 90%; }
 
+@media (min-width: 375px) {
+  .primary-navbar {
+    top: 4%; } }
 @media (min-width: 576px) {
   .primary-navbar {
     top: 8%; }

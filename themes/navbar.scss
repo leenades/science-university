@@ -81,6 +81,11 @@ a.social-media-icon {
 
 
 // Media queries
+@media (min-width: 375px){
+    .primary-navbar{
+        top: 4%;
+    }
+}
     @media (min-width: 576px){
         .primary-navbar {
             top: 8%;
