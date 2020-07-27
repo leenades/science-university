@@ -1,3 +1,5 @@
+@import '../bootstrap-4.5.0/scss/functions.scss';
+@import '../bootstrap-4.5.0/scss/variables.scss';
 @import 'variables.scss';
 
 .admission-section
@@ -33,7 +35,7 @@
             text-align: center;
             .button-animation {          
                 background-color: $greenVogueMain;              
-                font-size: 54px;   
+                font-size: 4rem;   
                 font-weight: 800;
                 text-transform: uppercase;
                 text-align: center;
@@ -43,6 +45,29 @@
                 padding: 1% 0;
                 margin: 0 0 100px 0;
                 transition: background-color .4s, color .4s;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px){
+    .admission-section {
+        .admission-row-btn{
+            .admission-btn{
+                .button-animation{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px){
+    .admission-section {
+        .admission-row-btn{
+            .admission-btn{
+                .button-animation{
+                    font-size: 4rem;
+                }
             }
         }
     }

@@ -27,3 +27,21 @@
         }
     }
 }
+
+@media (min-width: 576px){
+    .section-ticker{
+        .div-ticker 
+        {   
+            flex-direction: column;
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .section-ticker{
+        .div-ticker 
+        {   
+            flex-direction: row;
+        }
+    }
+}

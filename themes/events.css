@@ -1,5 +1,5 @@
 .events-section {
-  margin: 4% 0; }
+  margin: 6% 0; }
   .events-section .blurb-news {
     display: flex;
     justify-content: center;
@@ -97,6 +97,7 @@
       margin-bottom: 7%; }
       .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-blurb-description-location {
         left: calc(30% + 5%); } }
+
 @media (min-width: 992px) {
   .events-section .blogs-styles {
     flex-direction: unset; }
@@ -104,5 +105,3 @@
       margin-bottom: 0; }
       .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-blurb-description-location {
         left: 12%; } }
-
-/*# sourceMappingURL=events.css.map */

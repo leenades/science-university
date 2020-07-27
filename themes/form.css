@@ -3,21 +3,25 @@
   .form-section .form-row-contain .form-col-container {
     background-color: #f7f7f7; }
     .form-section .form-row-contain .form-col-container .blurb-news {
-      margin: 4% 0 3%; }
+      margin: 8% 0 3%; }
     .form-section .form-row-contain .form-col-container .form-style {
       width: 100%;
-      margin: 0 25%; }
+      margin: 0 20%; }
       .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number {
-        width: 100%;
-        white-space: nowrap; }
-        .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-name-phone {
-          width: 49.5%; }
-          .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-name-phone:nth-child(1) > input {
+        display: inline-block;
+        width: 100%; }
+        .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-name {
+          width: 48%;
+          float: left; }
+          .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-name > input {
             width: 100%;
             border: 1px solid #d4d4d4;
             outline: none;
             padding: 9px 0 9px 10px; }
-          .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-name-phone:nth-child(2) > input {
+        .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-phone {
+          width: 48%;
+          float: right; }
+          .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-phone > input {
             width: 100%;
             border: 1px solid #d4d4d4;
             outline: none;
@@ -30,10 +34,12 @@
       .form-section .form-row-contain .form-col-container .form-style .txtarea > textarea {
         border: 1px solid #d4d4d4;
         outline: none;
-        padding: 9px 0 9px 10px; }
+        padding: 9px 0 9px 10px;
+        width: 100%; }
       .form-section .form-row-contain .form-col-container .form-style .form-btn {
         text-align: center;
-        margin-top: 3%; }
+        margin-top: 3%;
+        margin-bottom: 10%; }
         .form-section .form-row-contain .form-col-container .form-style .form-btn > .button-animation {
           background-color: #021a4e;
           color: #e4c800;
@@ -45,5 +51,3 @@
           font-weight: 500;
           font-size: 18px;
           transition: background-color .4s, color .4s; }
-
-/*# sourceMappingURL=form.css.map */

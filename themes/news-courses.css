@@ -10,7 +10,7 @@
     padding: 0; }
     .news-programmes-container .courses-div .blurb {
       margin-right: 24px;
-      box-shadow: 10px 9px 5px #9a98985e;
+      box-shadow: 10px 9px 10px #9a98985e;
       margin-bottom: 16px;
       position: relative;
       transition: all .4s ease-in-out; }
@@ -39,7 +39,7 @@
     height: fit-content;
     background-color: #f3f3f3;
     padding: 20px 15px;
-    box-shadow: 10px 9px 5px #9a98985e; }
+    box-shadow: 10px 9px 10px #9a98985e; }
     .news-programmes-container .news-div .news {
       padding: 20px 0;
       position: relative; }
@@ -107,8 +107,7 @@
         height: 210px; }
       .news-programmes-container .courses-div .blurb > a .section-news-images-title {
         font-size: 12px; } }
+
 @media (min-width: 992px) {
   .news-programmes-container {
     flex-direction: unset; } }
-
-/*# sourceMappingURL=news-courses.css.map */
