@@ -3,11 +3,27 @@
   color: #021a4e !important; }
 
 .courses-div .blurb:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   z-index: 9; }
 
 .events-section .blogs-styles .blurb-column-events:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   z-index: 9; }
+
+a:hover {
+  text-decoration: none; }
+
+.search-box-field {
+  border: none;
+  border-bottom: 1px solid #b6b6b6;
+  margin: 0 1%;
+  animation: slide-left 2s;
+  outline: none; }
+
+@keyframes slide-left {
+  from {
+    transform: scaleX(0); }
+  to {
+    transform: scaleX(1); } }
 
 /*# sourceMappingURL=animation.css.map */

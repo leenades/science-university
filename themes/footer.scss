@@ -1,12 +1,9 @@
 // primary footer section styles START
-@import '../bootstrap-4.5.0/scss/functions.scss';
-@import '../bootstrap-4.5.0/scss/variables.scss';
 @import 'variables.scss';
 .footer-section 
 {
     padding: 4% 0;
     background-color: $greenVogueMain;
-    color: #fff;
     .v-line-divider 
     {
         border-left: 1px solid #4d4d4d;
@@ -29,11 +26,31 @@
             margin-bottom: 10px;
             font-weight: 600;
             font-size: 14px;
+            > a {
+                color: #fff;
+                &:hover{
+                    color: #b6b6b6;
+                }
+            }
+            &:hover{
+                color: #b6b6b6;
+            }
+            
         }
+
     }
     .social-media-icon 
     {
-        color: #fff;
+        padding: 4px;
+        > i {
+            min-width: 1rem;
+            font-size: 16px;
+            text-align: center;
+            
+        }
+        > a {
+            color: #fff;
+        }
     }
     .how-to-find-us 
     {
@@ -42,6 +59,7 @@
             > li 
             {
                 line-height: 2.6em;
+                color: #fff;
                 > span 
                 {
                     margin: 0 10px 0 15px;
@@ -56,6 +74,14 @@
     .follow-us {
         > .follow-us-row {
             margin: 25px 0 40px 0;
+            .social-media-follow-us {
+                > a {
+                    color: #fff;
+                    &:hover{
+                        color: #b6b6b6;
+                    }
+                }
+            }
         }
     }
 }

@@ -3,81 +3,79 @@
   display: flex;
   padding: 0; }
   .news-programmes-container .courses-div {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0; }
-    .news-programmes-container .courses-div .blurb {
-      margin-right: 24px;
-      box-shadow: 10px 9px 10px #9a98985e;
-      margin-bottom: 16px;
-      position: relative;
-      transition: all .4s ease-in-out; }
-      .news-programmes-container .courses-div .blurb > a {
-        text-decoration: none; }
-        .news-programmes-container .courses-div .blurb > a > img {
-          width: 253px;
-          height: 253px; }
-    .news-programmes-container .courses-div .section-news-images-title {
-      position: absolute;
-      background-color: #1123479e;
-      color: white;
-      width: 100%;
-      height: 40px;
-      font-size: 15px;
-      font-weight: bold;
-      font-family: OpenSans;
-      text-transform: uppercase;
-      text-align: center;
-      bottom: 0%;
-      margin: 0; }
-      .news-programmes-container .courses-div .section-news-images-title .news-title {
-        position: relative;
-        top: 25%; }
-  .news-programmes-container .news-div {
-    height: fit-content;
-    background-color: #f3f3f3;
-    padding: 20px 15px;
-    box-shadow: 10px 9px 10px #9a98985e; }
-    .news-programmes-container .news-div .news {
-      padding: 20px 0;
-      position: relative; }
-      .news-programmes-container .news-div .news > button {
-        float: right;
-        font-family: OpenSans;
-        font-size: 14px;
+    margin-top: 3%;
+    margin-bottom: 3%; }
+    .news-programmes-container .courses-div .col-first {
+      margin-right: 3%;
+      margin-bottom: 5%; }
+      .news-programmes-container .courses-div .col-first .courses-row-first {
+        margin-bottom: 3%; }
+      .news-programmes-container .courses-div .col-first .blurb {
+        width: fit-content;
+        box-shadow: 10px 9px 10px #9a98985e;
+        transition: all .4s ease-in-out; }
+        .news-programmes-container .courses-div .col-first .blurb > a {
+          text-decoration: none; }
+      .news-programmes-container .courses-div .col-first .section-news-images-title {
+        background-color: #021a4ecc;
+        color: white;
+        width: 100%;
+        height: 40px;
+        font-size: 15px;
         font-weight: bold;
-        color: #021a4f;
-        background: none;
-        border: none; }
-      .news-programmes-container .news-div .news .news-date {
         font-family: OpenSans;
-        font-size: 14px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.64;
-        letter-spacing: normal;
-        color: #021a4f; }
-      .news-programmes-container .news-div .news .news-title {
-        font-family: OpenSans;
-        font-size: 16px;
-        font-weight: 600;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: 0.4px;
-        color: #021a4f; }
-      .news-programmes-container .news-div .news .news-content {
-        font-family: OpenSans;
-        font-size: 16px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.63;
-        letter-spacing: normal;
-        color: #4a4a4a; }
+        text-transform: uppercase;
+        text-align: center; }
+        .news-programmes-container .courses-div .col-first .section-news-images-title .news-title {
+          position: relative;
+          top: 25%; }
+    .news-programmes-container .courses-div .news-div {
+      height: fit-content;
+      background-color: #f3f3f3;
+      padding: 20px 15px;
+      box-shadow: 10px 9px 10px #9a98985e; }
+      .news-programmes-container .courses-div .news-div .news {
+        padding: 20px 0;
+        position: relative; }
+        .news-programmes-container .courses-div .news-div .news > .news-btn {
+          float: right;
+          font-family: OpenSans;
+          font-size: 14px;
+          font-weight: bold;
+          color: #021a4f;
+          background: none;
+          border: none; }
+          .news-programmes-container .courses-div .news-div .news > .news-btn:hover {
+            color: #a7b0c2; }
+        .news-programmes-container .courses-div .news-div .news .news-date {
+          font-family: OpenSans;
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.64;
+          letter-spacing: normal;
+          color: #021a4f; }
+        .news-programmes-container .courses-div .news-div .news .news-title {
+          font-family: OpenSans;
+          font-size: 16px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 0.4px;
+          color: #021a4f; }
+          .news-programmes-container .courses-div .news-div .news .news-title:hover {
+            color: #a7b0c2; }
+        .news-programmes-container .courses-div .news-div .news .news-content {
+          font-family: OpenSans;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.63;
+          letter-spacing: normal;
+          color: #4a4a4a; }
 
 .blurb-news .title-style {
   font-family: none;
@@ -97,17 +95,14 @@
     display: block; }
 
 @media (min-width: 576px) {
-  .news-programmes-container {
-    display: flex;
+  .news-programmes-container .courses-div {
     flex-direction: column; }
-    .news-programmes-container .courses-div {
-      justify-content: center; }
-      .news-programmes-container .courses-div .blurb > a > img {
-        width: 225px;
-        height: 210px; }
-      .news-programmes-container .courses-div .blurb > a .section-news-images-title {
-        font-size: 12px; } }
-
+    .news-programmes-container .courses-div .blurb > a .section-news-images-title {
+      font-size: 12px; } }
 @media (min-width: 992px) {
-  .news-programmes-container {
-    flex-direction: unset; } }
+  .news-programmes-container .courses-div {
+    flex-direction: row; }
+    .news-programmes-container .courses-div .blurb > a .section-news-images-title {
+      font-size: 15px; } }
+
+/*# sourceMappingURL=news-courses.css.map */

@@ -1,72 +1,51 @@
-.sec-navbar-main {
+.navbar-styles {
+  padding: 0;
   position: fixed;
-  background-color: #fff;
   width: 100%;
+  background: white;
   z-index: 9999999; }
-  .sec-navbar-main .secondary-navbar {
-    width: 1500px;
-    margin: auto; }
-  .sec-navbar-main .social-media-container {
-    float: right;
-    position: relative;
-    bottom: -18px; }
-    .sec-navbar-main .social-media-container .social-media-icon {
-      color: white;
-      display: flex;
-      justify-content: space-around;
-      padding: 3px 2px;
-      width: 23px;
-      background-color: #b6b6b6; }
-    .sec-navbar-main .social-media-container .social-media-icon-search {
-      color: #b6b6b6;
-      display: flex;
-      justify-content: space-around;
-      padding: 3px 2px;
-      margin-left: 20px;
-      width: 23px; }
-
-a.social-media-icon {
-  margin: 0 8px; }
-
-.primary-navbar {
-  position: fixed;
-  background-color: #021a4e;
-  width: 100%;
-  top: 7%;
-  z-index: 9999999; }
-  .primary-navbar .primary-nav-div .nav-item {
-    color: #fff; }
-    .primary-navbar .primary-nav-div .nav-item .nav-link {
-      text-transform: uppercase;
-      font-size: 14px;
-      text-align: center;
-      color: #fff;
-      width: 180px; }
-      .primary-navbar .primary-nav-div .nav-item .nav-link:hover {
-        color: #b6b6b6; }
-  .primary-navbar .menu-btn-navbar {
-    color: white;
-    position: relative;
-    left: 90%; }
-
-@media (min-width: 375px) {
-  .primary-navbar {
-    top: 8%; } }
-@media (min-width: 576px) {
-  .primary-navbar .primary-nav-div {
-    text-align: center; }
-    .primary-navbar .primary-nav-div .navbar-nav {
-      display: inline-block; } }
-@media (min-width: 768px) {
-  .primary-navbar .primary-nav-div .nav-item {
+  .navbar-styles .navbar-container {
+    flex-direction: column;
+    width: 100%;
     display: flex;
-    justify-content: center; } }
-@media (min-width: 992px) {
-  .primary-navbar .primary-nav-div {
-    justify-content: center; }
-    .primary-navbar .primary-nav-div .nav-item {
-      display: inline-block; }
-      .primary-navbar .primary-nav-div .nav-item .nav-link {
-        width: 133px; } }
+    align-items: center; }
+    .navbar-styles .navbar-container .logo-socials-row {
+      width: 100%;
+      padding: 0; }
+      .navbar-styles .navbar-container .logo-socials-row .social-media-container {
+        position: relative;
+        top: 27%; }
+        .navbar-styles .navbar-container .logo-socials-row .social-media-container .social-media-icon {
+          color: white;
+          background-color: #b6b6b6;
+          padding: 3px; }
+          .navbar-styles .navbar-container .logo-socials-row .social-media-container .social-media-icon > i {
+            min-width: 1rem;
+            font-size: 16px;
+            text-align: center; }
+        .navbar-styles .navbar-container .logo-socials-row .social-media-container .social-media-icon-search {
+          color: #b6b6b6;
+          margin-left: 3%;
+          padding: 3px; }
+          .navbar-styles .navbar-container .logo-socials-row .social-media-container .social-media-icon-search > i {
+            min-width: 1rem;
+            font-size: 20px;
+            text-align: center; }
+    .navbar-styles .navbar-container .container-nav-links {
+      background-color: #021a4e;
+      width: 100%; }
+      .navbar-styles .navbar-container .container-nav-links .navbar-links {
+        justify-content: center; }
+        .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item {
+          width: 100%;
+          text-align: center; }
+          .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item .nav-link {
+            text-transform: uppercase;
+            font-size: 14px;
+            text-align: center;
+            color: #fff;
+            width: 180px; }
+            .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item .nav-link:hover {
+              color: #b6b6b6; }
 
 /*# sourceMappingURL=navbar.css.map */

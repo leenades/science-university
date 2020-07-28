@@ -8,7 +8,7 @@
     {
         display: flex;
         justify-content: center;
-        margin: 0 0 2% 0;
+        margin: 0 0 3% 0;
     }
     .blogs-styles
     {
@@ -114,12 +114,18 @@
                     left: 12%;
 
                 }
-                .events-description-title 
-                {
-                    h5 
+                > a {
+                    color: $greenVogue;
+                    .events-description-title 
                     {
-                        font-size: 16px;
-                        font-weight: 600;
+                        h5 
+                        {
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                        &:hover{
+                            color: #a7b0c2;
+                        }
                     }
                 }
                 .events-description-paragraph
@@ -141,6 +147,9 @@
                     bottom: 0;
                     right: 0;
                     margin: 3% 4%;
+                    &:hover{
+                        color: #a7b0c2;
+                    }
                 }
         }
     }

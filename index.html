@@ -18,40 +18,49 @@
 
     </head>
     <body>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script> -->
+        <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <!-- Secondary header Start -->
-        
-        <nav class="navbar sec-navbar-main" aria-label="Secondary navbar">
-            <div class="container">
-                <div class="secondary-navbar d-flex">
-                    <div class="col float-left">
-                        <a class="navbar-brand navbar-left" href="#"><img src="themes/sciences-uni-logo.png" alt="science-university-logo"></a>
+       
+
+
+        <!-- NAVBAR Section START -->
+        <nav class="navbar navbar-expand-lg navbar-styles">
+            <div class="navbar-container">
+                <div class="row logo-socials-row container">
+                    <div class="col">
+                        <a class="navbar-brand" href="#"><img src="themes/sciences-uni-logo.png" alt="science-university-logo"></a>
                     </div>
-                    <div class="col float-right">
-                        <div class="d-flex social-media-container">
-                            <a class="social-media-icon fa fa-linkedin" href="#"></a>
-                            <a class="social-media-icon fa fa-youtube" href="#"></a>
-                            <a class="social-media-icon fa fa-instagram" href="#"></a>
-                            <a class="social-media-icon fa fa-twitter" href="#"></a>
-                            <a class="social-media-icon fa fa-facebook" href="#"></a>
-                            <a class="social-media-icon-search fa fa-search" href="#"></a>
+                    <div class="col text-right">
+                        <div class="social-media-container">
+                            <a class="social-media-icon" href="#"><i class="fa fa-linkedin"></i></a>
+                            <a class="social-media-icon" href="#"><i class="fa fa-youtube"></i></a>
+                            <a class="social-media-icon" href="#"><i class="fa fa-instagram"></i></a>
+                            <a class="social-media-icon" href="#"><i class="fa fa-twitter"></i></a>
+                            <a class="social-media-icon" href="#"><i class="fa fa-facebook"></i></a>
+                            <input type="text" class="search-box-field" id="searchBox">
+                            <a class="social-media-icon-search" id="searchIcon">
+                            <i class="fa fa-search"></i></a>
                         </div>
                     </div>
-                </div> 
-            </div>
-        </nav>
-            <!-- Secondary header End -->
-            
-            <!-- primary header Start -->
-            <nav class="navbar navbar-expand-lg primary-navbar" aria-label="Primary navbar">
-            <div class="container">
-
-                <button class="navbar-toggler toggler-example menu-btn-navbar" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-                aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
-                    class="fa fa-align-right"></i></span></button>
-                    <div class="primary-nav-div collapse navbar-collapse" id="navbarSupportedContent1">
+                </div>
+                <button 
+                class="navbar-toggler toggler-example" 
+                type="button" 
+                data-toggle="collapse" 
+                data-traget="#navBarCollapse"
+                aria-expanded="false"
+                aria-controls="navBarCollapse">
+                <span class="dark-blue-text">
+                    <i class="fa fa-align-right"></i>
+                </span>
+                </button>
+                <div class="container-fluid container-nav-links collapse navbar-collapse" id="navBarCollapse">
+                    <div class="row navbar-links">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">About</a>
@@ -72,11 +81,11 @@
                                 <a class="nav-link" href="#">Contact Us</a>
                             </li>
                         </ul>
-                        
                     </div>
-            </div>
-        </nav>
-                <!-- primary header End -->
+                </div>
+                </div>
+            </nav>
+        <!-- NAVBAR Section END -->
                 
         <!-- Section header Start -->
         <section class="image-slider">
@@ -93,76 +102,82 @@
             <div class="container news-programmes-container">
                
                 <!-- Courses and programmes column START -->
-                <div class="col courses-div">
-                    <div class="blurb ug-courses">
-                        <a href="#">
-                            <img 
-                            src="undergraduate/undergraduate.png" 
-                            alt="Undergraduate Courses" 
-                            class="section-news-images" 
-                            width="253px"
-                            height="253px">
-                            <h4 class="section-news-images-title"><span class="news-title">Undergraduate Courses</span></h4>
-                        </a>
-                    </div>
-                    <div class="blurb grad-courses">
-                        <a href="#">
-                            <img 
-                            src="graduation/graduatestudents.png" 
-                            alt="Graduate Courses" 
-                            class="section-news-images" 
-                            width="253px" 
-                            height="253px">
-                            <h4 class="section-news-images-title"><span class="news-title">Graduate Courses</span></h4>
-                        </a>
-                    </div>
-                    <div class="blurb inter-studies">
-                        <a href="#">
-                            <img 
-                            src="student-photo/student-photo.png" 
-                            alt="International Students" 
-                            class="section-news-images" 
-                            width="253px" 
-                            height="253px">
-                            <h4 class="section-news-images-title"><span class="news-title">International Students</span></h4>
-                        </a>
-                    </div>
-                    <div class="blurb scholarships">
-                        <a href="#">
-                            <img 
-                            src="student-applying/student-applying.png" 
-                            alt="International Students" 
-                            class="section-news-images" 
-                            width="253px" 
-                            height="253px">
-                            <h4 class="section-news-images-title"><span class="news-title">scholarships</span></h4>
-                        </a>
-                    </div>
-                </div>
-                <!-- Courses and programmes column END  -->
-
-                <!-- News Column -->
-                <div class="col news-div">
-                    <div class="blurb-news">
-                        <h4 class="title-style">News</h4>    
-                    </div>
-                    <div class="news">
-                        <h6 class="news-date">January 06, 2017</h6>
-                        <h5 class="news-title">Smart Exhibition Upends Classical Style</h5>
-                        <p class="news-content">Even the most casual observer is probably acquainted with the Classical style, that aesthetic anchored in the ancient…</p>
-                        <button>READ MORE</button>
-                    </div>
-                    <hr>
-                    <div class="news">
-                        <h6 class="news-date">December 13, 2016</h6>
-                        <h5 class="news-title">Sciences University To Offer Now Undergraduate Major In Creative Writing</h5>
-                        <p class="news-content">The Department of English Language and Literature will offer a new undergraduate major in creative writing, beginning…</p>
-                        <button>READ MORE</button>
-                    </div>
-                    <hr>
-                    <div class="news">
+                <div class="row courses-div">
+                    <div class="col col-first">
+                        <div class="row courses-row-first">
+                            <div class="col">
+                                <div class="blurb ug-courses">
+                                    <a href="#">
+                                        <img 
+                                        src="undergraduate/undergraduate.png" 
+                                        alt="Undergraduate Courses" 
+                                        class="section-news-images">
+                                        <h4 class="section-news-images-title"><span class="news-title">Undergraduate Courses</span></h4>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="blurb grad-courses">
+                                    <a href="#">
+                                        <img 
+                                        src="graduation/graduatestudents.png" 
+                                        alt="Graduate Courses" 
+                                        class="section-news-images">
+                                        <h4 class="section-news-images-title"><span class="news-title">Graduate Courses</span></h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="row courses-row-second">
+                            <div class="col">
+                                <div class="blurb inter-studies">
+                                    <a href="#">
+                                        <img 
+                                        src="student-photo/student-photo.png" 
+                                        alt="International Students" 
+                                        class="section-news-images">
+                                        <h4 class="section-news-images-title"><span class="news-title">International Students</span></h4>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="blurb scholarships">
+                                    <a href="#">
+                                        <img 
+                                        src="student-applying/student-applying.png" 
+                                        alt="International Students" 
+                                        class="section-news-images">
+                                        <h4 class="section-news-images-title"><span class="news-title">scholarships</span></h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                        <!-- Courses and programmes column END  -->
+                        
+                        <!-- News Column -->
+                    <div class="col news-div col-second">
+                        <div class="blurb-news">
+                            <h4 class="title-style">News</h4>    
+                        </div>
+                        <div class="news">
+                            <h6 class="news-date">January 06, 2017</h6>
+                            <a href="#"><h5 class="news-title">Smart Exhibition Upends Classical Style</h5></a>
+                            <p class="news-content">Even the most casual observer is probably acquainted with the Classical style, that aesthetic anchored in the ancient…</p>
+                            <button class="news-btn">READ MORE</button>
+                        </div>
+                        <hr>
+                        <div class="news">
+                            <h6 href="#" class="news-date">December 13, 2016</h6>
+                            <a href="#"><h5 class="news-title">Sciences University To Offer Now Undergraduate Major In Creative Writing</h5></a>
+                            <p class="news-content">The Department of English Language and Literature will offer a new undergraduate major in creative writing, beginning…</p>
+                            <button class="news-btn">READ MORE</button>
+                        </div>
+                        <hr>
+                        <div class="news">
                         <h6 class="news-date">November 13, 2016</h6>
-                        <h5 class="news-title">New Method Uses Heat Flow To Levitate Variety Of Objects</h5>
+                        <a href="#"><h5 class="news-title">New Method Uses Heat Flow To Levitate Variety Of Objects</h5></a>
                         <p class="news-content">Even the most casual observer is probably acquainted with the Classical style, that aesthetic anchored in the ancient…</p>
                         <button class="news-btn">READ MORE</button>
                     </div>
@@ -231,7 +246,7 @@
                                 <h6 class="events-blurb-description-time">2:00 P.M - 4:00 P.M.</h6>
                                 <div class="v1"></div>
                                 <h6 class="events-blurb-description-location">Irbed Campus</h6>
-                                <span class="events-description-title "><h5>Postgraduate Drop-in Evening</h5></span>
+                                <a href="#"><span class="events-description-title "><h5>Postgraduate Drop-in Evening</h5></span></a>
                                 <span><p class="events-description-paragraph">Our Postgraduate Drop-in Evenings are an excellent opportunity for you to meet our staff and talk to current students…</p></span>
                             </div>
                         </div>
@@ -256,7 +271,7 @@
                                 <h6 class="events-blurb-description-time">4:00 P.M - 6:00 P.M.</h6>
                                 <div class="v1"></div>
                                 <h6 class="events-blurb-description-location">Amman Campus</h6>
-                                <span class="events-description-title "><h5>Undergraduate Music Open Day</h5></span>
+                                <a href="#"><span class="events-description-title "><h5>Undergraduate Music Open Day</h5></span></a>
                                 <span><p class="events-description-paragraph">Music open days are aimed at candidates who have made Kingston University one of their university choices…</p></span>
                             </div>
                         </div>
@@ -281,7 +296,7 @@
                                 <h6 class="events-blurb-description-time">2:00 P.M - 4:00 P.M.</h6>
                                 <div class="v1"></div>
                                 <h6 class="events-blurb-description-location">Ajlun Campus</h6>
-                                <span class="events-description-title"><h5>Making Nature’ Exhibition At Wellcome Collection</h5></span>
+                                <a href="#"><span class="events-description-title"><h5>Making Nature’ Exhibition At Wellcome Collection</h5></span></a>
                                 <span><p class="events-description-paragraph">The question of how humans relate to other animals has captivated, scientists, ethicists and artists for centuries...</p></span>
                             </div>
                         </div>
@@ -368,14 +383,14 @@
                     <div class="col explore">
                         <h6 class="footer-subtitles">Explore</h6>
                         <ul class="footer-list">
-                            <li><a>Privacy and cookies</a></li>
-                            <li><a>Legal Information</a></li>
-                            <li><a>About the University</a></li>
-                            <li><a>News and Events</a></li>
-                            <li><a>Research</a></li>
-                            <li><a>Schools and Departmens</a></li>
-                            <li><a>International</a></li>
-                            <li><a>Job Vacancies</a></li>
+                            <li><a href="#">Privacy and cookies</a></li>
+                            <li><a href="#">Legal Information</a></li>
+                            <li><a href="#">About the University</a></li>
+                            <li><a href="#">News and Events</a></li>
+                            <li><a href="#">Research</a></li>
+                            <li><a href="#">Schools and Departmens</a></li>
+                            <li><a href="#">International</a></li>
+                            <li><a href="#">Job Vacancies</a></li>
                         </ul>
                     </div>
                         
@@ -384,15 +399,15 @@
                     <div class="col quick-links-using-our-site">
                         <h6 class="footer-subtitles">Quick Links</h6>
                         <ul class="footer-list">
-                            <li><a>Online Payment</a></li>
-                            <li><a>Library</a></li>
-                            <li><a>Alumni</a></li>
-                            <li><a>Community Information</a></li>
+                            <li><a href="#">Online Payment</a></li>
+                            <li><a href="#">Library</a></li>
+                            <li><a href="#">Alumni</a></li>
+                            <li><a href="#">Community Information</a></li>
                         </ul>
                         <h6 class="footer-subtitles">Using our Site</h6>
                         <ul class="footer-list">
-                            <li><a>Accessibility</a></li>
-                            <li><a>Freedom of Information</a></li>
+                            <li><a href="#" class="hover-over-style">Accessibility</a></li>
+                            <li><a href="#" class="hover-over-style">Freedom of Information</a></li>
                         </ul>
                     </div>
                     <div class="tablet-footer-width"></div>
@@ -404,23 +419,23 @@
                         <ul class="footer-list">
                             <li>
                                 <span><i class="fa fa-phone"></i></span>
-                                <a>+ 1 (408) 703 8738</a>
+                                <a href="#">+ 1 (408) 703 8738</a>
                             </li>
                             <li>
                                 <span><i class="fa fa-phone"></i></span>
-                                <a>+ 962 6 581 7612</a>
+                                <a href="#">+ 962 6 581 7612</a>
                             </li>
                             <li>
                                 <span><i class="fa fa-envelope"></i></span>
-                                <a>info@SciencesUniversity.edu</a>
+                                <a href="#">info@SciencesUniversity.edu</a>
                             </li>
                             <li>
                                 <span><i class="fa fa-envelope"></i></span>
-                                <a>Contact Us</a>
+                                <a href="#">Contact Us</a>
                             </li>
                             <li>
                                 <span><i class="fa fa-map-marker fa-lg"></i></span>
-                                <a>Find Us</a>
+                                <a href="#">Find Us</a>
                             </li>
                         </ul>
                     </div>
@@ -437,11 +452,11 @@
                         <div class="row follow-us-row">
                             <h6 class="d-inline-block w-100 footer-subtitles">Follow Us</h6>
                             <div class="social-media-follow-us">
-                                <a href="#" class="social-media-icon"><i class="fa fa-linkedin"></i></a>
-                                <a href="#" class="social-media-icon"><i class="fa fa-youtube"></i></a>
-                                <a href="#" class="social-media-icon"><i class="fa fa-instagram"></i></a>
-                                <a href="#" class="social-media-icon"><i class="fa fa-twitter"></i></a>
-                                <a href="#" class="social-media-icon"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="social-media-icon hover-over-style"><i class="fa fa-linkedin"></i></a>
+                                <a href="#" class="social-media-icon hover-over-style"><i class="fa fa-youtube"></i></a>
+                                <a href="#" class="social-media-icon hover-over-style"><i class="fa fa-instagram"></i></a>
+                                <a href="#" class="social-media-icon hover-over-style"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="social-media-icon hover-over-style"><i class="fa fa-facebook"></i></a>
                             </div>
                         </div>
                     </div>
@@ -454,10 +469,12 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <span><i class="fa fa-copyright" aria-hidden="true"></i></span>
-                    <h6>2017 Sciences University. All Rights Reserved.</h6>
+                    <h6 class="hover-over-style">2017 Sciences University. All Rights Reserved.</h6>
                 </div>
             </div>
         </section>
         <!-- Secondary Footer Section End -->
+
+        <script src="script.js"></script>
     </body>
 </html>

@@ -1,126 +1,126 @@
-// Secondary navbar styles start
-.sec-navbar-main
-{
-    position: fixed;
-    background-color: #fff;
-    width: 100%;
-    z-index: 9999999;
-    .secondary-navbar
-    {
-        width: 1500px;
-        margin: auto;
-    } 
-    .social-media-container
-    {
-        float: right;
-        position: relative;
-        bottom: -18px;
-        .social-media-icon
-        {
-            color: white;
-            display: flex;
-            justify-content: space-around;
-            padding: 3px 2px;
-            width: 23px;
-            background-color: #b6b6b6;
-        }
-        .social-media-icon-search
-        {
-            color: #b6b6b6;
-            display: flex;
-            justify-content: space-around;
-            padding: 3px 2px;
-            margin-left: 20px;
-            width: 23px;
-        }
-    }
-}
-a.social-media-icon {
-    margin: 0 8px;
-}
-// Secondary navbar styles end
+@import '../bootstrap-4.5.0/scss/functions.scss';
+@import '../bootstrap-4.5.0/scss/variables.scss';
+@import '../bootstrap-4.5.0/scss/mixins';
 
-// Primary navbar styles start
-.primary-navbar 
-{
+// NAVBAR SECTION STYLES START
+.navbar-styles {
+    padding: 0;
     position: fixed;
-    background-color: #021a4e;
     width: 100%;
-    top: 7%;
+    background: white;
     z-index: 9999999;
-    .primary-nav-div
-    {
-        .nav-item
-        {
-            color: #fff;
-            .nav-link 
+    .navbar-container {
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .logo-socials-row {
+            width: 100%;
+            padding: 0;
+            .social-media-container
             {
-                text-transform: uppercase;
-                font-size: 14px;
-                text-align: center;
-                color: #fff;
-                width: 180px;
-
-                &:hover 
+                position: relative;
+                top: 27%;
+                .social-media-icon
+                {
+                    color: white;
+                    background-color: #b6b6b6;
+                    padding: 3px;
+                    > i {
+                        min-width: 1rem;
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                }
+                .social-media-icon-search
                 {
                     color: #b6b6b6;
+                    margin-left: 3%;
+                    padding: 3px;
+                    > i {
+                        min-width: 1rem;
+                        font-size: 20px;
+                        text-align: center;
+                    }
                 }
             }
         }
-    }
-    .menu-btn-navbar
-    {
-        color: white;
-        position: relative;
-        left: 90%;
-    }
-}
-
-
-// Primary navbar styles end
-
-
-// Media queries
-@media (min-width: 375px){
-    .primary-navbar{
-        top: 8%;
-    }
-}
-    @media (min-width: 576px){
-        .primary-navbar {
-            .primary-nav-div{
-                text-align: center;
-                .navbar-nav {
-                    display: inline-block;
-                }
-            }
-        }
-    }
-    @media (min-width: 768px){
-        .primary-navbar{
-            .primary-nav-div{
-                .nav-item {
-                    display: flex;
-                    justify-content: center;
-                }
-            }
-        }
-    }
-    @media (min-width: 992px){
-        .primary-navbar {
-            .primary-nav-div{
+        .container-nav-links {
+            background-color: #021a4e;
+            width: 100%;
+            .navbar-links
+            {
                 justify-content: center;
-                .nav-item {
-                    display: inline-block;
-                    .nav-link {
-                        width: 133px;
+                .navbar-nav 
+                {
+                    .nav-item {
+                        width: 100%;
+                        text-align: center;
+                       .nav-link 
+                       {
+                           text-transform: uppercase;
+                           font-size: 14px;
+                           text-align: center;
+                           color: #fff;
+                           width: 180px;
+                           &:hover 
+                           {
+                               color: #b6b6b6;
+                           }
+                       }
                     }
                 }
             }
         }
     }
-    @media (min-width: 1200px){
-        .primary-navbar {
-
-    }
 }
+// NAVBAR SECTION STYLES END
+
+
+
+
+
+// // Media queries
+// @media (min-width: 375px){
+//     .primary-navbar{
+//         top: 8%;
+//     }
+// }
+//     @media (min-width: 576px){
+//         .primary-navbar {
+//             .primary-nav-div{
+//                 text-align: center;
+//                 .navbar-nav {
+//                     display: inline-block;
+//                 }
+//             }
+//         }
+//     }
+//     @media (min-width: 768px){
+//         .primary-navbar{
+//             .primary-nav-div{
+//                 .nav-item {
+//                     display: flex;
+//                     justify-content: center;
+//                 }
+//             }
+//         }
+//     }
+//     @media (min-width: 992px){
+//         .primary-navbar {
+//             .primary-nav-div{
+//                 justify-content: center;
+//                 .nav-item {
+//                     display: inline-block;
+//                     .nav-link {
+//                         width: 133px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     @media (min-width: 1200px){
+//         .primary-navbar {
+
+//     }
+// }
