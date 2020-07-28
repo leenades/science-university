@@ -33,7 +33,8 @@
             text-align: center; }
     .navbar-styles .navbar-container .container-nav-links {
       background-color: #021a4e;
-      width: 100%; }
+      width: 100%;
+      justify-content: center; }
       .navbar-styles .navbar-container .container-nav-links .navbar-links {
         justify-content: center; }
         .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item {
