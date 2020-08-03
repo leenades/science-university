@@ -2,6 +2,10 @@
   position: relative; }
   .image-slider .carousel-slider {
     overflow-y: hidden; }
+    .image-slider .carousel-slider .carousel-indicators > li {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%; }
     .image-slider .carousel-slider .header-title-container {
       position: absolute;
       top: 25%;

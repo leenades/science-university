@@ -40,15 +40,16 @@ a {
     border: none;
     border-bottom: 1px solid #b6b6b6;
     margin: 0 1%;
-    animation: slide-left 2s;
+    // animation: slide-left 2s;
     outline: none;
+    width: 45%;
 }
 
-@keyframes slide-left {
-    from {
-        transform: scaleX(0);
-    }
-    to {
-        transform: scaleX(1);
-    }
-}
+// @keyframes slide-left {
+//     from {
+//         transform: scaleX(0);
+//     }
+//     to {
+//         transform: scaleX(1);
+//     }
+// }

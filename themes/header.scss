@@ -8,8 +8,15 @@
     .carousel-slider 
     {
         overflow-y: hidden;
-        .header-title-container 
-        {
+        .carousel-indicators {
+            > li {
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+            }
+        }
+    .header-title-container 
+    {
             position: absolute;
             top: 25%;
             right: 5%;
