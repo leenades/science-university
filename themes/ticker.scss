@@ -1,9 +1,16 @@
+@import '../bootstrap-4.5.0/scss/functions.scss';
+@import '../bootstrap-4.5.0/scss/variables.scss';
+@import '../bootstrap-4.5.0/scss/mixins';
+
 @import 'variables.scss';
 .section-ticker 
 {
     background-color: $greenVogueMain;
     .div-ticker 
     {
+        @include media-breakpoint-between(xs, md){
+            flex-direction: column;
+        }
         > .ticker-col
         {
             color: $corn;
@@ -24,24 +31,6 @@
                 font-weight: 600;
                 padding: 0 47px;
             }
-        }
-    }
-}
-
-@media (min-width: 576px){
-    .section-ticker{
-        .div-ticker 
-        {   
-            flex-direction: column;
-        }
-    }
-}
-
-@media (min-width: 992px){
-    .section-ticker{
-        .div-ticker 
-        {   
-            flex-direction: row;
         }
     }
 }

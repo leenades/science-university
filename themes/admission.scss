@@ -46,33 +46,51 @@
                 padding: 1% 0;
                 margin: 0 0 100px 0;
                 transition: background-color .4s, color .4s;
-            }
-        }
-    }
-}
-
-@media (min-width: 576px){
-    .admission-section {
-        .admission-row-btn{
-            .admission-btn{
-                .button-animation{
+                @include media-breakpoint-between(xs, md){
                     font-size: 2rem;
                 }
-            }
-        }
-    }
-}
-@media (min-width: 992px){
-    .admission-section {
-        .admission-row-btn{
-            .admission-btn{
-                .button-animation{
-                    font-size: 4rem;
+                @include media-breakpoint-up(1024px){
+                    font-size: 3rem;
                 }
             }
         }
     }
 }
-@include media-breakpoint-up(sm){
 
-}
+// @media (min-width: 576px){
+//     .admission-section {
+//         .admission-row-btn{
+//             .admission-btn{
+//                 .button-animation{
+//                     font-size: 2rem;
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media (min-width: 992px){
+//     .admission-section {
+//         .admission-row-btn{
+//             .admission-btn{
+//                 .button-animation{
+//                     font-size: 4rem;
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media only screen and (min-width: 1024px) and (orientation: portrait) {
+//     .admission-section {
+//         .admission-row-btn{
+//             .admission-btn{
+//                 .button-animation{
+//                     font-size: 3rem;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// // @include media-breakpoint-up(sm){
+
+// // }

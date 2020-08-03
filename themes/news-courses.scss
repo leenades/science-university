@@ -1,3 +1,7 @@
+@import '../bootstrap-4.5.0/scss/functions.scss';
+@import '../bootstrap-4.5.0/scss/variables.scss';
+@import '../bootstrap-4.5.0/scss/mixins';
+
 @import 'variables.scss';
 // News Section Styles Start
 .news-programmes-container 
@@ -9,6 +13,9 @@
     {
         margin-top: 3%;
         margin-bottom: 3%;
+        @include media-breakpoint-between(xs, md){
+            flex-direction: column;
+        }
         .col-first
         {
             margin-right: 3%;
@@ -21,9 +28,23 @@
                 width: fit-content;
                 box-shadow: 10px 9px 10px #9a98985e;
                 transition: all .4s ease-in-out;
+                @include media-breakpoint-between(xs, md){
+                    width: 100%;
+                }
+                @include media-breakpoint-up(1024px){
+                    width: 100%;
+                }
                 > a 
                 {
                     text-decoration: none;
+                    .section-news-images{
+                        @include media-breakpoint-between(xs, md){
+                            width: 100%;   
+                        }
+                        @include media-breakpoint-up(1024px){
+                            width: 100%;
+                        }
+                    }
                 }
             }
             .section-news-images-title 
@@ -37,6 +58,13 @@
                 font-family: OpenSans;
                 text-transform: uppercase;
                 text-align: center;
+                @include media-breakpoint-between(xs, md){
+                    font-size: 12px;
+                    
+                }
+                @include media-breakpoint-up(1024px){
+                    font-size: 13px;
+                }
                 .news-title 
                 {
                     position: relative;
@@ -132,35 +160,3 @@
 }
 
 // News Section Styles End
-    
-    // Media Queries
-    
-    @media (min-width: 576px){
-        .news-programmes-container{
-            .courses-div{
-                flex-direction: column;
-                .blurb 
-                {
-                    > a {
-                        .section-news-images-title {
-                            font-size: 12px;
-                        }
-                    }
-                }
-        }
-    }
-}
-@media (min-width: 992px) {
-    .news-programmes-container{
-        .courses-div{
-            flex-direction: row;
-            .blurb{
-                > a {
-                    .section-news-images-title {
-                        font-size: 15px;
-                    }
-                }
-            }
-        }
-    }
-}

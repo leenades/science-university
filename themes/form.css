@@ -13,6 +13,11 @@
         .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-name {
           width: 48%;
           float: left; }
+          @media (min-width: 576px) and (max-width: 991.98px) {
+            .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-name {
+              width: 100%;
+              float: unset;
+              margin-bottom: 1rem; } }
           .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-name > input {
             width: 100%;
             border: 1px solid #d4d4d4;
@@ -21,6 +26,11 @@
         .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-phone {
           width: 48%;
           float: right; }
+          @media (min-width: 576px) and (max-width: 991.98px) {
+            .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-phone {
+              width: 100%;
+              margin-bottom: 1rem;
+              float: unset; } }
           .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-phone > input {
             width: 100%;
             border: 1px solid #d4d4d4;
@@ -51,5 +61,3 @@
           font-weight: 500;
           font-size: 18px;
           transition: background-color .4s, color .4s; }
-
-/*# sourceMappingURL=form.css.map */

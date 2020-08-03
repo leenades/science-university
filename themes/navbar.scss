@@ -9,14 +9,26 @@
     width: 100%;
     background: white;
     z-index: 9999999;
+    height: fit-content;
+    @include media-breakpoint-between(xs, md){
+        height: 6vh;
+    }
+    .btn-menu-burger{
+        @include media-breakpoint-between(xs, md){
+            position: absolute;
+            right: 5%;
+        }
+    }
     .navbar-container {
-        flex-direction: column;
+        margin: auto;
         width: 100%;
-        display: flex;
-        align-items: center;
         .logo-socials-row {
             width: 100%;
             padding: 0;
+            margin: auto;
+            @include media-breakpoint-between(xs, md){
+                margin: auto;
+            }
             .social-media-container
             {
                 position: relative;
@@ -48,7 +60,10 @@
         .container-nav-links {
             background-color: #021a4e;
             width: 100%;
+            position: absolute;
+            top: 100%;
             justify-content: center;
+            display: inline-block;
             .navbar-links
             {
                 justify-content: center;
@@ -76,52 +91,3 @@
     }
 }
 // NAVBAR SECTION STYLES END
-
-
-
-
-
-// // Media queries
-// @media (min-width: 375px){
-//     .primary-navbar{
-//         top: 8%;
-//     }
-// }
-//     @media (min-width: 576px){
-//         .primary-navbar {
-//             .primary-nav-div{
-//                 text-align: center;
-//                 .navbar-nav {
-//                     display: inline-block;
-//                 }
-//             }
-//         }
-//     }
-//     @media (min-width: 768px){
-//         .primary-navbar{
-//             .primary-nav-div{
-//                 .nav-item {
-//                     display: flex;
-//                     justify-content: center;
-//                 }
-//             }
-//         }
-//     }
-//     @media (min-width: 992px){
-//         .primary-navbar {
-//             .primary-nav-div{
-//                 justify-content: center;
-//                 .nav-item {
-//                     display: inline-block;
-//                     .nav-link {
-//                         width: 133px;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-//     @media (min-width: 1200px){
-//         .primary-navbar {
-
-//     }
-// }

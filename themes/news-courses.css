@@ -5,6 +5,9 @@
   .news-programmes-container .courses-div {
     margin-top: 3%;
     margin-bottom: 3%; }
+    @media (max-width: 991.98px) {
+      .news-programmes-container .courses-div {
+        flex-direction: column; } }
     .news-programmes-container .courses-div .col-first {
       margin-right: 3%;
       margin-bottom: 5%; }
@@ -13,9 +16,18 @@
       .news-programmes-container .courses-div .col-first .blurb {
         width: fit-content;
         box-shadow: 10px 9px 10px #9a98985e;
-        transition: all .4s ease-in-out; }
+        transition: all .4s ease-in-out;
+        width: 100%; }
+        @media (max-width: 991.98px) {
+          .news-programmes-container .courses-div .col-first .blurb {
+            width: 100%; } }
         .news-programmes-container .courses-div .col-first .blurb > a {
           text-decoration: none; }
+          .news-programmes-container .courses-div .col-first .blurb > a .section-news-images {
+            width: 100%; }
+            @media (max-width: 991.98px) {
+              .news-programmes-container .courses-div .col-first .blurb > a .section-news-images {
+                width: 100%; } }
       .news-programmes-container .courses-div .col-first .section-news-images-title {
         background-color: #021a4ecc;
         color: white;
@@ -25,7 +37,11 @@
         font-weight: bold;
         font-family: OpenSans;
         text-transform: uppercase;
-        text-align: center; }
+        text-align: center;
+        font-size: 13px; }
+        @media (max-width: 991.98px) {
+          .news-programmes-container .courses-div .col-first .section-news-images-title {
+            font-size: 12px; } }
         .news-programmes-container .courses-div .col-first .section-news-images-title .news-title {
           position: relative;
           top: 25%; }
@@ -93,16 +109,3 @@
     border-bottom: 1px solid #271a4f;
     width: 100%;
     display: block; }
-
-@media (min-width: 576px) {
-  .news-programmes-container .courses-div {
-    flex-direction: column; }
-    .news-programmes-container .courses-div .blurb > a .section-news-images-title {
-      font-size: 12px; } }
-@media (min-width: 992px) {
-  .news-programmes-container .courses-div {
-    flex-direction: row; }
-    .news-programmes-container .courses-div .blurb > a .section-news-images-title {
-      font-size: 15px; } }
-
-/*# sourceMappingURL=news-courses.css.map */

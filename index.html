@@ -24,13 +24,26 @@
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="bootstrap-4.5.0/dist/js/bootstrap.min.js"></script>
        
 
 
         <!-- NAVBAR Section START -->
         <nav class="navbar navbar-expand-lg navbar-styles">
-            <div class="navbar-container">
+            <button 
+            class="navbar-toggler btn-menu-burger" 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#navBarCollapse" 
+            aria-controls="navBarCollapse" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="dark-blue-text">
+                <i class="fa fa-align-right"></i>
+            </span>
+            </button>
+
+            <div class="navbar-container collapse navbar-collapse" id="navBarCollapse">
                 <div class="row logo-socials-row container">
                     <div class="col">
                         <a class="navbar-brand" href="#"><img src="themes/sciences-uni-logo.png" alt="science-university-logo"></a>
@@ -48,18 +61,7 @@
                         </div>
                     </div>
                 </div>
-                <button 
-                class="navbar-toggler toggler-example" 
-                type="button" 
-                data-toggle="collapse" 
-                data-traget="#navBarCollapse"
-                aria-expanded="false"
-                aria-controls="navBarCollapse">
-                <span class="dark-blue-text">
-                    <i class="fa fa-align-right"></i>
-                </span>
-                </button>
-                <div class="container-fluid container-nav-links collapse navbar-collapse" id="navBarCollapse">
+                <div class="container-fluid container-nav-links">
                     <div class="row navbar-links">
                         <ul class="navbar-nav">
                             <li class="nav-item">
@@ -89,10 +91,35 @@
                 
         <!-- Section header Start -->
         <section class="image-slider">
-            <div class="container image-slider-div">
-            </div>
-            <div class="header-title-container">
-                <h2 class="header-title">One of the Top 10 Universities in Design</h2>
+            <div id="myCarousel" class="carousel slide carousel-slider" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-targe="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-targe="#myCarousel" data-slide-to="1"></li>
+                    <li data-targe="#myCarousel" data-slide-to="2"></li>
+                    <li data-targe="#myCarousel" data-slide-to="3"></li>
+                    <li data-targe="#myCarousel" data-slide-to="4"></li>
+                    <li data-targe="#myCarousel" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="group-8.png" alt="First image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="group-8.png" alt="First image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="group-8.png" alt="First image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="group-8.png" alt="First image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="group-8.png" alt="First image">
+                    </div>
+                </div>
+                <div class="header-title-container">
+                    <h2 class="header-title">One of the Top 10 Universities in Design</h2>
+                </div>
             </div>
         </section>
         <!-- Section header End -->
@@ -334,15 +361,15 @@
                         </div>
                         <div class="row justify-content-center">
                             <form class="form-style">
-                                <div class="form-group full-name-phone-number">
+                                <div class="full-name-phone-number">
 
-                                    <div class="form-name">
+                                    <div class="form-group form-name">
                                         <input 
                                         type="text"
                                         for="fullName" 
                                         placeholder="Full Name">
                                     </div>
-                                    <div class="form-phone">
+                                    <div class="form-group form-phone">
                                         <input
                                         type="text" 
                                         for="phoneNumber" 

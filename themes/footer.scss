@@ -1,14 +1,30 @@
-// primary footer section styles START
+@import '../bootstrap-4.5.0/scss/functions.scss';
+@import '../bootstrap-4.5.0/scss/variables.scss';
+@import '../bootstrap-4.5.0/scss/mixins';
 @import 'variables.scss';
+
+// primary footer section styles START
 .footer-section 
 {
     padding: 4% 0;
     background-color: $greenVogueMain;
-    .v-line-divider 
-    {
-        border-left: 1px solid #4d4d4d;
-
-    }
+    .footer-row{
+        @include media-breakpoint-between(xs, sm){
+            flex-direction: column;
+            text-align: center;
+        }
+        .v-line-divider 
+        {
+            border-left: 1px solid #4d4d4d;
+        }
+        .tablet-footer-width {
+            @include media-breakpoint-between(sm, md){
+                width: 100%;
+            }
+            @include media-breakpoint-between(md, lg){
+                width: 100%;
+            }
+        }
     .footer-subtitles 
     {
         color: $corn;
@@ -26,6 +42,14 @@
             margin-bottom: 10px;
             font-weight: 600;
             font-size: 14px;
+            @include media-breakpoint-between(xs, sm){
+                font-size: 11px;
+            }
+            > span {
+                @include media-breakpoint-between(sm, md){
+                    margin: 0;
+                }
+            }
             > a {
                 color: #fff;
                 &:hover{
@@ -37,7 +61,7 @@
             }
             
         }
-
+        
     }
     .social-media-icon 
     {
@@ -74,6 +98,12 @@
     .follow-us {
         > .follow-us-row {
             margin: 25px 0 40px 0;
+            @include media-breakpoint-between(xs, sm){
+                justify-content: center;
+            }
+            @include media-breakpoint-between(sm, md){
+                justify-content: start;
+            }
             .social-media-follow-us {
                 > a {
                     color: #fff;
@@ -84,6 +114,7 @@
             }
         }
     }
+}
 }
 // primary footer section styles END
 
@@ -107,64 +138,55 @@
 
 // Media queries
 
-@media (min-width: 576px) {
-    .footer-section{
-        .footer-row{
-            flex-direction: column;
-            text-align: center;
-            .footer-list {
-                > li {
-                    font-size: 11px;
-                }
-            }
-            .follow-us{
-                > .follow-us-row {
-                    justify-content: center;
 
-                }
-            }
-        }
-    }
-}
-@media (min-width: 768px){
-    .footer-section{
-        .footer-row{
-            flex-direction: row;
-            text-align: start;
-            .footer-list{
-                > li {
-                        font-size: 11px;
-                        > span {
-                            margin: 0;
-                        }
-                }
-            }
-            .follow-us{
-                > .follow-us-row {
-                    justify-content: start;
 
-                }
-            }
-            .tablet-footer-width{
-                width: 100%;
-            }
-        }
-    }
-}
-@media (min-width: 992px){
-    .footer-section{
-        .footer-row{
-            .footer-list{
-                > li {
-                    font-size: 14px;
-                    > span {
-                        margin: 0 10px 0 15px;
-                    }
-                }
-            }
-            .tablet-footer-width{
-                width: 0;
-            }
-        }
-    }
-}
+// // @media (min-width: 768px){
+// //     .footer-section{
+// //         .footer-row{
+            
+// //             .footer-list{
+// //                 > li {
+// //                         font-size: 11px;
+// //                         > span {
+// //                             margin: 0;
+// //                         }
+// //                 }
+// //             }
+// //             .follow-us{
+// //                 > .follow-us-row {
+// //                     justify-content: start;
+
+// //                 }
+// //             }
+// //             .tablet-footer-width{
+// //                 width: 100%;
+// //             }
+// //         }
+// //     }
+// // }
+// @media (min-width: 992px){
+//     .footer-section{
+//         .footer-row{
+//             .footer-list{
+//                 > li {
+//                     font-size: 12px;
+//                     > span {
+//                         margin: 0 10px 0 15px;
+//                     }
+//                 }
+//             }
+//             .tablet-footer-width{
+//                 width: 0;
+//             }
+//         }
+//     }
+// }
+// @media only screen and (min-width: 1024px) and (orientation: portrait) {
+//     .footer-section{
+//         .footer-row{
+//             .tablet-footer-width{
+//                 width: 100%;
+//             }
+//         }
+//     }
+// }

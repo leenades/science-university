@@ -3,15 +3,25 @@
   position: fixed;
   width: 100%;
   background: white;
-  z-index: 9999999; }
+  z-index: 9999999;
+  height: fit-content; }
+  @media (max-width: 991.98px) {
+    .navbar-styles {
+      height: 6vh; } }
+  @media (max-width: 991.98px) {
+    .navbar-styles .btn-menu-burger {
+      position: absolute;
+      right: 5%; } }
   .navbar-styles .navbar-container {
-    flex-direction: column;
-    width: 100%;
-    display: flex;
-    align-items: center; }
+    margin: auto;
+    width: 100%; }
     .navbar-styles .navbar-container .logo-socials-row {
       width: 100%;
-      padding: 0; }
+      padding: 0;
+      margin: auto; }
+      @media (max-width: 991.98px) {
+        .navbar-styles .navbar-container .logo-socials-row {
+          margin: auto; } }
       .navbar-styles .navbar-container .logo-socials-row .social-media-container {
         position: relative;
         top: 27%; }
@@ -34,7 +44,10 @@
     .navbar-styles .navbar-container .container-nav-links {
       background-color: #021a4e;
       width: 100%;
-      justify-content: center; }
+      position: absolute;
+      top: 100%;
+      justify-content: center;
+      display: inline-block; }
       .navbar-styles .navbar-container .container-nav-links .navbar-links {
         justify-content: center; }
         .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item {
@@ -48,5 +61,3 @@
             width: 180px; }
             .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item .nav-link:hover {
               color: #b6b6b6; }
-
-/*# sourceMappingURL=navbar.css.map */

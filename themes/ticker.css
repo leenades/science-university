@@ -1,5 +1,8 @@
 .section-ticker {
   background-color: #021a4e; }
+  @media (max-width: 991.98px) {
+    .section-ticker .div-ticker {
+      flex-direction: column; } }
   .section-ticker .div-ticker > .ticker-col {
     color: #e4c800;
     text-align: center;
@@ -13,11 +16,3 @@
       font-size: 24px;
       font-weight: 600;
       padding: 0 47px; }
-
-@media (min-width: 576px) {
-  .section-ticker .div-ticker {
-    flex-direction: column; } }
-
-@media (min-width: 992px) {
-  .section-ticker .div-ticker {
-    flex-direction: row; } }
