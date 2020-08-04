@@ -13,15 +13,9 @@
     @include media-breakpoint-between(xs, md){
         height: 5vh;
     }
-    .navbar-brand{
-        // margin-left: 10rem;
-        // @include media-breakpoint-between(sm, md){
-        //     margin-left: 2rem;
-        // }
-    }
     .btn-menu-burger{
         @include media-breakpoint-between(xs, md){
-            position: absolute;
+            position: relative;
             right: 5%;
         }
     }
@@ -31,11 +25,15 @@
         .logo-socials-row {
             width: 100%;
             margin: auto;
-            padding: 5px 0;
             .social-media-container
             {
                 position: relative;
                 top: 27%;
+                @include media-breakpoint-between(sm, md){
+                    position: absolute;
+                    right: 0;
+                    display: flex;
+                }
                 .social-media-icon
                 {
                     color: white;
@@ -59,6 +57,25 @@
                     }
                 }
             }
+            .search-box-container{
+                display: inline;
+                @include media-breakpoint-between(sm, md){
+                    position: absolute;
+                    bottom: 16px;
+                    right: 0;
+                }
+                .search-box-field {
+                    border: none;
+                    border-bottom: 1px solid #b6b6b6;
+                    margin: 0 1%;
+                    // animation: slide-left 2s ease-in;
+                    outline: none;
+                    width: 25%;
+                    @include media-breakpoint-between(sm, md){
+                        width: 80%;
+                    }
+                }
+            }
         }
         .container-nav-links {
             background-color: #021a4e;
@@ -70,13 +87,13 @@
             left: 0;
             @include media-breakpoint-between(sm, md){
                 padding: 1rem 0;
+                position: unset;
+                top: unset;
+                left: unset;
             }
             .navbar-links
             {
                 justify-content: center;
-                @include media-breakpoint-between(sm, md){
-                    justify-content: start;
-                }
                 .navbar-nav 
                 {
                     .nav-item {
@@ -89,10 +106,6 @@
                             text-align: center;
                             color: #fff;
                             width: 180px;
-                            @include media-breakpoint-between(sm, md){
-                                text-align: start;
-                                margin-left: 5rem;
-                            }
                            &:hover 
                            {
                                color: #b6b6b6;
@@ -105,3 +118,10 @@
     }
 }
 // NAVBAR SECTION STYLES END
+// .collapse.show .container-nav-links {
+//     transform: translateX(43px);
+// }
+// .collapse .container-nav-links {
+//     transition: transform .7s ease;
+//     transform: translateX(96%);
+// }

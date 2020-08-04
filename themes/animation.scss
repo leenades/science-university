@@ -36,11 +36,13 @@ a {
 }
 
 
-.search-box-field {
-    border: none;
-    border-bottom: 1px solid #b6b6b6;
-    margin: 0 1%;
-    // animation: slide-left 2s;
-    outline: none;
-    width: 45%;
-}
+
+// @keyframes slide-left {
+//     from {
+//         display: none;
+//         width: 0;
+//     }
+//     to {
+//         display: inline;
+//     }
+// }

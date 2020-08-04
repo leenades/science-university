@@ -28,12 +28,12 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
         crossorigin="anonymous"></script>
         <script src="bootstrap-4.5.0/dist/js/bootstrap.min.js"></script>
-       
-
 
         <!-- NAVBAR Section START -->
         <nav class="navbar navbar-expand-lg navbar-styles">
-            
+            <div> <!-- LOGO -->
+                <a class="navbar-brand" href="#"><img src="themes/sciences-uni-logo.png" alt="science-university-logo"></a>
+            </div>
             <button 
             class="navbar-toggler btn-menu-burger" 
             type="button" 
@@ -42,23 +42,21 @@
             aria-controls="navBarCollapse" 
             aria-expanded="false" 
             aria-label="Toggle navigation">
-            <span class="dark-blue-text">
-                <i class="fa fa-align-right"></i>
-            </span>
-        </button>
-        
-        <div class="navbar-container collapse navbar-collapse" id="navBarCollapse">
-            <div class="row logo-socials-row container">
-                <div class="col"> <!-- LOGO -->
-                    <a class="navbar-brand" href="#"><img src="themes/sciences-uni-logo.png" alt="science-university-logo"></a>
-                </div>
-                <div class="col text-right d-sm-none d-md-none d-lg-block">
+                <span class="dark-blue-text">
+                    <i class="fa fa-align-right"></i>
+                </span>
+            </button>
+            <div class="navbar-container collapse navbar-collapse" id="navBarCollapse">
+                <div class="row logo-socials-row container">
+                    <div class="col text-right">
                         <div class="social-media-container">
                             <a class="social-media-icon" href="#"><i class="fa fa-linkedin"></i></a>
                             <a class="social-media-icon" href="#"><i class="fa fa-youtube"></i></a>
                             <a class="social-media-icon" href="#"><i class="fa fa-instagram"></i></a>
                             <a class="social-media-icon" href="#"><i class="fa fa-twitter"></i></a>
                             <a class="social-media-icon" href="#"><i class="fa fa-facebook"></i></a>
+                        </div>
+                        <div class="search-box-container">
                             <input type="text" class="search-box-field" id="searchBox">
                             <a class="social-media-icon-search" id="searchIcon">
                             <i class="fa fa-search"></i></a>
@@ -89,10 +87,10 @@
                         </ul>
                     </div>
                 </div>
-                </div>
-            </nav>
+            </div>
+        </nav>
         <!-- NAVBAR Section END -->
-                
+
         <!-- Section header Start -->
         <section class="image-slider">
             <div id="myCarousel" class="carousel slide carousel-slider" data-ride="carousel">

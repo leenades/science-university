@@ -10,18 +10,22 @@
       height: 5vh; } }
   @media (max-width: 991.98px) {
     .navbar-styles .btn-menu-burger {
-      position: absolute;
+      position: relative;
       right: 5%; } }
   .navbar-styles .navbar-container {
     margin: auto;
     width: 100%; }
     .navbar-styles .navbar-container .logo-socials-row {
       width: 100%;
-      margin: auto;
-      padding: 5px 0; }
+      margin: auto; }
       .navbar-styles .navbar-container .logo-socials-row .social-media-container {
         position: relative;
         top: 27%; }
+        @media (min-width: 576px) and (max-width: 991.98px) {
+          .navbar-styles .navbar-container .logo-socials-row .social-media-container {
+            position: absolute;
+            right: 0;
+            display: flex; } }
         .navbar-styles .navbar-container .logo-socials-row .social-media-container .social-media-icon {
           color: white;
           background-color: #b6b6b6;
@@ -38,6 +42,22 @@
             min-width: 1rem;
             font-size: 20px;
             text-align: center; }
+      .navbar-styles .navbar-container .logo-socials-row .search-box-container {
+        display: inline; }
+        @media (min-width: 576px) and (max-width: 991.98px) {
+          .navbar-styles .navbar-container .logo-socials-row .search-box-container {
+            position: absolute;
+            bottom: 16px;
+            right: 0; } }
+        .navbar-styles .navbar-container .logo-socials-row .search-box-container .search-box-field {
+          border: none;
+          border-bottom: 1px solid #b6b6b6;
+          margin: 0 1%;
+          outline: none;
+          width: 25%; }
+          @media (min-width: 576px) and (max-width: 991.98px) {
+            .navbar-styles .navbar-container .logo-socials-row .search-box-container .search-box-field {
+              width: 80%; } }
     .navbar-styles .navbar-container .container-nav-links {
       background-color: #021a4e;
       width: 100%;
@@ -48,12 +68,12 @@
       left: 0; }
       @media (min-width: 576px) and (max-width: 991.98px) {
         .navbar-styles .navbar-container .container-nav-links {
-          padding: 1rem 0; } }
+          padding: 1rem 0;
+          position: unset;
+          top: unset;
+          left: unset; } }
       .navbar-styles .navbar-container .container-nav-links .navbar-links {
         justify-content: center; }
-        @media (min-width: 576px) and (max-width: 991.98px) {
-          .navbar-styles .navbar-container .container-nav-links .navbar-links {
-            justify-content: start; } }
         .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item {
           width: 100%;
           text-align: center; }
@@ -63,10 +83,6 @@
             text-align: center;
             color: #fff;
             width: 180px; }
-            @media (min-width: 576px) and (max-width: 991.98px) {
-              .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item .nav-link {
-                text-align: start;
-                margin-left: 5rem; } }
             .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item .nav-link:hover {
               color: #b6b6b6; }
 

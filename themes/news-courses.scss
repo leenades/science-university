@@ -71,9 +71,11 @@
                     font-size: 12px;
                     top: 19.7rem;
                 }
-                @include media-breakpoint-up(lg){
+                @include media-breakpoint-only(md){
                     font-size: 13px;
-                    
+                }
+                @include media-breakpoint-only(lg){
+                    top: 11rem;
                 }
                 .news-title 
                 {
