@@ -6,6 +6,8 @@
       width: 10px;
       height: 10px;
       border-radius: 100%; }
+    .image-slider .carousel-slider .carousel-inner .carousel-item > img {
+      width: 100%; }
     .image-slider .carousel-slider .header-title-container {
       position: absolute;
       top: 25%;
@@ -30,3 +32,5 @@
           .image-slider .carousel-slider .header-title-container .header-title {
             padding: 50px 30px;
             font-size: 30px; } }
+
+/*# sourceMappingURL=header.css.map */

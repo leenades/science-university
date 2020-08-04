@@ -1,3 +1,6 @@
+@font-face {
+  font-family: OpenSans;
+  src: url("../Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
 .form-section .form-row-contain {
   margin: 6% 0; }
   .form-section .form-row-contain .form-col-container {
@@ -61,3 +64,5 @@
           font-weight: 500;
           font-size: 18px;
           transition: background-color .4s, color .4s; }
+
+/*# sourceMappingURL=form.css.map */

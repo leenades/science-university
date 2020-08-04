@@ -1,3 +1,6 @@
+@font-face {
+  font-family: OpenSans;
+  src: url("../Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
 .news-programmes-container {
   margin: 55px auto;
   display: flex;
@@ -94,7 +97,7 @@
           color: #4a4a4a; }
 
 .blurb-news .title-style {
-  font-family: none;
+  font-family: OpenSans;
   text-transform: uppercase;
   font-size: 36px;
   font-weight: bold;
@@ -109,3 +112,5 @@
     border-bottom: 1px solid #271a4f;
     width: 100%;
     display: block; }
+
+/*# sourceMappingURL=news-courses.css.map */

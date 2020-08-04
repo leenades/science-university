@@ -1,8 +1,8 @@
 @import '../bootstrap-4.5.0/scss/functions.scss';
 @import '../bootstrap-4.5.0/scss/variables.scss';
 @import '../bootstrap-4.5.0/scss/mixins';
-
 @import 'variables.scss';
+
 // News Section Styles Start
 .news-programmes-container 
 {
@@ -139,7 +139,7 @@
 {
     .title-style 
     {
-        font-family: none;
+        font-family: OpenSans;
         text-transform: uppercase;
         font-size: 36px;
         font-weight: bold;

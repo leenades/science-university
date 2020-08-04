@@ -1,3 +1,6 @@
+@font-face {
+  font-family: OpenSans;
+  src: url("../Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
 .section-ticker {
   background-color: #021a4e; }
   @media (max-width: 991.98px) {
@@ -16,3 +19,5 @@
       font-size: 24px;
       font-weight: 600;
       padding: 0 47px; }
+
+/*# sourceMappingURL=ticker.css.map */

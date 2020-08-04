@@ -1,3 +1,6 @@
+@font-face {
+  font-family: OpenSans;
+  src: url("../Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
 .admission-section {
   width: 100%;
   background-image: url("admission-background.png");
@@ -14,7 +17,8 @@
     letter-spacing: normal;
     text-align: center;
     color: #021a4f;
-    margin: 100px 0; }
+    margin: 6% 0 10%;
+    text-shadow: 0 2px 4px rgba(83, 83, 83, 0.48); }
   .admission-section .admission-row-btn .admission-btn {
     text-align: center; }
     .admission-section .admission-row-btn .admission-btn .button-animation {
@@ -33,3 +37,5 @@
       @media (max-width: 991.98px) {
         .admission-section .admission-row-btn .admission-btn .button-animation {
           font-size: 2rem; } }
+
+/*# sourceMappingURL=admission.css.map */

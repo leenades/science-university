@@ -1,3 +1,6 @@
+@font-face {
+  font-family: OpenSans;
+  src: url("../Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
 .button-animation:hover {
   background-color: #e4c800 !important;
   color: #021a4e !important; }
@@ -19,3 +22,5 @@ a:hover {
   margin: 0 1%;
   outline: none;
   width: 45%; }
+
+/*# sourceMappingURL=animation.css.map */
