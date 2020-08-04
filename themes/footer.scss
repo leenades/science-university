@@ -52,16 +52,15 @@
             }
             > a {
                 color: #fff;
-                &:hover{
-                    color: #b6b6b6;
-                }
             }
             &:hover{
                 color: #b6b6b6;
+                > a {
+                    color: #b6b6b6;
+                }
             }
             
         }
-        
     }
     .social-media-icon 
     {
@@ -87,6 +86,9 @@
                 > span 
                 {
                     margin: 0 10px 0 15px;
+                    @include media-breakpoint-between(sm, lg){
+                        margin: 0 10px 0 0px;
+                    }
                     > i 
                     {
                         min-width: 1rem;
@@ -96,6 +98,11 @@
         } 
     }
     .follow-us {
+        @include media-breakpoint-between(sm, lg){
+            display: flex;
+            flex-direction: column-reverse;
+            height: fit-content;
+        }
         > .follow-us-row {
             margin: 25px 0 40px 0;
             @include media-breakpoint-between(xs, sm){
@@ -134,59 +141,3 @@
     }
 }
 // secondary footer section styles END
-
-
-// Media queries
-
-
-
-// // @media (min-width: 768px){
-// //     .footer-section{
-// //         .footer-row{
-            
-// //             .footer-list{
-// //                 > li {
-// //                         font-size: 11px;
-// //                         > span {
-// //                             margin: 0;
-// //                         }
-// //                 }
-// //             }
-// //             .follow-us{
-// //                 > .follow-us-row {
-// //                     justify-content: start;
-
-// //                 }
-// //             }
-// //             .tablet-footer-width{
-// //                 width: 100%;
-// //             }
-// //         }
-// //     }
-// // }
-// @media (min-width: 992px){
-//     .footer-section{
-//         .footer-row{
-//             .footer-list{
-//                 > li {
-//                     font-size: 12px;
-//                     > span {
-//                         margin: 0 10px 0 15px;
-//                     }
-//                 }
-//             }
-//             .tablet-footer-width{
-//                 width: 0;
-//             }
-//         }
-//     }
-// }
-// @media only screen and (min-width: 1024px) and (orientation: portrait) {
-//     .footer-section{
-//         .footer-row{
-//             .tablet-footer-width{
-//                 width: 100%;
-//             }
-//         }
-//     }
-// }

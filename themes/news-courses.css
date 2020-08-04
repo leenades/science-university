@@ -20,31 +20,35 @@
         width: fit-content;
         box-shadow: 10px 9px 10px #9a98985e;
         transition: all .4s ease-in-out;
+        position: relative;
+        overflow: hidden;
         width: 100%; }
         @media (max-width: 991.98px) {
           .news-programmes-container .courses-div .col-first .blurb {
             width: 100%; } }
-        .news-programmes-container .courses-div .col-first .blurb > a {
-          text-decoration: none; }
-          .news-programmes-container .courses-div .col-first .blurb > a .section-news-images {
-            width: 100%; }
-            @media (max-width: 991.98px) {
-              .news-programmes-container .courses-div .col-first .blurb > a .section-news-images {
-                width: 100%; } }
+        .news-programmes-container .courses-div .col-first .blurb > img {
+          width: 100%;
+          height: 100%; }
       .news-programmes-container .courses-div .col-first .section-news-images-title {
         background-color: #021a4ecc;
         color: white;
         width: 100%;
-        height: 40px;
         font-size: 15px;
         font-weight: bold;
         font-family: OpenSans;
         text-transform: uppercase;
         text-align: center;
-        font-size: 13px; }
+        height: fit-content;
+        padding: 10px 0;
+        position: absolute;
+        top: 13.7rem; }
         @media (max-width: 991.98px) {
           .news-programmes-container .courses-div .col-first .section-news-images-title {
-            font-size: 12px; } }
+            font-size: 12px;
+            top: 19.7rem; } }
+        @media (min-width: 992px) {
+          .news-programmes-container .courses-div .col-first .section-news-images-title {
+            font-size: 13px; } }
         .news-programmes-container .courses-div .col-first .section-news-images-title .news-title {
           position: relative;
           top: 25%; }

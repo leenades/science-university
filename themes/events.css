@@ -14,8 +14,9 @@
     border: 1px solid #cecece;
     padding: 0;
     margin-right: 30px;
-    box-shadow: 10px 9px 5px #9a98985e;
-    transition: all .4s ease-in-out; }
+    box-shadow: 10px 9px 10px #9a98985e;
+    transition: all .4s ease-in-out;
+    border-top: none; }
     @media (max-width: 991.98px) {
       .events-section .blogs-styles .blurb-column-events {
         margin-bottom: 7%; } }
@@ -87,7 +88,8 @@
         color: #021a4f; }
         .events-section .blogs-styles .blurb-column-events .events-blurbs-description > a .events-description-title h5 {
           font-size: 16px;
-          font-weight: 600; }
+          font-weight: 600;
+          margin: .5rem 0; }
         .events-section .blogs-styles .blurb-column-events .events-blurbs-description > a .events-description-title:hover {
           color: #a7b0c2; }
       .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-description-paragraph {

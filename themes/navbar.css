@@ -7,7 +7,7 @@
   height: fit-content; }
   @media (max-width: 991.98px) {
     .navbar-styles {
-      height: 6vh; } }
+      height: 5vh; } }
   @media (max-width: 991.98px) {
     .navbar-styles .btn-menu-burger {
       position: absolute;
@@ -17,11 +17,8 @@
     width: 100%; }
     .navbar-styles .navbar-container .logo-socials-row {
       width: 100%;
-      padding: 0;
-      margin: auto; }
-      @media (max-width: 991.98px) {
-        .navbar-styles .navbar-container .logo-socials-row {
-          margin: auto; } }
+      margin: auto;
+      padding: 5px 0; }
       .navbar-styles .navbar-container .logo-socials-row .social-media-container {
         position: relative;
         top: 27%; }
@@ -47,9 +44,16 @@
       position: absolute;
       top: 100%;
       justify-content: center;
-      display: inline-block; }
+      display: inline-block;
+      left: 0; }
+      @media (min-width: 576px) and (max-width: 991.98px) {
+        .navbar-styles .navbar-container .container-nav-links {
+          padding: 1rem 0; } }
       .navbar-styles .navbar-container .container-nav-links .navbar-links {
         justify-content: center; }
+        @media (min-width: 576px) and (max-width: 991.98px) {
+          .navbar-styles .navbar-container .container-nav-links .navbar-links {
+            justify-content: start; } }
         .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item {
           width: 100%;
           text-align: center; }
@@ -59,5 +63,11 @@
             text-align: center;
             color: #fff;
             width: 180px; }
+            @media (min-width: 576px) and (max-width: 991.98px) {
+              .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item .nav-link {
+                text-align: start;
+                margin-left: 5rem; } }
             .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item .nav-link:hover {
               color: #b6b6b6; }
+
+/*# sourceMappingURL=navbar.css.map */

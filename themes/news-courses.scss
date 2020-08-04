@@ -28,42 +28,52 @@
                 width: fit-content;
                 box-shadow: 10px 9px 10px #9a98985e;
                 transition: all .4s ease-in-out;
+                position: relative;
+                overflow: hidden;
                 @include media-breakpoint-between(xs, md){
                     width: 100%;
                 }
                 @include media-breakpoint-up(1024px){
                     width: 100%;
                 }
-                > a 
-                {
-                    text-decoration: none;
-                    .section-news-images{
-                        @include media-breakpoint-between(xs, md){
-                            width: 100%;   
-                        }
-                        @include media-breakpoint-up(1024px){
-                            width: 100%;
-                        }
-                    }
+                > img {
+                    width: 100%;
+                    height: 100%;
                 }
+                // > a 
+                // {
+                //     text-decoration: none;
+                //     .section-news-images{
+                //         @include media-breakpoint-between(xs, md){
+                //             width: 100%;   
+                //         }
+                //         @include media-breakpoint-up(1024px){
+                //             width: 100%;
+                //         }
+                //     }
+                // }
             }
             .section-news-images-title 
             {
                 background-color: #021a4ecc;
                 color: white;
                 width: 100%;
-                height: 40px;
                 font-size: 15px;
                 font-weight: bold;
                 font-family: OpenSans;
                 text-transform: uppercase;
                 text-align: center;
+                height: fit-content;
+                padding: 10px 0;
+                position: absolute;
+                top: 13.7rem;
                 @include media-breakpoint-between(xs, md){
                     font-size: 12px;
-                    
+                    top: 19.7rem;
                 }
-                @include media-breakpoint-up(1024px){
+                @include media-breakpoint-up(lg){
                     font-size: 13px;
+                    
                 }
                 .news-title 
                 {

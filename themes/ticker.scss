@@ -8,6 +8,7 @@
     background-color: $greenVogueMain;
     .div-ticker 
     {
+        padding: 6% 0;
         @include media-breakpoint-between(xs, md){
             flex-direction: column;
         }
@@ -15,7 +16,7 @@
         {
             color: $corn;
             text-align: center;
-            margin: 70px auto;
+            margin: 50px auto;
             > * 
             {
                 margin-bottom: 25px;
