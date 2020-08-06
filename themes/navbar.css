@@ -1,89 +1,61 @@
 .navbar-styles {
-  padding: 0;
   position: fixed;
   width: 100%;
   background: white;
-  z-index: 9999999;
-  height: fit-content; }
-  @media (max-width: 991.98px) {
-    .navbar-styles {
-      height: 5vh; } }
+  z-index: 9999999; }
+  .navbar-styles .navbar-brand-container {
+    margin-left: 5.3rem; }
   @media (max-width: 991.98px) {
     .navbar-styles .btn-menu-burger {
-      position: relative;
-      right: 5%; } }
-  .navbar-styles .navbar-container {
-    margin: auto;
-    width: 100%; }
-    .navbar-styles .navbar-container .logo-socials-row {
-      width: 100%;
-      margin: auto; }
-      .navbar-styles .navbar-container .logo-socials-row .social-media-container {
-        position: relative;
-        top: 27%; }
-        @media (min-width: 576px) and (max-width: 991.98px) {
-          .navbar-styles .navbar-container .logo-socials-row .social-media-container {
-            position: absolute;
-            right: 0;
-            display: flex; } }
-        .navbar-styles .navbar-container .logo-socials-row .social-media-container .social-media-icon {
-          color: white;
-          background-color: #b6b6b6;
-          padding: 3px; }
-          .navbar-styles .navbar-container .logo-socials-row .social-media-container .social-media-icon > i {
-            min-width: 1rem;
-            font-size: 16px;
-            text-align: center; }
-        .navbar-styles .navbar-container .logo-socials-row .social-media-container .social-media-icon-search {
-          color: #b6b6b6;
-          margin-left: 3%;
-          padding: 3px; }
-          .navbar-styles .navbar-container .logo-socials-row .social-media-container .social-media-icon-search > i {
-            min-width: 1rem;
-            font-size: 20px;
-            text-align: center; }
-      .navbar-styles .navbar-container .logo-socials-row .search-box-container {
-        display: inline; }
-        @media (min-width: 576px) and (max-width: 991.98px) {
-          .navbar-styles .navbar-container .logo-socials-row .search-box-container {
-            position: absolute;
-            bottom: 16px;
-            right: 0; } }
-        .navbar-styles .navbar-container .logo-socials-row .search-box-container .search-box-field {
-          border: none;
-          border-bottom: 1px solid #b6b6b6;
-          margin: 0 1%;
-          outline: none;
-          width: 25%; }
-          @media (min-width: 576px) and (max-width: 991.98px) {
-            .navbar-styles .navbar-container .logo-socials-row .search-box-container .search-box-field {
-              width: 80%; } }
-    .navbar-styles .navbar-container .container-nav-links {
-      background-color: #021a4e;
-      width: 100%;
-      position: absolute;
-      top: 100%;
-      justify-content: center;
-      display: inline-block;
-      left: 0; }
-      @media (min-width: 576px) and (max-width: 991.98px) {
-        .navbar-styles .navbar-container .container-nav-links {
-          padding: 1rem 0;
-          position: unset;
-          top: unset;
-          left: unset; } }
-      .navbar-styles .navbar-container .container-nav-links .navbar-links {
-        justify-content: center; }
-        .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item {
-          width: 100%;
-          text-align: center; }
-          .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item .nav-link {
-            text-transform: uppercase;
-            font-size: 14px;
-            text-align: center;
-            color: #fff;
-            width: 180px; }
-            .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item .nav-link:hover {
-              color: #b6b6b6; }
-
-/*# sourceMappingURL=navbar.css.map */
+      float: right;
+      margin-left: 1rem; } }
+  .navbar-styles .search-box-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 12%; }
+    .navbar-styles .search-box-container .social-media-icon-search {
+      color: #b6b6b6;
+      margin-left: 3%;
+      padding: 3px; }
+      .navbar-styles .search-box-container .social-media-icon-search > i {
+        min-width: 1rem;
+        font-size: 20px;
+        text-align: center; }
+    .navbar-styles .search-box-container .search-box-field {
+      border: none;
+      border-bottom: 1px solid #b6b6b6;
+      margin: 0 1%;
+      outline: none; }
+  .navbar-styles .navbar-container .logo-socials-row .social-media-icons-col .social-media-container .social-media-icon {
+    color: white;
+    background-color: #b6b6b6;
+    padding: 3px; }
+    .navbar-styles .navbar-container .logo-socials-row .social-media-icons-col .social-media-container .social-media-icon > i {
+      min-width: 1rem;
+      font-size: 16px;
+      text-align: center; }
+  .navbar-styles .navbar-container .container-nav-links {
+    background-color: #021a4e;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    justify-content: center;
+    display: inline-block;
+    left: 0; }
+    @media (min-width: 576px) and (max-width: 991.98px) {
+      .navbar-styles .navbar-container .container-nav-links {
+        padding: 1rem 0; } }
+    .navbar-styles .navbar-container .container-nav-links .navbar-links {
+      justify-content: center; }
+      .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item {
+        width: 100%;
+        text-align: center; }
+        .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item .nav-link {
+          text-transform: uppercase;
+          font-size: 14px;
+          text-align: center;
+          color: #fff;
+          width: 180px; }
+          .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item .nav-link:hover {
+            color: #b6b6b6; }
