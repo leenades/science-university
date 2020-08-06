@@ -1,11 +1,4 @@
-// $('#searchBox').hide();
-// $('#searchIcon').on('click', function(){
-    // $('#searchBox').toggle(800);
-// });
-
-
-// window.onload = function counter(){
-//     var start = 0;
-
-
-// }
+var element = $('#searchBox');
+$('#searchIcon').click(function(){
+    element.toggleClass('search-box-field-new');
+});

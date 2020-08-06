@@ -3,7 +3,8 @@
   src: url("../Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
 .footer-section {
   padding: 4% 0;
-  background-color: #021a4e; }
+  background-color: #021a4e;
+  position: relative; }
   @media (max-width: 767.98px) {
     .footer-section .footer-row {
       flex-direction: column;
@@ -79,7 +80,10 @@
 
 .secondary-footer {
   background-color: #223663;
-  color: #fff; }
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  bottom: 0; }
   .secondary-footer .row > * {
     font-size: .7rem;
     margin: 10px 0;

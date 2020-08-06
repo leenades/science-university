@@ -41,17 +41,12 @@
         height: fit-content;
         padding: 10px 0;
         position: absolute;
-        top: 13.7rem; }
+        top: inherit;
+        bottom: 0;
+        margin-bottom: 0; }
         @media (max-width: 991.98px) {
           .news-programmes-container .courses-div .col-first .section-news-images-title {
-            font-size: 12px;
-            top: 19.7rem; } }
-        @media (min-width: 768px) and (max-width: 991.98px) {
-          .news-programmes-container .courses-div .col-first .section-news-images-title {
-            font-size: 13px; } }
-        @media (min-width: 992px) and (max-width: 1199.98px) {
-          .news-programmes-container .courses-div .col-first .section-news-images-title {
-            top: 11rem; } }
+            font-size: 1rem; } }
         .news-programmes-container .courses-div .col-first .section-news-images-title .news-title {
           position: relative;
           top: 25%; }

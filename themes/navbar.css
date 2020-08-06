@@ -3,38 +3,87 @@
   width: 100%;
   background: white;
   z-index: 9999999; }
+  @media (max-width: 991.98px) {
+    .navbar-styles {
+      box-shadow: 0px 30px 65px #556b9a30; } }
   .navbar-styles .navbar-brand-container {
     margin-left: 5.3rem; }
+    @media (min-width: 576px) and (max-width: 991.98px) {
+      .navbar-styles .navbar-brand-container {
+        margin-left: 0; } }
   @media (max-width: 991.98px) {
     .navbar-styles .btn-menu-burger {
       float: right;
-      margin-left: 1rem; } }
+      margin-left: 1rem;
+      z-index: 999999999999;
+      color: #30446f; } }
+  .navbar-styles .btn-menu-burger i {
+    font-size: 2rem; }
   .navbar-styles .search-box-container {
     display: flex;
     flex-direction: row;
     position: absolute;
-    right: 12%; }
+    right: 19rem;
+    z-index: 9999; }
+    @media (min-width: 576px) and (max-width: 991.98px) {
+      .navbar-styles .search-box-container {
+        right: 7rem; } }
     .navbar-styles .search-box-container .social-media-icon-search {
       color: #b6b6b6;
       margin-left: 3%;
       padding: 3px; }
       .navbar-styles .search-box-container .social-media-icon-search > i {
         min-width: 1rem;
-        font-size: 20px;
+        font-size: 1.2rem;
         text-align: center; }
+        @media (min-width: 576px) and (max-width: 991.98px) {
+          .navbar-styles .search-box-container .social-media-icon-search > i {
+            font-size: 1.6rem; } }
     .navbar-styles .search-box-container .search-box-field {
       border: none;
       border-bottom: 1px solid #b6b6b6;
       margin: 0 1%;
-      outline: none; }
-  .navbar-styles .navbar-container .logo-socials-row .social-media-icons-col .social-media-container .social-media-icon {
-    color: white;
-    background-color: #b6b6b6;
-    padding: 3px; }
-    .navbar-styles .navbar-container .logo-socials-row .social-media-icons-col .social-media-container .social-media-icon > i {
-      min-width: 1rem;
-      font-size: 16px;
-      text-align: center; }
+      outline: none;
+      transform: scaleX(0);
+      transition: transform .7s ease-in-out;
+      background-color: transparent;
+      transform-origin: 100% 50%; }
+    .navbar-styles .search-box-container .search-box-field-new {
+      transform: scaleX(1); }
+  .navbar-styles .navbar-container.collapsing {
+    position: static;
+    height: 100%;
+    overflow: hidden;
+    transition: inherit; }
+  .navbar-styles .navbar-container.collapse:not(.show) {
+    display: inherit; }
+  .navbar-styles .navbar-container.collapse.show .container-nav-links {
+    transform: translateX(10%) scaleX(1); }
+  .navbar-styles .navbar-container .logo-socials-row {
+    position: absolute;
+    right: 8rem; }
+    @media (min-width: 576px) and (max-width: 991.98px) {
+      .navbar-styles .navbar-container .logo-socials-row {
+        position: unset;
+        right: unset; } }
+    .navbar-styles .navbar-container .logo-socials-row .social-media-icons-col .social-media-container .social-media-icon {
+      color: white;
+      background-color: #b6b6b6;
+      padding: 3px; }
+      @media (min-width: 576px) and (max-width: 991.98px) {
+        .navbar-styles .navbar-container .logo-socials-row .social-media-icons-col .social-media-container .social-media-icon {
+          border-radius: 100%;
+          margin-right: 1rem;
+          background-color: #1c3260;
+          padding: 12px; } }
+      .navbar-styles .navbar-container .logo-socials-row .social-media-icons-col .social-media-container .social-media-icon > i {
+        min-width: 1rem;
+        font-size: 16px;
+        text-align: center; }
+        @media (min-width: 576px) and (max-width: 991.98px) {
+          .navbar-styles .navbar-container .logo-socials-row .social-media-icons-col .social-media-container .social-media-icon > i {
+            min-width: 2rem;
+            font-size: 20px; } }
   .navbar-styles .navbar-container .container-nav-links {
     background-color: #021a4e;
     width: 100%;
@@ -45,17 +94,45 @@
     left: 0; }
     @media (min-width: 576px) and (max-width: 991.98px) {
       .navbar-styles .navbar-container .container-nav-links {
-        padding: 1rem 0; } }
+        background-color: #ffffff;
+        padding: 1rem 0;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        transform: translateX(100%) scaleX(0);
+        transition: transform 1s ease-out;
+        box-shadow: 30px 0px 65px #021a4f; } }
     .navbar-styles .navbar-container .container-nav-links .navbar-links {
       justify-content: center; }
+      @media (min-width: 576px) and (max-width: 991.98px) {
+        .navbar-styles .navbar-container .container-nav-links .navbar-links {
+          justify-content: flex-start;
+          position: absolute;
+          left: 4%;
+          top: 4%; } }
       .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item {
         width: 100%;
         text-align: center; }
+        @media (min-width: 576px) and (max-width: 991.98px) {
+          .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item {
+            text-align: start;
+            color: #021a4e; } }
         .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item .nav-link {
           text-transform: uppercase;
           font-size: 14px;
           text-align: center;
           color: #fff;
           width: 180px; }
+          @media (min-width: 576px) and (max-width: 991.98px) {
+            .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item .nav-link {
+              text-align: start;
+              width: 100%;
+              font-size: 1.5rem;
+              color: #1c3260; } }
           .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item .nav-link:hover {
             color: #b6b6b6; }
+      @media (min-width: 576px) and (max-width: 991.98px) {
+        .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav > * {
+          line-height: 4rem; } }
+
+/*# sourceMappingURL=navbar.css.map */
