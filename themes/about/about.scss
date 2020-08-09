@@ -30,6 +30,7 @@ $primary-title-color: #021a4f;
         @include media-breakpoint-between(sm, md){
             flex-direction: column;
             text-align: center;
+            display: block;
         }
         .about-info {
             align-items: center;

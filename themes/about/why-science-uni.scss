@@ -13,12 +13,13 @@
         margin: 4rem 0;
         @include media-breakpoint-between(sm, md){
             flex-direction: column;
+            display: block;
         }
         > .col {
             margin-bottom: 1.5rem;
-            @include media-breakpoint-between(sm, md){
-                margin-bottom: 7.5rem;
-            }
+            // @include media-breakpoint-between(sm, md){
+            //     margin-bottom: 7.5rem;
+            // }
         .icon-container{
             .row{
                 margin-bottom: 2rem;
@@ -35,7 +36,7 @@
                 }
                 .col {
                     > p{
-                        margin-bottom: 0;
+                        // margin-bottom: 0;
                         @include media-breakpoint-between(sm, md){
                             font-size: 1.2rem;
                         }

@@ -8,12 +8,10 @@
     margin: 4rem 0; }
     @media (min-width: 576px) and (max-width: 991.98px) {
       .why-science-uni-section .why-science-uni-info {
-        flex-direction: column; } }
+        flex-direction: column;
+        display: block; } }
     .why-science-uni-section .why-science-uni-info > .col {
       margin-bottom: 1.5rem; }
-      @media (min-width: 576px) and (max-width: 991.98px) {
-        .why-science-uni-section .why-science-uni-info > .col {
-          margin-bottom: 7.5rem; } }
       .why-science-uni-section .why-science-uni-info > .col .icon-container .row {
         margin-bottom: 2rem; }
         @media (min-width: 576px) and (max-width: 991.98px) {
@@ -24,10 +22,8 @@
           .why-science-uni-section .why-science-uni-info > .col .icon-container .row .col-3 i {
             font-size: 3rem;
             color: #e7ce16; }
-      .why-science-uni-section .why-science-uni-info > .col .icon-container .col > p {
-        margin-bottom: 0; }
-        @media (min-width: 576px) and (max-width: 991.98px) {
-          .why-science-uni-section .why-science-uni-info > .col .icon-container .col > p {
-            font-size: 1.2rem; } }
+      @media (min-width: 576px) and (max-width: 991.98px) {
+        .why-science-uni-section .why-science-uni-info > .col .icon-container .col > p {
+          font-size: 1.2rem; } }
 
 /*# sourceMappingURL=why-science-uni.css.map */
