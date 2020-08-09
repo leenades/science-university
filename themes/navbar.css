@@ -70,8 +70,7 @@
     right: 16%; }
     @media (min-width: 576px) and (max-width: 991.98px) {
       .navbar-styles .navbar-container .logo-socials-row {
-        position: unset;
-        right: unset; } }
+        left: 0px; } }
     .navbar-styles .navbar-container .logo-socials-row .social-media-icon {
       color: white;
       background-color: #b6b6b6;
