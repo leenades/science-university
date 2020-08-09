@@ -58,6 +58,7 @@
             .social-media-icon-search
             {
                 color: #b6b6b6;
+                cursor: pointer;
                 // margin-left: 3%;
                 // padding: 3px;
                 > i {
@@ -161,7 +162,6 @@
                         width: 100%;
                         text-align: center;
                         @include media-breakpoint-between(sm, md){
-                            text-align: start;
                             color: #021a4e;
                         }
                         .nav-link 
@@ -172,7 +172,7 @@
                             color: #fff;
                             width: 180px;
                             @include media-breakpoint-between(sm, md){
-                                text-align: start;
+                                text-align: left;
                                 width: 100%;
                                 font-size: 1.5rem;
                                 color: #1c3260;

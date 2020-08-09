@@ -37,7 +37,8 @@
     .navbar-styles .search-social-container .search-box-container {
       z-index: 9999; }
       .navbar-styles .search-social-container .search-box-container .social-media-icon-search {
-        color: #b6b6b6; }
+        color: #b6b6b6;
+        cursor: pointer; }
         .navbar-styles .search-social-container .search-box-container .social-media-icon-search > i {
           min-width: 1rem;
           font-size: 1.2rem;
@@ -118,7 +119,6 @@
         text-align: center; }
         @media (min-width: 576px) and (max-width: 991.98px) {
           .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item {
-            text-align: start;
             color: #021a4e; } }
         .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item .nav-link {
           text-transform: uppercase;
@@ -128,7 +128,7 @@
           width: 180px; }
           @media (min-width: 576px) and (max-width: 991.98px) {
             .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item .nav-link {
-              text-align: start;
+              text-align: left;
               width: 100%;
               font-size: 1.5rem;
               color: #1c3260; } }
