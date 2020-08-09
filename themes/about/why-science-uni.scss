@@ -16,9 +16,15 @@
         }
         > .col {
             margin-bottom: 1.5rem;
+            @include media-breakpoint-between(sm, md){
+                margin-bottom: 7.5rem;
+            }
         .icon-container{
             .row{
                 margin-bottom: 2rem;
+                @include media-breakpoint-between(sm, md){
+                    margin-bottom: 0;
+                }
                 .col-3 {
                     text-align: center;
                     i {

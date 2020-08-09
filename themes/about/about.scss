@@ -5,10 +5,12 @@
 $primary-title-color: #021a4f;
 // ABOUT HEADER SECTION START
 .about-header-section {
+    @include media-breakpoint-between(sm, md){
+        margin-bottom: 4rem;
+    }
     .about-header-img {
         > img {
             width: 100%;
-            // filter: brightness(0.7);
         }
     }
 }
@@ -17,6 +19,9 @@ $primary-title-color: #021a4f;
 // ABOUT INFO SECTION START
 .about-section{
     padding: 5rem 0;
+    @include media-breakpoint-between(sm, md){
+        padding: 0;
+    }
     .about-title-container{
         margin-bottom: 3rem;
         text-align: center;
@@ -27,7 +32,6 @@ $primary-title-color: #021a4f;
             text-align: center;
         }
         .about-info {
-            display: flex;
             align-items: center;
             @include media-breakpoint-between(sm, md){
                 margin-bottom: 5rem;
@@ -42,9 +46,11 @@ $primary-title-color: #021a4f;
             }
         }
         .about-img{
+            @include media-breakpoint-between(sm, md){
+                margin-bottom: 60px;
+            }
             > img {
                 border-radius: 100%;
-                // filter: brightness(0.7);
             }
         }
     }

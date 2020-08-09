@@ -6,15 +6,11 @@
 // primary footer section styles START
 .footer-section 
 {
-    background-color: $greenVogueMain;
-    
-    .footer-container {
-        padding: 4% 0;
-    }
+    background-color: #021a4e;
     .footer-row{
-        @include media-breakpoint-between(xs, sm){
-            flex-direction: column;
-            text-align: center;
+        padding: 4rem 0;
+        @include media-breakpoint-between(sm, md){
+            padding: 5rem 0;
         }
         .v-line-divider 
         {
@@ -104,13 +100,9 @@
         @include media-breakpoint-between(sm, lg){
             display: flex;
             flex-direction: column-reverse;
-            // height: fit-content;
         }
         > .follow-us-row {
             margin: 25px 0 40px 0;
-            @include media-breakpoint-between(xs, sm){
-                justify-content: center;
-            }
             @include media-breakpoint-between(sm, md){
                 justify-content: start;
             }

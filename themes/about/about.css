@@ -1,8 +1,14 @@
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .about-header-section {
+    margin-bottom: 4rem; } }
 .about-header-section .about-header-img > img {
   width: 100%; }
 
 .about-section {
   padding: 5rem 0; }
+  @media (min-width: 576px) and (max-width: 991.98px) {
+    .about-section {
+      padding: 0; } }
   .about-section .about-title-container {
     margin-bottom: 3rem;
     text-align: center; }
@@ -11,7 +17,6 @@
       flex-direction: column;
       text-align: center; } }
   .about-section .about-info-image .about-info {
-    display: flex;
     align-items: center; }
     @media (min-width: 576px) and (max-width: 991.98px) {
       .about-section .about-info-image .about-info {
@@ -23,6 +28,9 @@
         .about-section .about-info-image .about-info > p {
           font-size: 1.7rem;
           line-height: 2.7rem; } }
+  @media (min-width: 576px) and (max-width: 991.98px) {
+    .about-section .about-info-image .about-img {
+      margin-bottom: 60px; } }
   .about-section .about-info-image .about-img > img {
     border-radius: 100%; }
 
