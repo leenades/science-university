@@ -64,8 +64,6 @@
     transition: inherit; }
   .navbar-styles .navbar-container.collapse:not(.show) {
     display: inherit; }
-  .navbar-styles .navbar-container.collapse.show .container-nav-links {
-    transform: translateX(10%) scaleX(1); }
   .navbar-styles .navbar-container .logo-socials-row {
     position: absolute;
     right: 16%; }
@@ -106,8 +104,7 @@
         position: absolute;
         top: 0;
         height: 100vh;
-        transform: translateX(100%) scaleX(0);
-        transition: transform 1s ease-out;
+        transform: translateX(100%);
         box-shadow: 30px 0px 65px #021a4f; } }
     .navbar-styles .navbar-container .container-nav-links .navbar-links {
       justify-content: center; }
@@ -141,5 +138,9 @@
       @media (min-width: 576px) and (max-width: 991.98px) {
         .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav > * {
           line-height: 4rem; } }
+  .navbar-styles .navbar-container .transitionNavBar {
+    transform: translateX(10%); }
+  .navbar-styles .navbar-container .mobileTransition {
+    transition: transform 1s ease-out; }
 
 /*# sourceMappingURL=navbar.css.map */

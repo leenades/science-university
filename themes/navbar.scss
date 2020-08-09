@@ -99,11 +99,6 @@
             &:not(.show){
                 display: inherit;
             }
-            &.show{
-                .container-nav-links{
-                    transform: translateX(10%) scaleX(1);
-                }
-            }
         }
         .logo-socials-row {
             position: absolute;
@@ -148,8 +143,7 @@
                 position: absolute;
                 top: 0;
                 height: 100vh;
-                transform: translateX(100%) scaleX(0);
-                transition: transform 1s ease-out;
+                transform: translateX(100%); 
                 box-shadow: 30px 0px 65px #021a4f;
 
             }
@@ -197,6 +191,13 @@
                     }
                 }
             }
+        }
+        .transitionNavBar { 
+            transform: translateX(10%); 
+            // transition: transform 1s ease-out; 
+        }
+        .mobileTransition{
+            transition: transform 1s ease-out;
         }
     }
 }
