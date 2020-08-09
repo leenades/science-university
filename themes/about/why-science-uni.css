@@ -22,3 +22,26 @@
         @media (min-width: 576px) and (max-width: 991.98px) {
           .why-science-uni-section .why-science-uni-info > .col .icon-container .col > p {
             font-size: 1.2rem; } }
+
+.about-title-style-two {
+  text-align: center;
+  color: #021a4f;
+  margin: 0; }
+  .about-title-style-two:before {
+    content: "";
+    top: 20px;
+    width: 167px;
+    position: absolute;
+    height: 0.5px;
+    background-color: #021a4f;
+    margin-left: -13rem; }
+  .about-title-style-two:after {
+    content: "";
+    top: 20px;
+    width: 167px;
+    position: absolute;
+    height: 0.5px;
+    background-color: #021a4f;
+    margin-left: 3rem; }
+
+/*# sourceMappingURL=why-science-uni.css.map */

@@ -16,7 +16,10 @@ $primary-title-color: #021a4f;
 
 // ABOUT INFO SECTION START
 .about-section{
-        padding: 5rem 0;
+    padding: 5rem 0;
+    .about-title-container{
+        margin-bottom: 3rem;
+    }
     .about-info-image{
         @include media-breakpoint-between(sm, md){
             flex-direction: column;

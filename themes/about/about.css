@@ -3,6 +3,8 @@
 
 .about-section {
   padding: 5rem 0; }
+  .about-section .about-title-container {
+    margin-bottom: 3rem; }
   @media (min-width: 576px) and (max-width: 991.98px) {
     .about-section .about-info-image {
       flex-direction: column;
@@ -43,3 +45,5 @@
     height: 0.5px;
     background-color: #021a4f;
     margin-left: 3rem; }
+
+/*# sourceMappingURL=about.css.map */
