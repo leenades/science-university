@@ -6,15 +6,17 @@
 // primary footer section styles START
 .footer-section 
 {
+    position: relative;
     background-color: #021a4e;
     .footer-row{
-        padding: 4rem 0;
+        padding: 62px 0 98px 0;
         @include media-breakpoint-between(sm, md){
             padding: 5rem 0;
         }
         .v-line-divider 
         {
             border-left: 1px solid #4d4d4d;
+            margin: 7px 0;
         }
         .tablet-footer-width {
             @include media-breakpoint-between(sm, md){
@@ -100,6 +102,7 @@
         @include media-breakpoint-between(sm, lg){
             display: flex;
             flex-direction: column-reverse;
+            justify-content: flex-end;
         }
         > .follow-us-row {
             margin: 25px 0 40px 0;
@@ -122,6 +125,9 @@
 
 // secondary footer section styles START
 .secondary-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     background-color: #223663;
     color: #fff;
     .row {

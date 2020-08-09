@@ -3,14 +3,12 @@
 @import '../../bootstrap-4.5.0/scss/mixins';
 
 .why-science-uni-section{
-    background-color: #e5e5e5;
-    padding: 5rem 0;
+    background-color: #f7f7f7;
     .why-science-uni-title-container{
-        margin: 0 0 2rem 0;
         text-align: center;
+        margin-bottom: 30px;
     }
     .why-science-uni-info {
-        margin: 4rem 0;
         @include media-breakpoint-between(sm, md){
             flex-direction: column;
             display: block;

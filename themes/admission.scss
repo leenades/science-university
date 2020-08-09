@@ -13,6 +13,7 @@
     background-position: center;
     .addmission-row-title
     {
+        padding: 20px 0 60px 0;
         .addmission-title
         {
             h2
@@ -25,13 +26,13 @@
                 letter-spacing: normal;
                 text-align: center;
                 color: $greenVogue;
-                margin: 6.3rem 0 3.8rem;
                 text-shadow: 0 2px 4px rgba(83, 83, 83, 0.48);
             }
         }
     }
     .admission-row-btn 
     {
+        padding-bottom: 20px;
         .admission-btn
         {
             text-align: center;
@@ -45,7 +46,6 @@
                 border: none;
                 width: 40%;
                 padding: 1% 0;
-                margin: 0 0 100px 0;
                 transition: background-color .4s, color .4s;
                 @include media-breakpoint-between(xs, md){
                     font-size: 2rem;

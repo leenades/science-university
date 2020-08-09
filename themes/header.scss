@@ -2,8 +2,9 @@
 @import '../bootstrap-4.5.0/scss/variables.scss';
 @import '../bootstrap-4.5.0/scss/mixins';
 // Header Section styles start
-.image-slider
+section.image-slider
 {
+    padding: 0;
     position: relative;
     .carousel-slider 
     {

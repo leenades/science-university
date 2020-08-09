@@ -7,3 +7,7 @@ html, body{
     margin: 0;
     font-family: OpenSans;
 }
+
+section:not(.secondary-footer) {
+    padding: 80px 0;
+}
