@@ -8,6 +8,8 @@ $('#searchIcon').click(function(event){
 });
 $(window).resize(function(){
     navbarButton.removeClass('mobileTransition');
+    navbarButton.removeClass('transitionNavBar');
+
 });
 
 $('#btn-menu').click(function(){

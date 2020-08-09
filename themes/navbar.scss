@@ -144,7 +144,6 @@
                 top: 0;
                 height: 100vh;
                 transform: translateX(100%); 
-                box-shadow: 30px 0px 65px #021a4f;
 
             }
             .navbar-links
@@ -194,10 +193,10 @@
         }
         .transitionNavBar { 
             transform: translateX(10%); 
-            // transition: transform 1s ease-out; 
+            box-shadow: 30px 0px 65px #021a4f; 
         }
         .mobileTransition{
-            transition: transform 1s ease-out;
+            transition: transform .6s, box-shadow .6s ease-out;
         }
     }
 }
