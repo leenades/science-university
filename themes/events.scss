@@ -18,6 +18,7 @@
     {
         @include media-breakpoint-between(xs, md){
             flex-direction: column;
+            display: block;
         }
         .blurb-column-events 
         {

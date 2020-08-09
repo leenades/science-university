@@ -15,6 +15,7 @@
         margin-bottom: 3%;
         @include media-breakpoint-between(xs, md){
             flex-direction: column;
+            display: block;
         }
         .col-first
         {

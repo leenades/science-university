@@ -1,14 +1,14 @@
 @font-face {
   font-family: OpenSans;
   src: url("../Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
-
 .section-ticker {
   background-color: #021a4e; }
   .section-ticker .div-ticker {
     padding: 6% 0; }
     @media (max-width: 991.98px) {
       .section-ticker .div-ticker {
-        flex-direction: column; } }
+        flex-direction: column;
+        display: block; } }
     .section-ticker .div-ticker > .ticker-col {
       color: #e4c800;
       text-align: center;
@@ -25,3 +25,5 @@
         font-size: 24px;
         font-weight: 600;
         padding: 0 47px; }
+
+/*# sourceMappingURL=ticker.css.map */

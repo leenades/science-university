@@ -11,6 +11,7 @@
         padding: 6% 0;
         @include media-breakpoint-between(xs, md){
             flex-direction: column;
+            display: block;
         }
         > .ticker-col
         {

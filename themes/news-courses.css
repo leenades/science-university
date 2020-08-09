@@ -1,7 +1,6 @@
 @font-face {
   font-family: OpenSans;
   src: url("../Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
-
 .news-programmes-container {
   margin: 55px auto;
   padding: 0; }
@@ -10,7 +9,8 @@
     margin-bottom: 3%; }
     @media (max-width: 991.98px) {
       .news-programmes-container .courses-div {
-        flex-direction: column; } }
+        flex-direction: column;
+        display: block; } }
     .news-programmes-container .courses-div .col-first {
       margin-right: 3%;
       margin-bottom: 5%; }
@@ -111,3 +111,5 @@
     border-bottom: 1px solid #271a4f;
     width: 100%;
     display: block; }
+
+/*# sourceMappingURL=news-courses.css.map */
