@@ -19,6 +19,7 @@ $primary-title-color: #021a4f;
     padding: 5rem 0;
     .about-title-container{
         margin-bottom: 3rem;
+        text-align: center;
     }
     .about-info-image{
         @include media-breakpoint-between(sm, md){
@@ -48,27 +49,4 @@ $primary-title-color: #021a4f;
         }
     }
 }
-.about-title-style{
-    text-align: center;
-    color: $primary-title-color;
-    margin: 0;
-    &:before {
-        content: "";
-        top: 1.3rem;
-        width: 167px;
-        position: absolute;
-        height: 0.5px;
-        background-color: $primary-title-color;
-        margin-left: -13rem;
-    }
-    &:after {
-    content: "";
-    top: 1.3rem;
-    width: 167px;
-    position: absolute;
-    height: 0.5px;
-    background-color: $primary-title-color;
-    margin-left: 3rem;
-    }
-} 
 // ABOUT INFO SECTION END

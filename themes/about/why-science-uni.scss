@@ -7,6 +7,7 @@
     padding: 5rem 0;
     .why-science-uni-title-container{
         margin: 0 0 2rem 0;
+        text-align: center;
     }
     .why-science-uni-info {
         margin: 4rem 0;
@@ -38,26 +39,3 @@
         }
     }
 }
-.about-title-style-two{
-    text-align: center;
-    color: #021a4f;
-    margin: 0;
-    &:before {
-        content: "";
-        top: 20px;
-        width: 167px;
-        position: absolute;
-        height: 0.5px;
-        background-color: #021a4f;
-        margin-left: -13rem;
-    }
-    &:after {
-    content: "";
-    top: 20px;
-    width: 167px;
-    position: absolute;
-    height: 0.5px;
-    background-color: #021a4f;
-    margin-left: 3rem;
-    }
-} 
