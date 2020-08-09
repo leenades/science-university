@@ -39,11 +39,15 @@
     .navbar-styles .search-social-container .social-media-icon {
       color: white;
       background-color: #b6b6b6;
-      padding: 3px; }
+      padding: 3px;
+      transition: color .2s, background-color .2s ease-in; }
       .navbar-styles .search-social-container .social-media-icon > i {
         min-width: 1rem;
         font-size: 16px;
         text-align: center; }
+      .navbar-styles .search-social-container .social-media-icon:hover {
+        background-color: #fff;
+        color: #b6b6b6; }
     .navbar-styles .search-social-container .search-box-container {
       z-index: 9999; }
       .navbar-styles .search-social-container .search-box-container .social-media-icon-search {
