@@ -1,0 +1,71 @@
+@import '../../bootstrap-4.5.0/scss/functions.scss';
+@import '../../bootstrap-4.5.0/scss/variables.scss';
+@import '../../bootstrap-4.5.0/scss/mixins';
+
+$primary-title-color: #021a4f;
+// ABOUT HEADER SECTION START
+.about-header-section {
+    .about-header-img {
+        > img {
+            width: 100%;
+            // filter: brightness(0.7);
+        }
+    }
+}
+// ABOUT HEADER SECTION END
+
+// ABOUT INFO SECTION START
+.about-section{
+        padding: 5rem 0;
+    .about-info-image{
+        @include media-breakpoint-between(sm, md){
+            flex-direction: column;
+            text-align: center;
+        }
+        .about-info {
+            display: flex;
+            align-items: center;
+            @include media-breakpoint-between(sm, md){
+                margin-bottom: 5rem;
+            }
+            > p {
+                font-size: 1.2rem;
+                line-height: 1.7rem;
+                @include media-breakpoint-between(sm, md){
+                    font-size: 1.7rem;
+                    line-height: 2.7rem;
+                }
+            }
+        }
+        .about-img{
+            > img {
+                border-radius: 100%;
+                // filter: brightness(0.7);
+            }
+        }
+    }
+}
+.about-title-style{
+    text-align: center;
+    color: $primary-title-color;
+    margin: 0;
+    &:before {
+        content: "";
+        top: 1.3rem;
+        width: 167px;
+        position: absolute;
+        height: 0.5px;
+        background-color: $primary-title-color;
+        margin-left: -13rem;
+    }
+    &:after {
+    content: "";
+    top: 1.3rem;
+    width: 167px;
+    position: absolute;
+    height: 0.5px;
+    background-color: $primary-title-color;
+    margin-left: 3rem;
+    }
+} 
+// ABOUT INFO SECTION END

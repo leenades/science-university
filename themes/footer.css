@@ -1,10 +1,11 @@
 @font-face {
   font-family: OpenSans;
   src: url("../Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
+
 .footer-section {
-  padding: 4% 0;
-  background-color: #021a4e;
-  position: relative; }
+  background-color: #021a4e; }
+  .footer-section .footer-container {
+    padding: 4% 0; }
   @media (max-width: 767.98px) {
     .footer-section .footer-row {
       flex-direction: column;
@@ -63,8 +64,7 @@
   @media (min-width: 576px) and (max-width: 1199.98px) {
     .footer-section .footer-row .follow-us {
       display: flex;
-      flex-direction: column-reverse;
-      height: fit-content; } }
+      flex-direction: column-reverse; } }
   .footer-section .footer-row .follow-us > .follow-us-row {
     margin: 25px 0 40px 0; }
     @media (max-width: 767.98px) {
@@ -80,15 +80,10 @@
 
 .secondary-footer {
   background-color: #223663;
-  color: #fff;
-  position: absolute;
-  width: 100%;
-  bottom: 0; }
+  color: #fff; }
   .secondary-footer .row > * {
     font-size: .7rem;
     margin: 10px 0;
     line-height: 1.5; }
   .secondary-footer .row > span {
     margin-right: 5px; }
-
-/*# sourceMappingURL=footer.css.map */

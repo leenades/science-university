@@ -17,7 +17,7 @@
       top: 30%;
       right: 10%;
       width: 30%;
-      background-color: #01194dcc;
+      background-color: rgba(2, 26, 78, 0.75);
       color: white;
       text-transform: uppercase; }
       @media (max-width: 991.98px) {
@@ -39,5 +39,3 @@
         @media (max-width: 1199.98px) {
           .image-slider .carousel-slider .header-title-container .header-title {
             font-size: 27px; } }
-
-/*# sourceMappingURL=header.css.map */

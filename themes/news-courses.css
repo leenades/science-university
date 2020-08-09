@@ -1,9 +1,9 @@
 @font-face {
   font-family: OpenSans;
   src: url("../Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
+
 .news-programmes-container {
   margin: 55px auto;
-  display: flex;
   padding: 0; }
   .news-programmes-container .courses-div {
     margin-top: 3%;
@@ -17,7 +17,6 @@
       .news-programmes-container .courses-div .col-first .courses-row-first {
         margin-bottom: 3%; }
       .news-programmes-container .courses-div .col-first .blurb {
-        width: fit-content;
         box-shadow: 10px 9px 10px #9a98985e;
         transition: all .4s ease-in-out;
         position: relative;
@@ -30,7 +29,7 @@
           width: 100%;
           height: 100%; }
       .news-programmes-container .courses-div .col-first .section-news-images-title {
-        background-color: #021a4ecc;
+        background-color: rgba(2, 26, 78, 0.8);
         color: white;
         width: 100%;
         font-size: 15px;
@@ -38,7 +37,6 @@
         font-family: OpenSans;
         text-transform: uppercase;
         text-align: center;
-        height: fit-content;
         padding: 10px 0;
         position: absolute;
         top: inherit;
@@ -51,7 +49,6 @@
           position: relative;
           top: 25%; }
     .news-programmes-container .courses-div .news-div {
-      height: fit-content;
       background-color: #f3f3f3;
       padding: 20px 15px;
       box-shadow: 10px 9px 10px #9a98985e; }
@@ -114,5 +111,3 @@
     border-bottom: 1px solid #271a4f;
     width: 100%;
     display: block; }
-
-/*# sourceMappingURL=news-courses.css.map */

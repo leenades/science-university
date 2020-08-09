@@ -7,7 +7,7 @@
 .news-programmes-container 
 {
     margin: 55px auto;
-    display: flex;
+    // display: flex;
     padding: 0;
     .courses-div 
     {
@@ -25,7 +25,7 @@
             }
             .blurb 
             {
-                width: fit-content;
+                // width: fit-content;
                 box-shadow: 10px 9px 10px #9a98985e;
                 transition: all .4s ease-in-out;
                 position: relative;
@@ -43,7 +43,7 @@
             }
             .section-news-images-title 
             {
-                background-color: #021a4ecc;
+                background-color: rgba(2, 26, 78, 0.8);
                 color: white;
                 width: 100%;
                 font-size: 15px;
@@ -51,7 +51,7 @@
                 font-family: OpenSans;
                 text-transform: uppercase;
                 text-align: center;
-                height: fit-content;
+                // height: fit-content;
                 padding: 10px 0;
                 position: absolute;
                 top: inherit;
@@ -69,7 +69,7 @@
         }
         .news-div 
         {
-            height: fit-content;
+            // height: fit-content;
             background-color: #f3f3f3;
             padding: 20px 15px;
             box-shadow: 10px 9px 10px #9a98985e;

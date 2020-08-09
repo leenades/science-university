@@ -1,3 +1,45 @@
+.about-header-section .about-header-img > img {
+  width: 100%; }
 
+.about-section {
+  padding: 5rem 0; }
+  @media (min-width: 576px) and (max-width: 991.98px) {
+    .about-section .about-info-image {
+      flex-direction: column;
+      text-align: center; } }
+  .about-section .about-info-image .about-info {
+    display: flex;
+    align-items: center; }
+    @media (min-width: 576px) and (max-width: 991.98px) {
+      .about-section .about-info-image .about-info {
+        margin-bottom: 5rem; } }
+    .about-section .about-info-image .about-info > p {
+      font-size: 1.2rem;
+      line-height: 1.7rem; }
+      @media (min-width: 576px) and (max-width: 991.98px) {
+        .about-section .about-info-image .about-info > p {
+          font-size: 1.7rem;
+          line-height: 2.7rem; } }
+  .about-section .about-info-image .about-img > img {
+    border-radius: 100%; }
 
-/*# sourceMappingURL=about.css.map */
+.about-title-style {
+  text-align: center;
+  color: #021a4f;
+  margin: 0; }
+  .about-title-style:before {
+    content: "";
+    top: 1.3rem;
+    width: 167px;
+    position: absolute;
+    height: 0.5px;
+    background-color: #021a4f;
+    margin-left: -13rem; }
+  .about-title-style:after {
+    content: "";
+    top: 1.3rem;
+    width: 167px;
+    position: absolute;
+    height: 0.5px;
+    background-color: #021a4f;
+    margin-left: 3rem; }

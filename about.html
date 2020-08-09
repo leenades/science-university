@@ -9,7 +9,9 @@
         <link rel="stylesheet" href="themes/navbar.css">
         <link rel="stylesheet" href="themes/footer.css">
         <link rel="stylesheet" href="themes/animation.css">
-        <link rel="stylesheet" href="themes/about">
+        <link rel="stylesheet" href="themes/about/about.css">
+        <link rel="stylesheet" href="themes/about/why-science-uni.css">
+
 
 
     </head>
@@ -27,7 +29,7 @@
         <!-- NAVBAR Section START -->
         <nav class="navbar navbar-expand-lg navbar-styles">
             <div class="navbar-brand-container">
-                <a class="navbar-brand" href="#"><img src="themes/sciences-uni-logo.png" alt="science-university-logo"></a>
+                <a class="navbar-brand" href="index.html"><img src="themes/sciences-uni-logo.png" alt="science-university-logo"></a>
             </div>
             <button 
             id="btn-menu"
@@ -42,12 +44,7 @@
                 <i class="fa fa-align-right"></i>
             </span>
             </button>
-            <div class="search-box-container">
-                <input type="text" class="search-box-field" id="searchBox">
-                <a class="social-media-icon-search" id="searchIcon">
-                <i class="fa fa-search"></i></a>
-            </div>
-            <div class="navbar-container collapse navbar-collapse" id="navBarCollapse">
+            <div class="search-social-container d-flex">
                 <div class="logo-socials-row d-sm-none d-md-none d-lg-block">
                     <div class="col social-media-icons-col">
                         <div class="social-media-container">
@@ -59,6 +56,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="search-box-container">
+                    <input type="text" class="search-box-field" id="searchBox">
+                    <a class="social-media-icon-search" id="searchIcon">
+                    <i class="fa fa-search"></i></a>
+                </div>
+            </div>
+            <div class="navbar-container collapse navbar-collapse" id="navBarCollapse">
                 <div class="container-fluid container-nav-links">
                     <div class="row navbar-links">
                         <ul class="navbar-nav">
@@ -97,12 +101,20 @@
             </div>
         </nav>
         <!-- NAVBAR Section END -->
+        <section class="about-header-section">
+            <div class="about-header-img">
+                <img
+                src="headersun1.jpg"
+                alt="Science University Campus"
+                />
+            </div>
+        </section>
         <!-- About Section START -->
         <section class="about-section">
             <div class="container">
                 <div class="row about-title-container"> <!-- TITLE -->
                     <div class="col">
-                        <h2 class="about-title-style">About</h2>
+                        <h2 class="about-title-style">About Science University</h2>
                     </div>
                 </div>
                 <div class="row about-info-image">
@@ -112,45 +124,104 @@
                             Consequuntur, nesciunt rem vel ipsam neque voluptatum harum 
                             saepe facere rerum omnis? Maiores, perspiciatis assumenda 
                             impedit aliquid explicabo aut aperiam quae. Dolore.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Consequuntur, nesciunt rem vel ipsam neque voluptatum harum 
+                            saepe facere rerum omnis? Maiores, perspiciatis assumenda 
+                            impedit aliquid explicabo aut aperiam quae. Dolore. 
                         </p>
                     </div>
                     <div class="col about-img">
                         <img 
-                        src=""
-                        alt=""
-                        />
-                    </div>
-                </div>
-                <div class="row why-science-uni-title-container">
-                    <div class="col">
-                        <h2 class="about-title-style">Why Science University?</h2>
-                    </div>
-                </div>
-                <div class="row why-science-uni-info">
-                    <div class="col">
-                        <div class="icon-container">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="icon-container">
-                        </div>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col">
-                        <div class="icon-container">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="icon-container">
-                        </div>
+                        class="w-100" 
+                        src="sliderimg5.jpg" 
+                        alt="Science University Campus" />
                     </div>
                 </div>
             </div>
         </section>
         <!-- About Section END -->
+
+        <!-- Why Science Uni START -->
+        <section class="why-science-uni-section">
+            <div class="container">
+                <div class="row why-science-uni-title-container about-title-container">
+                    <div class="col">
+                        <h2 class="about-title-style">Why Science University?</h2>
+                    </div>
+                </div>
+            <div class="row why-science-uni-info">
+                <div class="col">
+                    <div class="icon-container">
+                        <div class="row">
+                            <div class="col-3">
+                                <span>
+                                    <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="col">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Cum sint, magnam nobis fugit voluptate accusamus temporibus.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="icon-container">
+                            <div class="row">
+                                <div class="col-3">
+                                    <span>
+                                        <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            <div class="col">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Cum sint, magnam nobis fugit voluptate accusamus temporibus.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <div class="icon-container">
+                        <div class="row">
+                            <div class="col-3">
+                                <span>
+                                    <i class="fa fa-spinner" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="col">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Cum sint, magnam nobis fugit voluptate accusamus temporibus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="icon-container">
+                        <div class="row">
+                            <div class="col-3">
+                                <span>
+                                    <i class="fa fa-registered" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="col">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Cum sint, magnam nobis fugit voluptate accusamus temporibus.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Science Uni END -->
         <!-- Footer Section Start -->
         <footer class="footer-section">
-            <div class="container">
+            <div class="container footer-container">
                 <div class="row footer-row">
                     <div class="v-line-divider"></div>
                     <div class="col explore">

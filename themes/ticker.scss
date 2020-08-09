@@ -21,10 +21,14 @@
             {
                 margin-bottom: 25px;
             }
-            > h3 
-            {
-                font-size: 60px;
-                font-weight: 700;
+            .ticker-header-title{
+                display: flex;
+                justify-content: center;
+                > h3 
+                {
+                    font-size: 60px;
+                    font-weight: 700;
+                }
             }
             > h4 
             {

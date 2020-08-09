@@ -1,0 +1,40 @@
+@import '../../bootstrap-4.5.0/scss/functions.scss';
+@import '../../bootstrap-4.5.0/scss/variables.scss';
+@import '../../bootstrap-4.5.0/scss/mixins';
+
+.why-science-uni-section{
+    background-color: #e5e5e5;
+    padding: 5rem 0;
+    .why-science-uni-title-container{
+        margin: 0 0 2rem 0;
+    }
+    .why-science-uni-info {
+        margin: 4rem 0;
+        @include media-breakpoint-between(sm, md){
+            flex-direction: column;
+        }
+        > .col {
+            margin-bottom: 1.5rem;
+        .icon-container{
+            .row{
+                margin-bottom: 2rem;
+                .col-3 {
+                    text-align: center;
+                    i {
+                        font-size: 3rem;
+                        color: #e7ce16;
+                        }       
+                    }
+                }
+                .col {
+                    > p{
+                        margin-bottom: 0;
+                        @include media-breakpoint-between(sm, md){
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

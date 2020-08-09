@@ -15,24 +15,26 @@
         <link rel="stylesheet" href="themes/form.css">
         <link rel="stylesheet" href="themes/footer.css">
         <link rel="stylesheet" href="themes/animation.css">
-
+        <link rel="stylesheet" href="themes/about/about.css">
+        <link rel="stylesheet" href="themes/about/why-science-uni.css">
 
     </head>
     <body>
        
         <script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
         crossorigin="anonymous"></script>
         <script src="bootstrap-4.5.0/dist/js/bootstrap.min.js"></script>
+        <script src="count-up-speed/counter.min.js"></script>
 
         <!-- NAVBAR Section START -->
         <nav class="navbar navbar-expand-lg navbar-styles">
             <div class="navbar-brand-container">
-                <a class="navbar-brand" href="#"><img src="themes/sciences-uni-logo.png" alt="science-university-logo"></a>
+                <a class="navbar-brand" href="index.html"><img src="themes/sciences-uni-logo.png" alt="science-university-logo"></a>
             </div>
             <button 
             id="btn-menu"
@@ -47,12 +49,7 @@
                 <i class="fa fa-align-right"></i>
             </span>
             </button>
-            <div class="search-box-container">
-                <input type="text" class="search-box-field" id="searchBox">
-                <a class="social-media-icon-search" id="searchIcon">
-                <i class="fa fa-search"></i></a>
-            </div>
-            <div class="navbar-container collapse navbar-collapse" id="navBarCollapse">
+            <div class="search-social-container d-flex">
                 <div class="logo-socials-row d-sm-none d-md-none d-lg-block">
                     <div class="col social-media-icons-col">
                         <div class="social-media-container">
@@ -64,6 +61,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="search-box-container">
+                    <input type="text" class="search-box-field" id="searchBox">
+                    <a class="social-media-icon-search" id="searchIcon">
+                    <i class="fa fa-search"></i></a>
+                </div>
+            </div>
+            <div class="navbar-container collapse navbar-collapse" id="navBarCollapse">
                 <div class="container-fluid container-nav-links">
                     <div class="row navbar-links">
                         <ul class="navbar-nav">
@@ -243,7 +247,11 @@
                         alt="icon of man"
                         width="69px"
                         height="70px">
-                        <h3>90+</h3>
+                        <div class="ticker-header-title">
+                        <h3 
+                        class="counter">
+                        90</h3><h3>+</h3>
+                        </div>
                         <h4>Profession-ready degree programs</h4>
                     </div>
                     <div class="col-sm ticker-col">
@@ -252,7 +260,10 @@
                         alt="icon of opened letter"
                         width="93px"
                         height="70px">
-                        <h3>#1</h3>
+                        <div class="ticker-header-title">
+                        <h3>#</h3>
+                        <h3>1</h3>
+                        </div>
                         <h4>Our MBA for salary-to-debt ratio</h4>
                     </div>
                     <div class="col-sm ticker-col">
@@ -261,7 +272,9 @@
                         alt="icon of a graduation cap"
                         width="86px"
                         height="70px">
-                        <h3>100,000</h3>
+                        <div class="ticker-header-title">
+                        <h3 class="counter">100000</h3>
+                        </div>
                         <h4>Sciences University alumni worldwide</h4>
                     </div>
                 </div>
@@ -423,7 +436,7 @@
         
         <!-- Footer Section Start -->
         <footer class="footer-section">
-            <div class="container">
+            <div class="container footer-container">
                 <div class="row footer-row">
                     <div class="v-line-divider"></div>
                     <div class="col explore">
