@@ -113,7 +113,8 @@
           justify-content: flex-start;
           position: absolute;
           left: 4%;
-          top: 4%; } }
+          top: 4%;
+          width: 100%; } }
       .navbar-styles .navbar-container .container-nav-links .navbar-links .navbar-nav .nav-item {
         width: 100%;
         text-align: center; }
