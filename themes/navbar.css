@@ -32,7 +32,7 @@
     right: 7rem;
     bottom: 1rem;
     top: 1.5rem;
-    margin-right: 162px; }
+    margin-right: 45px; }
     @media (min-width: 576px) and (max-width: 991.98px) {
       .navbar-styles .search-social-container {
         margin-right: 0; } }
@@ -59,7 +59,7 @@
           text-align: center; }
           @media (min-width: 576px) and (max-width: 991.98px) {
             .navbar-styles .search-social-container .search-box-container .social-media-icon-search > i {
-              font-size: 1.6rem; } }
+              font-size: 2rem; } }
       .navbar-styles .search-social-container .search-box-container .search-box-field {
         border: none;
         border-bottom: 1px solid #b6b6b6;
@@ -72,6 +72,11 @@
       .navbar-styles .search-social-container .search-box-container .search-box-field-new {
         transform: scaleX(1);
         width: 200px; }
+        @media (min-width: 576px) and (max-width: 991.98px) {
+          .navbar-styles .search-social-container .search-box-container .search-box-field-new {
+            width: 350px;
+            height: 100%;
+            border-bottom-width: 3px; } }
   .navbar-styles .navbar-container.collapsing {
     position: static;
     height: 100%;
@@ -160,5 +165,3 @@
     box-shadow: 30px 0px 65px #021a4f; }
   .navbar-styles .navbar-container .mobileTransition {
     transition: transform .6s, box-shadow .6s ease-out; }
-
-/*# sourceMappingURL=navbar.css.map */

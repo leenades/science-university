@@ -1,3 +1,7 @@
+@font-face {
+  font-family: OpenSans;
+  src: url("../Assets/Fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
+
 section.image-slider {
   padding: 0;
   position: relative; }
@@ -43,5 +47,3 @@ section.image-slider {
         @media (max-width: 1199.98px) {
           section.image-slider .carousel-slider .header-title-container .header-title {
             font-size: 27px; } }
-
-/*# sourceMappingURL=header.css.map */

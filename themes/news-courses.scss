@@ -20,10 +20,15 @@
             }
             .courses-row-first{
                 margin-bottom: 30px;
+                .col {
+                    @include media-breakpoint-between(sm, md){
+                        height: 100%;
+                        max-height: 100%;
+                    }
+                }
             }
             .blurb 
             {
-                // width: fit-content;
                 box-shadow: 10px 9px 10px #9a98985e;
                 transition: all .4s ease-in-out;
                 position: relative;
@@ -34,9 +39,13 @@
                 @include media-breakpoint-up(1024px){
                     width: 100%;
                 }
-                > img {
-                    width: 100%;
-                    height: 100%;
+                a{
+                    > img {
+                        @include media-breakpoint-between(sm, md){
+                            width: 100%;
+                            max-width: 100%;
+                        }
+                    }
                 }
             }
             .section-news-images-title 
@@ -49,7 +58,6 @@
                 font-family: OpenSans;
                 text-transform: uppercase;
                 text-align: center;
-                // height: fit-content;
                 padding: 10px 0;
                 position: absolute;
                 top: inherit;
@@ -67,7 +75,6 @@
         }
         .news-div 
         {
-            // height: fit-content;
             background-color: #f3f3f3;
             padding: 20px 15px;
             box-shadow: 10px 9px 10px #9a98985e;
@@ -151,5 +158,4 @@
         }
     }
 }
-
 // News Section Styles End

@@ -1,6 +1,7 @@
 @font-face {
   font-family: OpenSans;
-  src: url("../Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
+  src: url("../Assets/Fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
+
 html, body {
   height: 100%;
   width: 100%;
@@ -11,4 +12,5 @@ html, body {
 section:not(.secondary-footer) {
   padding: 80px 0; }
 
-/*# sourceMappingURL=GLOBAL.css.map */
+.noScrollMobileView {
+  overflow: hidden; }

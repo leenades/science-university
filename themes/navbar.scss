@@ -42,7 +42,7 @@
         right: 7rem;
         bottom: 1rem;
         top: 1.5rem;
-        margin-right: 162px;
+        margin-right: 45px;
         @include media-breakpoint-between(sm, md){
             margin-right: 0;
         }
@@ -74,7 +74,7 @@
                     font-size: 1.2rem;
                     text-align: center;
                     @include media-breakpoint-between(sm, md){
-                        font-size: 1.6rem;
+                        font-size: 2rem;
                     }
 
                 }
@@ -93,6 +93,11 @@
             .search-box-field-new{
                 transform: scaleX(1);
                 width: 200px;
+                @include media-breakpoint-between(sm, md){
+                    width: 350px;
+                    height: 100%;
+                    border-bottom-width: 3px;
+                }
             }
         }
     }
