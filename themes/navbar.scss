@@ -11,6 +11,7 @@
     padding: 0;
     @include media-breakpoint-between(xs, md){
         box-shadow: 0px 30px 65px #556b9a30;
+        height: 5vh;
     }
     .navbar-brand-container{
         margin-left: 151px;
@@ -22,6 +23,11 @@
         .navbar-brand{
             padding-top: 0;
             padding-bottom: 0;
+            > img {
+                @include media-breakpoint-between(sm, md){
+                    width: 200px;
+                }
+            }
         }
     }
     .btn-menu-burger{
@@ -31,7 +37,7 @@
             margin-left: 1rem;
             z-index: 999999999999;
             color: #30446f;
-            bottom: 15%;
+            bottom: 30%;
         }
         i {
             font-size: 2rem;
@@ -44,6 +50,8 @@
         top: 1.5rem;
         margin-right: 45px;
         @include media-breakpoint-between(sm, md){
+            right: 9rem;
+            top: 2rem;
             margin-right: 0;
         }
         .social-media-icon
@@ -74,7 +82,7 @@
                     font-size: 1.2rem;
                     text-align: center;
                     @include media-breakpoint-between(sm, md){
-                        font-size: 2rem;
+                        font-size: 2.3rem;
                     }
 
                 }
