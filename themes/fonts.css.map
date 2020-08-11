@@ -3,5 +3,5 @@
 "mappings": "AACA,UAGC;EAFG,WAAW,EAAE,QAAQ;EACrB,GAAG,EAAE,wEAAwE;AAEjF,UAGC;EAFG,WAAW,EAAE,SAAS;EACtB,GAAG,EAAE,yEAAyE",
 "sources": ["fonts.scss"],
 "names": [],
-"file": "variables.css"
+"file": "fonts.css"
 }

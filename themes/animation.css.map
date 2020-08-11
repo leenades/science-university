@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AACA,UAGC;EAFG,WAAW,EAAE,QAAQ;EACrB,GAAG,EAAE,wEAAwE;AAEjF,UAGC;EAFG,WAAW,EAAE,SAAS;EACtB,GAAG,EAAE,yEAAyE;ACD9E,uBAAQ;EACJ,gBAAgB,EAAE,kBAAgB;EAClC,KAAK,EAAE,kBAA0B;;AAKjC,yBAAQ;EACJ,SAAS,EAAE,WAAW;EACtB,OAAO,EAAE,CAAC;;AAQV,wDAAQ;EACJ,SAAS,EAAE,WAAW;EACtB,OAAO,EAAE,CAAC;;AAOxB,OAAO;EACH,eAAe,EAAE,IAAI",
-"sources": ["variables.scss","animation.scss"],
+"sources": ["fonts.scss","animation.scss"],
 "names": [],
 "file": "animation.css"
 }
