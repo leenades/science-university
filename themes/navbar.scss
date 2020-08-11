@@ -37,7 +37,7 @@
             margin-left: 1rem;
             z-index: 999999999999;
             color: #30446f;
-            bottom: 30%;
+            bottom: 28%;
         }
         i {
             font-size: 2rem;
@@ -90,11 +90,12 @@
             .search-box-field 
             {
                 border: none;
-                border-bottom: 1px solid #b6b6b6;
+                border-bottom: 3px solid #b6b6b6;
                 outline: none;
                 transform: scaleX(0);
                 width: 0;
-                transition: transform .7s, width .7s ease-in-out;
+                height: 100%;
+                transition: transform .7s, width .7s, height .7s ease-in-out;
                 background-color: transparent;
                 transform-origin: 100% 50%;
             }
@@ -140,7 +141,7 @@
                     border-radius: 100%;
                     margin-right: 1rem;
                     background-color: #1c3260;
-                    padding: 12px;
+                    padding: 17px 12px;
                 }
                 > i {
                     min-width: 1rem;
