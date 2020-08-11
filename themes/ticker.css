@@ -1,6 +1,9 @@
 @font-face {
   font-family: OpenSans;
-  src: url("../Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
+  src: url("../Assets/Fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: TrajanPro;
+  src: url("../Assets/Fonts/TrajanPro/TrajanPro-Regular.ttf") format("truetype"); }
 .section-ticker {
   background-color: #021a4e; }
   @media (max-width: 991.98px) {

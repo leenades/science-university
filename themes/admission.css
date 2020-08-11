@@ -1,7 +1,9 @@
 @font-face {
   font-family: OpenSans;
-  src: url("../Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
-
+  src: url("../Assets/Fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: TrajanPro;
+  src: url("../Assets/Fonts/TrajanPro/TrajanPro-Regular.ttf") format("truetype"); }
 .admission-section {
   width: 100%;
   background-image: url("../Assets/Images/admission-background.png");
@@ -40,3 +42,5 @@
         @media (max-width: 991.98px) {
           .admission-section .admission-row-btn .admission-btn .button-animation {
             font-size: 2rem; } }
+
+/*# sourceMappingURL=admission.css.map */

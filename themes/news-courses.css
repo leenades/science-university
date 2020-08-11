@@ -1,12 +1,13 @@
 @font-face {
   font-family: OpenSans;
-  src: url("../Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
-
+  src: url("../Assets/Fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: TrajanPro;
+  src: url("../Assets/Fonts/TrajanPro/TrajanPro-Regular.ttf") format("truetype"); }
 @media (max-width: 991.98px) {
   .news-programmes-container .courses-div {
     flex-direction: column;
     display: block; } }
-
 .news-programmes-container .courses-div .col-first {
   margin-right: 29px; }
   @media (min-width: 576px) and (max-width: 991.98px) {
@@ -51,7 +52,6 @@
     .news-programmes-container .courses-div .col-first .section-news-images-title .news-title {
       position: relative;
       top: 25%; }
-
 .news-programmes-container .courses-div .news-div {
   background-color: #f3f3f3;
   padding: 20px 15px;
@@ -115,3 +115,5 @@
     border-bottom: 1px solid #271a4f;
     width: 100%;
     display: block; }
+
+/*# sourceMappingURL=news-courses.css.map */
