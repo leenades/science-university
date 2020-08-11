@@ -17,6 +17,7 @@
             margin-right: 29px;
             @include media-breakpoint-between(sm, md){
                 margin-bottom: 40px;
+                padding: 0;
             }
             .courses-row-first{
                 margin-bottom: 30px;
