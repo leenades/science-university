@@ -13,6 +13,9 @@
   .section-ticker .div-ticker > .ticker-col {
     color: #e4c800;
     text-align: center; }
+    @media (min-width: 576px) and (max-width: 991.98px) {
+      .section-ticker .div-ticker > .ticker-col {
+        margin-bottom: 60px; } }
     .section-ticker .div-ticker > .ticker-col > *:not(:last-child) {
       margin-bottom: 25px; }
     .section-ticker .div-ticker > .ticker-col .ticker-header-title {

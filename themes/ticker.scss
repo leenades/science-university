@@ -16,6 +16,9 @@
         {
             color: $corn;
             text-align: center;
+            @include media-breakpoint-between(sm, md){
+                margin-bottom: 60px;
+            }
             > *
             {
                 &:not(:last-child){
