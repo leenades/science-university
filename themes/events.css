@@ -74,6 +74,9 @@
       position: absolute;
       left: 46%;
       top: 0%; }
+      @media (min-width: 576px) and (max-width: 991.98px) {
+        .events-section .blogs-styles .blurb-column-events .events-blurbs-description .v1 {
+          left: 25%; } }
     .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-blurb-description-time {
       display: inline-block;
       font-size: .9rem; }
@@ -83,9 +86,9 @@
       font-size: .9rem;
       display: inline-block;
       left: 12%; }
-      @media (max-width: 991.98px) {
+      @media (min-width: 576px) and (max-width: 991.98px) {
         .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-blurb-description-location {
-          left: calc(30% + 5%); } }
+          left: calc(30% - 20%); } }
     .events-section .blogs-styles .blurb-column-events .events-blurbs-description > a {
       color: #021a4f; }
       .events-section .blogs-styles .blurb-column-events .events-blurbs-description > a .events-description-title h5 {

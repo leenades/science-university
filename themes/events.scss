@@ -110,6 +110,9 @@
                     position: absolute;
                     left: 46%;
                     top: 0%;
+                    @include media-breakpoint-between(sm, md){
+                        left: 25%;
+                    }
                 }
                 .events-blurb-description-time
                 {
@@ -123,8 +126,8 @@
                     font-size: .9rem;
                     display: inline-block;
                     left: 12%;
-                    @include media-breakpoint-between(xs, md){
-                        left: calc(30% + 5%);
+                    @include media-breakpoint-between(sm, md){
+                        left: calc(30% - 20%);
                     }
 
                 }
