@@ -4,14 +4,13 @@
   background: white;
   z-index: 9999999;
   padding: 0; }
-  @media (max-width: 991.98px) {
+  @media (min-width: 576px) and (max-width: 991.98px) {
     .navbar-styles {
-      box-shadow: 0px 30px 65px #556b9a30;
-      height: 5vh; } }
+      box-shadow: 0px 30px 65px #556b9a30; } }
   .navbar-styles .navbar-brand-container {
     margin-left: 151px;
-    padding-top: 13px;
-    padding-bottom: 14px; }
+    margin-top: 13px;
+    margin-bottom: 14px; }
     @media (min-width: 576px) and (max-width: 991.98px) {
       .navbar-styles .navbar-brand-container {
         margin-left: 30px; } }
@@ -28,7 +27,8 @@
       margin-left: 1rem;
       z-index: 999999999999;
       color: #30446f;
-      bottom: 28%; } }
+      margin-top: 8px;
+      margin-bottom: 14px; } }
   .navbar-styles .btn-menu-burger i {
     font-size: 2rem; }
   .navbar-styles .search-social-container {
@@ -40,8 +40,9 @@
     @media (min-width: 576px) and (max-width: 991.98px) {
       .navbar-styles .search-social-container {
         right: 9rem;
-        top: 2rem;
-        margin-right: 0; } }
+        margin-right: 0;
+        margin-top: 8px;
+        margin-bottom: 14px; } }
     .navbar-styles .search-social-container .social-media-icon {
       color: white;
       background-color: #b6b6b6;
