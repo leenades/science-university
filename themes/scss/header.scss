@@ -15,6 +15,12 @@ section.image-slider
                 width: 10px;
                 height: 10px;
                 border-radius: 100%;
+                border: 1px solid white;
+                opacity: 1;
+                background-color: transparent;
+                &:not(.active){
+                    background-color: white;
+                }
             }
         }
         .carousel-inner {
@@ -35,31 +41,31 @@ section.image-slider
     .header-title-container 
     {
             position: absolute;
-            top: 30%;
+            top: 0;
             right: 10%;
-            width: 30%;
+            width: 35%;
             background-color: rgba(2, 26, 78, 0.75);
             color: white;
             text-transform: uppercase;
+            margin-bottom: 120px;
+            margin-top: 140px;
             @include media-breakpoint-between(xs, md){
-                top: 40%;
+                top: 6rem;
                 width: 83%;
             }
             .header-title 
             {
                 font-size: 40px;
+                font-weight: bold;
                 text-align: center;
                 position: relative;
                 top: 20%;
                 line-height: 1.63em;
-                padding: 12% 13%;
+                padding: 4rem 3rem;
                 font-family: TrajanPro;
                 @include media-breakpoint-between(xs, md) {
                     padding: 50px 30px;
                     font-size: 30px;
-                }
-                @include media-breakpoint-down(lg){
-                    font-size: 27px;
                 }
             }
         }

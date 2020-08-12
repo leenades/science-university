@@ -3,6 +3,9 @@
   justify-content: center;
   margin: 0 0 30px 0;
 }
+.events-section .blogs-styles {
+  position: relative;
+}
 @media (max-width: 991.98px) {
   .events-section .blogs-styles {
     flex-direction: column;
@@ -16,6 +19,7 @@
   box-shadow: 10px 9px 10px #9a98985e;
   transition: all 0.4s ease-in-out;
   border-top: none;
+  position: relative;
 }
 @media (max-width: 991.98px) {
   .events-section .blogs-styles .blurb-column-events {
@@ -77,7 +81,7 @@
   color: #021a4f;
   font-size: 14px !important;
   position: relative;
-  margin: 8% 4% 11%;
+  margin: 30px 20px;
 }
 .events-section .blogs-styles .blurb-column-events .events-blurbs-description .v1 {
   border-left: 2px solid #979797a3;
@@ -93,18 +97,24 @@
 }
 .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-blurb-description-time {
   display: inline-block;
-  font-size: 0.9rem;
+  font-size: 14px;
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-blurb-description-time {
+    font-size: 16px;
+  }
 }
 .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-blurb-description-location {
   position: relative;
   right: 20%;
-  font-size: 0.9rem;
+  font-size: 14px;
   display: inline-block;
   left: 12%;
 }
 @media (min-width: 576px) and (max-width: 991.98px) {
   .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-blurb-description-location {
     left: calc(30% - 20%);
+    font-size: 16px;
   }
 }
 .events-section .blogs-styles .blurb-column-events .events-blurbs-description > a {
@@ -118,23 +128,43 @@
 .events-section .blogs-styles .blurb-column-events .events-blurbs-description > a .events-description-title:hover {
   color: #a7b0c2;
 }
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .events-section .blogs-styles .blurb-column-events .events-blurbs-description > a .events-description-title {
+    font-size: 18px;
+  }
+}
 .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-description-paragraph {
   color: #4a4a4a;
   font-size: 16px;
 }
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-description-paragraph {
+    font-size: 18px;
+  }
+}
 .events-section .blogs-styles .blurb-column-events .events-blurb-description-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.35px;
   float: right;
   border: none;
+  outline: none;
   background: none;
   text-transform: uppercase;
   color: #021a4f;
-  font-weight: 600;
-  font-size: 0.9rem;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 3% 4%;
+  margin: 30px 20px 15px 0;
 }
 .events-section .blogs-styles .blurb-column-events .events-blurb-description-btn:hover {
   color: #a7b0c2;
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .events-section .blogs-styles .blurb-column-events .events-blurb-description-btn {
+    font-size: 15px;
+  }
 }

@@ -8,6 +8,9 @@
 @media (min-width: 576px) and (max-width: 991.98px) {
   .footer-section .footer-row {
     padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 }
 .footer-section .footer-row .v-line-divider {
@@ -85,7 +88,7 @@
 .footer-section .footer-row .how-to-find-us ul > li > span > i {
   min-width: 1rem;
 }
-@media (min-width: 576px) and (max-width: 1199.98px) {
+@media (min-width: 576px) and (max-width: 991.98px) {
   .footer-section .footer-row .follow-us {
     display: flex;
     flex-direction: column-reverse;
@@ -97,7 +100,7 @@
 }
 @media (min-width: 576px) and (max-width: 991.98px) {
   .footer-section .footer-row .follow-us > .follow-us-row {
-    justify-content: start;
+    justify-content: center;
   }
 }
 .footer-section .footer-row .follow-us > .follow-us-row .social-media-follow-us > a {

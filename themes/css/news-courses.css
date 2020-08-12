@@ -44,7 +44,7 @@
   background-color: rgba(2, 26, 78, 0.8);
   color: white;
   width: 100%;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
   font-family: OpenSans;
   text-transform: uppercase;
@@ -95,6 +95,11 @@
   letter-spacing: normal;
   color: #021a4f;
 }
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .news-programmes-container .courses-div .news-div .news .news-date {
+    font-size: 15px;
+  }
+}
 .news-programmes-container .courses-div .news-div .news .news-title {
   font-family: OpenSans;
   font-size: 16px;
@@ -108,6 +113,11 @@
 .news-programmes-container .courses-div .news-div .news .news-title:hover {
   color: #a7b0c2;
 }
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .news-programmes-container .courses-div .news-div .news .news-title {
+    font-size: 18px;
+  }
+}
 .news-programmes-container .courses-div .news-div .news .news-content {
   font-family: OpenSans;
   font-size: 16px;
@@ -117,6 +127,11 @@
   line-height: 1.63;
   letter-spacing: normal;
   color: #4a4a4a;
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .news-programmes-container .courses-div .news-div .news .news-content {
+    font-size: 17px;
+  }
 }
 
 .blurb-news .title-style {

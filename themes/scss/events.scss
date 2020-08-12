@@ -15,6 +15,7 @@
     }
     .blogs-styles
     {
+        position: relative;
         @include media-breakpoint-between(xs, md){
             flex-direction: column;
             display: block;
@@ -27,6 +28,7 @@
             box-shadow: 10px 9px 10px #9a98985e;
             transition: all .4s ease-in-out;
             border-top: none;
+            position: relative;
             @include media-breakpoint-between(xs, md){
                 margin-bottom: 7%;
             }
@@ -40,8 +42,6 @@
                 }
                 .icon-container
                 {
-                    // max-width: 100%;
-                    // display: inline-block;
                     position: absolute;
                     right: 4%;
                     top: 4%;
@@ -101,8 +101,7 @@
                 color: $greenVogue;
                 font-size: 14px !important; 
                 position: relative;
-                // display: inline-block;
-                margin: 8% 4% 11%;
+                margin: 30px 20px;
                 .v1 
                 {
                     border-left: 2px solid #979797a3;
@@ -117,17 +116,21 @@
                 .events-blurb-description-time
                 {
                     display: inline-block;
-                    font-size: .9rem;
+                    font-size: 14px;
+                    @include media-breakpoint-between(sm, md){
+                        font-size: 16px;
+                    }
                 } 
                 .events-blurb-description-location 
                 {
                     position: relative;
                     right: 20%;
-                    font-size: .9rem;
+                    font-size: 14px;
                     display: inline-block;
                     left: 12%;
                     @include media-breakpoint-between(sm, md){
                         left: calc(30% - 20%);
+                        font-size: 16px;
                     }
 
                 }
@@ -144,29 +147,43 @@
                         &:hover{
                             color: #a7b0c2;
                         }
+                        @include media-breakpoint-between(sm, md){
+                        font-size: 18px;
+                    }
                     }
                 }
                 .events-description-paragraph
                 {
                     color: $eventsDescriptionParagraph;
                     font-size: 16px;
+                    @include media-breakpoint-between(sm, md){
+                        font-size: 18px;
+                    }
                 }
             }
             .events-blurb-description-btn
                 {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    font-weight: bold;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: 0.35px;
                     float: right;
                     border: none;
+                    outline: none;
                     background: none;
                     text-transform: uppercase;
-                    color: $greenVogue;
-                    font-weight: 600;
-                    font-size: 0.9rem;
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-                    margin: 3% 4%;
+                    color: #021a4f;
+                    margin: 30px 20px 15px 0;
                     &:hover{
                         color: #a7b0c2;
+                    }
+                    @include media-breakpoint-between(sm, md){
+                        font-size: 15px;
                     }
                 }
         }

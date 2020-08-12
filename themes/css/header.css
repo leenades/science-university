@@ -9,6 +9,12 @@ section.image-slider .carousel-slider .carousel-indicators > li {
   width: 10px;
   height: 10px;
   border-radius: 100%;
+  border: 1px solid white;
+  opacity: 1;
+  background-color: transparent;
+}
+section.image-slider .carousel-slider .carousel-indicators > li:not(.active) {
+  background-color: white;
 }
 section.image-slider .carousel-slider .carousel-inner .carousel-item .header-picture-responsive > img {
   width: 100%;
@@ -22,36 +28,34 @@ section.image-slider .carousel-slider .carousel-inner .carousel-item .header-pic
 }
 section.image-slider .carousel-slider .header-title-container {
   position: absolute;
-  top: 30%;
+  top: 0;
   right: 10%;
-  width: 30%;
+  width: 35%;
   background-color: rgba(2, 26, 78, 0.75);
   color: white;
   text-transform: uppercase;
+  margin-bottom: 120px;
+  margin-top: 140px;
 }
 @media (max-width: 991.98px) {
   section.image-slider .carousel-slider .header-title-container {
-    top: 40%;
+    top: 6rem;
     width: 83%;
   }
 }
 section.image-slider .carousel-slider .header-title-container .header-title {
   font-size: 40px;
+  font-weight: bold;
   text-align: center;
   position: relative;
   top: 20%;
   line-height: 1.63em;
-  padding: 12% 13%;
+  padding: 4rem 3rem;
   font-family: TrajanPro;
 }
 @media (max-width: 991.98px) {
   section.image-slider .carousel-slider .header-title-container .header-title {
     padding: 50px 30px;
     font-size: 30px;
-  }
-}
-@media (max-width: 1199.98px) {
-  section.image-slider .carousel-slider .header-title-container .header-title {
-    font-size: 27px;
   }
 }

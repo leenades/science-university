@@ -12,6 +12,9 @@
         padding: 62px 0 98px 0;
         @include media-breakpoint-between(sm, md){
             padding: 5rem 0;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
         }
         .v-line-divider 
         {
@@ -99,7 +102,7 @@
         } 
     }
     .follow-us {
-        @include media-breakpoint-between(sm, lg){
+        @include media-breakpoint-between(sm, md){
             display: flex;
             flex-direction: column-reverse;
             justify-content: flex-end;
@@ -107,7 +110,7 @@
         > .follow-us-row {
             margin: 25px 0 40px 0;
             @include media-breakpoint-between(sm, md){
-                justify-content: start;
+                justify-content: center;
             }
             .social-media-follow-us {
                 > a {
