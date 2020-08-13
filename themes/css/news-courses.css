@@ -54,6 +54,10 @@
   top: inherit;
   bottom: 0;
   margin-bottom: 0;
+  letter-spacing: 0.4px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
 }
 @media (max-width: 991.98px) {
   .news-programmes-container .courses-div .col-first .section-news-images-title {
@@ -80,6 +84,10 @@
   font-weight: bold;
   color: #021a4f;
   background: none;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.35px;
   border: none;
 }
 .news-programmes-container .courses-div .news-div .news > .news-btn:hover {

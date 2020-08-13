@@ -57,11 +57,20 @@
                         {
                             margin: 0;
                             font-weight: 800;
+                            font-size: 18px;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 1.06;
+                            letter-spacing: normal;
                         }
                         h6
                         {
                             font-size: 12px;
                             font-weight: bold;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 1.58;
+                            letter-spacing: normal;
                         }
                     }
                 }
@@ -117,6 +126,11 @@
                 {
                     display: inline-block;
                     font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.64;
+                    letter-spacing: normal;
                     @include media-breakpoint-between(sm, md){
                         font-size: 16px;
                     }
@@ -128,6 +142,11 @@
                     font-size: 14px;
                     display: inline-block;
                     left: 12%;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.64;
+                    letter-spacing: normal;
                     @include media-breakpoint-between(sm, md){
                         left: calc(30% - 20%);
                         font-size: 16px;
@@ -156,6 +175,11 @@
                 {
                     color: $eventsDescriptionParagraph;
                     font-size: 16px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.63;
+                    letter-spacing: normal;
                     @include media-breakpoint-between(sm, md){
                         font-size: 18px;
                     }

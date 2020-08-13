@@ -12,6 +12,7 @@ section.image-slider .carousel-slider .carousel-indicators > li {
   border: 1px solid white;
   opacity: 1;
   background-color: transparent;
+  margin-right: 15px;
 }
 section.image-slider .carousel-slider .carousel-indicators > li:not(.active) {
   background-color: white;

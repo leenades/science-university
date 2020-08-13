@@ -33,9 +33,12 @@
     {
         color: $corn;
         text-transform: uppercase;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2.6rem;
+        font-weight: bold;
+        font-size: 16px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.93px;
     }
     .footer-list 
     {
@@ -46,6 +49,10 @@
             margin-bottom: 10px;
             font-weight: 600;
             font-size: 14px;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.82px;
             @include media-breakpoint-between(xs, sm){
                 font-size: 11px;
             }

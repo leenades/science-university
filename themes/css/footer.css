@@ -30,9 +30,12 @@
 .footer-section .footer-row .footer-subtitles {
   color: #e4c800;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2.6rem;
+  font-weight: bold;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.93px;
 }
 .footer-section .footer-row .footer-list {
   list-style: none;
@@ -42,6 +45,10 @@
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.82px;
 }
 @media (max-width: 767.98px) {
   .footer-section .footer-row .footer-list > li {

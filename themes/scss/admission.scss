@@ -39,20 +39,21 @@
             text-align: center;
             .button-animation {          
                 background-color: $greenVogueMain;              
-                font-size: 4rem;   
+                font-size: 54px;
                 font-weight: 800;
-                text-transform: uppercase;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.06;
+                letter-spacing: normal;
                 text-align: center;
+                text-transform: uppercase;
                 color: $corn;
                 border: none;
                 width: 40%;
                 padding: 1% 0;
                 transition: background-color .4s, color .4s;
-                @include media-breakpoint-between(xs, md){
+                @include media-breakpoint-between(sm, md){
                     font-size: 2rem;
-                }
-                @include media-breakpoint-up(1024px){
-                    font-size: 3rem;
                 }
             }
         }

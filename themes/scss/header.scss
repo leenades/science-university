@@ -18,6 +18,7 @@ section.image-slider
                 border: 1px solid white;
                 opacity: 1;
                 background-color: transparent;
+                margin-right: 15px;
                 &:not(.active){
                     background-color: white;
                 }

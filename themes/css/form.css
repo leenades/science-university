@@ -70,7 +70,11 @@
   width: 140px;
   height: 45px;
   outline: none;
-  font-weight: 500;
   font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
   transition: background-color 0.4s, color 0.4s;
 }
