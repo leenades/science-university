@@ -10,8 +10,8 @@
     background-color: #021a4e;
     .footer-row{
         padding: 62px 0 98px 0;
-        @include media-breakpoint-between(sm, md){
-            padding: 5rem 0;
+        @include media-breakpoint-between(sm, lg){
+            padding: 5rem 0 0 0;
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -20,14 +20,6 @@
         {
             border-left: 1px solid #4d4d4d;
             margin: 7px 0;
-        }
-        .tablet-footer-width {
-            @include media-breakpoint-between(sm, md){
-                width: 100%;
-            }
-            @include media-breakpoint-between(md, lg){
-                width: 100%;
-            }
         }
     .footer-subtitles 
     {
@@ -54,11 +46,8 @@
             font-style: normal;
             line-height: normal;
             letter-spacing: 0.82px;
-            @include media-breakpoint-between(xs, sm){
-                font-size: 11px;
-            }
             > span {
-                @include media-breakpoint-between(sm, md){
+                @include media-breakpoint-between(sm, lg){
                     margin: 0;
                 }
             }
@@ -107,15 +96,15 @@
         } 
     }
     .follow-us {
-        @include media-breakpoint-between(sm, md){
+        @include media-breakpoint-between(sm, lg){
             display: flex;
             flex-direction: column-reverse;
             justify-content: flex-end;
-            margin-bottom: 40px;
+            margin-bottom: 80px;
         }
         > .follow-us-row {
             margin: 25px 0 40px 0;
-            @include media-breakpoint-between(sm, md){
+            @include media-breakpoint-between(sm, lg){
                 justify-content: center;
             }
             .social-media-follow-us {
@@ -127,7 +116,7 @@
                 }
             }
             &:last-child{
-                @include media-breakpoint-between(sm, md){
+                @include media-breakpoint-between(sm, lg){
                     margin-top: 0;
                 }
             }
