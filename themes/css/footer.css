@@ -111,11 +111,6 @@
   background-color: #223663;
   color: #fff;
 }
-@media (max-width: 1199.98px) {
-  .secondary-footer {
-    margin-top: 130px;
-  }
-}
 .secondary-footer .row > * {
   font-size: 11px;
   margin: 10px 0;

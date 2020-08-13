@@ -133,9 +133,6 @@
     bottom: 0;
     background-color: #223663;
     color: #fff;
-    @include media-breakpoint-between(xd, lg){
-        margin-top: 130px;
-    }
     .row {
         > * {
             font-size: 11px;
