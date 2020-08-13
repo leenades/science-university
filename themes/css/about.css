@@ -9,7 +9,7 @@ section.about-header-section .about-header-img > img {
   margin-bottom: 30px;
   text-align: center;
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 1199.98px) {
   .about-section .about-info-image {
     flex-direction: column;
     text-align: center;
@@ -19,7 +19,7 @@ section.about-header-section .about-header-img > img {
 .about-section .about-info-image .about-info {
   align-items: center;
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 1199.98px) {
   .about-section .about-info-image .about-info {
     margin-bottom: 5rem;
   }
@@ -28,13 +28,13 @@ section.about-header-section .about-header-img > img {
   font-size: 1.2rem;
   line-height: 1.7rem;
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 1199.98px) {
   .about-section .about-info-image .about-info > p {
     font-size: 1.7rem;
     line-height: 2.7rem;
   }
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 1199.98px) {
   .about-section .about-info-image .about-img {
     margin-bottom: 60px;
   }

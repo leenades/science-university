@@ -8,21 +8,21 @@
 {
     .courses-div 
     {
-        @include media-breakpoint-between(xs, md){
+        @include media-breakpoint-between(xs, lg){
             flex-direction: column;
             display: block;
         }
         .col-first
         {
             margin-right: 29px;
-            @include media-breakpoint-between(sm, md){
+            @include media-breakpoint-between(sm, lg){
                 margin-bottom: 40px;
                 padding: 0;
             }
             .courses-row-first{
                 margin-bottom: 30px;
                 .col {
-                    @include media-breakpoint-between(sm, md){
+                    @include media-breakpoint-between(sm, lg){
                         height: 100%;
                         max-height: 100%;
                     }
@@ -34,7 +34,7 @@
                 transition: all .4s ease-in-out;
                 position: relative;
                 overflow: hidden;
-                @include media-breakpoint-between(xs, md){
+                @include media-breakpoint-between(xs, lg){
                     width: 100%;
                 }
                 @include media-breakpoint-up(1024px){
@@ -42,7 +42,7 @@
                 }
                 a{
                     > img {
-                        @include media-breakpoint-between(sm, md){
+                        @include media-breakpoint-between(sm, lg){
                             width: 100%;
                             max-width: 100%;
                         }
@@ -68,7 +68,7 @@
                 font-style: normal;
                 font-stretch: normal;
                 line-height: normal;
-                @include media-breakpoint-between(xs, md){
+                @include media-breakpoint-between(xs, lg){
                     font-size: 1rem;
                 }
                 .news-title 
@@ -114,7 +114,7 @@
                     line-height: 1.64;
                     letter-spacing: normal;
                     color: $greenVogue;
-                    @include media-breakpoint-between(sm, md){
+                    @include media-breakpoint-between(sm, lg){
                         font-size: 15px;
                     }
                 }
@@ -131,7 +131,7 @@
                     &:hover{
                         color: #a7b0c2;
                     }
-                    @include media-breakpoint-between(sm, md){
+                    @include media-breakpoint-between(sm, lg){
                         font-size: 18px;
                     }
                 }
@@ -145,7 +145,7 @@
                     line-height: 1.63;
                     letter-spacing: normal;
                     color: $eventsDescriptionParagraph;
-                    @include media-breakpoint-between(sm, md){
+                    @include media-breakpoint-between(sm, lg){
                         font-size: 17px;
                     }
                 }

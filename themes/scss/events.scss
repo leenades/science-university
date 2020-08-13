@@ -16,7 +16,7 @@
     .blogs-styles
     {
         position: relative;
-        @include media-breakpoint-between(xs, md){
+        @include media-breakpoint-between(xs, lg){
             flex-direction: column;
             display: block;
         }
@@ -29,7 +29,7 @@
             transition: all .4s ease-in-out;
             border-top: none;
             position: relative;
-            @include media-breakpoint-between(xs, md){
+            @include media-breakpoint-between(xs, lg){
                 margin-bottom: 7%;
             }
             .img-icon-container 
@@ -118,7 +118,7 @@
                     position: absolute;
                     left: 46%;
                     top: 0%;
-                    @include media-breakpoint-between(sm, md){
+                    @include media-breakpoint-between(sm, lg){
                         left: 25%;
                     }
                 }
@@ -131,7 +131,7 @@
                     font-style: normal;
                     line-height: 1.64;
                     letter-spacing: normal;
-                    @include media-breakpoint-between(sm, md){
+                    @include media-breakpoint-between(sm, lg){
                         font-size: 16px;
                     }
                 } 
@@ -147,7 +147,7 @@
                     font-style: normal;
                     line-height: 1.64;
                     letter-spacing: normal;
-                    @include media-breakpoint-between(sm, md){
+                    @include media-breakpoint-between(sm, lg){
                         left: calc(30% - 20%);
                         font-size: 16px;
                     }
@@ -166,7 +166,7 @@
                         &:hover{
                             color: #a7b0c2;
                         }
-                        @include media-breakpoint-between(sm, md){
+                        @include media-breakpoint-between(sm, lg){
                         font-size: 18px;
                     }
                     }
@@ -180,7 +180,7 @@
                     font-style: normal;
                     line-height: 1.63;
                     letter-spacing: normal;
-                    @include media-breakpoint-between(sm, md){
+                    @include media-breakpoint-between(sm, lg){
                         font-size: 18px;
                     }
                 }
@@ -206,7 +206,7 @@
                     &:hover{
                         color: #a7b0c2;
                     }
-                    @include media-breakpoint-between(sm, md){
+                    @include media-breakpoint-between(sm, lg){
                         font-size: 15px;
                     }
                 }

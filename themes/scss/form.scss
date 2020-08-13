@@ -20,7 +20,7 @@
                     .form-name {
                         width: 48%;
                         float: left;
-                        @include media-breakpoint-between(sm, md) {
+                        @include media-breakpoint-between(sm, lg) {
                             width: 100%;
                             float: unset;
                             margin-bottom: 1rem;
@@ -35,7 +35,7 @@
                     .form-phone {
                         width: 48%;
                         float: right;
-                        @include media-breakpoint-between(sm, md) {
+                        @include media-breakpoint-between(sm, lg) {
                             width: 100%;
                             margin-bottom: 1rem;
                             float: unset;

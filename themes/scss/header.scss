@@ -31,7 +31,7 @@ section.image-slider
                     > img {
                         width: 100%;
                         height: 100%;
-                        @include media-breakpoint-between(sm, md){
+                        @include media-breakpoint-between(sm, lg){
                             width: unset;
                             height: 100%;
                         }
@@ -50,7 +50,7 @@ section.image-slider
             text-transform: uppercase;
             margin-bottom: 120px;
             margin-top: 140px;
-            @include media-breakpoint-between(xs, md){
+            @include media-breakpoint-between(xs, lg){
                 top: 6rem;
                 width: 83%;
             }
@@ -64,7 +64,7 @@ section.image-slider
                 line-height: 1.63em;
                 padding: 4rem 3rem;
                 font-family: TrajanPro;
-                @include media-breakpoint-between(xs, md) {
+                @include media-breakpoint-between(xs, lg) {
                     padding: 50px 30px;
                     font-size: 30px;
                 }

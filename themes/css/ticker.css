@@ -1,7 +1,7 @@
 .section-ticker {
   background-color: #021a4e;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .section-ticker .div-ticker {
     flex-direction: column;
     display: block;
@@ -11,7 +11,7 @@
   color: #e4c800;
   text-align: center;
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 1199.98px) {
   .section-ticker .div-ticker > .ticker-col {
     margin-bottom: 60px;
   }

@@ -53,7 +53,7 @@
                 outline: none;
                 padding: 24px 0;
                 transition: background-color .4s, color .4s;
-                @include media-breakpoint-between(sm, md){
+                @include media-breakpoint-between(sm, lg){
                     font-size: 2rem;
                 }
             }

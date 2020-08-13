@@ -43,7 +43,7 @@
   padding: 24px 0;
   transition: background-color 0.4s, color 0.4s;
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 1199.98px) {
   .admission-section .admission-row-btn .admission-btn .button-animation {
     font-size: 2rem;
   }

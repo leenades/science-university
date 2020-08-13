@@ -1,4 +1,4 @@
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .news-programmes-container .courses-div {
     flex-direction: column;
     display: block;
@@ -7,7 +7,7 @@
 .news-programmes-container .courses-div .col-first {
   margin-right: 29px;
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 1199.98px) {
   .news-programmes-container .courses-div .col-first {
     margin-bottom: 40px;
     padding: 0;
@@ -16,7 +16,7 @@
 .news-programmes-container .courses-div .col-first .courses-row-first {
   margin-bottom: 30px;
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 1199.98px) {
   .news-programmes-container .courses-div .col-first .courses-row-first .col {
     height: 100%;
     max-height: 100%;
@@ -29,12 +29,12 @@
   overflow: hidden;
   width: 100%;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .news-programmes-container .courses-div .col-first .blurb {
     width: 100%;
   }
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 1199.98px) {
   .news-programmes-container .courses-div .col-first .blurb a > img {
     width: 100%;
     max-width: 100%;
@@ -59,7 +59,7 @@
   font-stretch: normal;
   line-height: normal;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .news-programmes-container .courses-div .col-first .section-news-images-title {
     font-size: 1rem;
   }
@@ -103,7 +103,7 @@
   letter-spacing: normal;
   color: #021a4f;
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 1199.98px) {
   .news-programmes-container .courses-div .news-div .news .news-date {
     font-size: 15px;
   }
@@ -121,7 +121,7 @@
 .news-programmes-container .courses-div .news-div .news .news-title:hover {
   color: #a7b0c2;
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 1199.98px) {
   .news-programmes-container .courses-div .news-div .news .news-title {
     font-size: 18px;
   }
@@ -136,7 +136,7 @@
   letter-spacing: normal;
   color: #4a4a4a;
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 1199.98px) {
   .news-programmes-container .courses-div .news-div .news .news-content {
     font-size: 17px;
   }
