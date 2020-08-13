@@ -1,7 +1,7 @@
 $(window).on('load resize', function() {
     var widowWidth = $(window).width(); 
 
-    if (widowWidth <= 992){
+    if (widowWidth <= 1024){
         if(!$('#demo').hasClass('collapse')){
             $('#demo').addClass('collapse');
             $('.demo').attr('data-toggle', 'collapse');
