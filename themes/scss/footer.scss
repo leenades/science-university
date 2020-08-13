@@ -39,6 +39,7 @@
         font-style: normal;
         line-height: normal;
         letter-spacing: 0.93px;
+        margin-bottom: 15px;
     }
     .footer-list 
     {
@@ -96,10 +97,7 @@
                 color: #fff;
                 > span 
                 {
-                    margin: 0 10px 0 15px;
-                    @include media-breakpoint-between(sm, lg){
-                        margin: 0 10px 0 0px;
-                    }
+                    margin-right: 10px;
                     > i 
                     {
                         min-width: 1rem;
@@ -147,9 +145,13 @@
     color: #fff;
     .row {
         > * {
-            font-size: .7rem;
+            font-size: 11px;
             margin: 10px 0;
-            line-height: 1.5;
+            line-height: normal;
+            letter-spacing: normal;
+            font-stretch: normal;
+            font-weight: normal;
+            font-style: normal;
         }
         > span {
             margin-right: 5px;

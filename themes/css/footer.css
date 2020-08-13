@@ -36,6 +36,7 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: 0.93px;
+  margin-bottom: 15px;
 }
 .footer-section .footer-row .footer-list {
   list-style: none;
@@ -85,12 +86,7 @@
   color: #fff;
 }
 .footer-section .footer-row .how-to-find-us ul > li > span {
-  margin: 0 10px 0 15px;
-}
-@media (min-width: 576px) and (max-width: 1199.98px) {
-  .footer-section .footer-row .how-to-find-us ul > li > span {
-    margin: 0 10px 0 0px;
-  }
+  margin-right: 10px;
 }
 .footer-section .footer-row .how-to-find-us ul > li > span > i {
   min-width: 1rem;
@@ -130,9 +126,13 @@
   color: #fff;
 }
 .secondary-footer .row > * {
-  font-size: 0.7rem;
+  font-size: 11px;
   margin: 10px 0;
-  line-height: 1.5;
+  line-height: normal;
+  letter-spacing: normal;
+  font-stretch: normal;
+  font-weight: normal;
+  font-style: normal;
 }
 .secondary-footer .row > span {
   margin-right: 5px;

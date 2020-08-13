@@ -50,7 +50,8 @@
                 color: $corn;
                 border: none;
                 width: 40%;
-                padding: 1% 0;
+                outline: none;
+                padding: 24px 0;
                 transition: background-color .4s, color .4s;
                 @include media-breakpoint-between(sm, md){
                     font-size: 2rem;

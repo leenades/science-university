@@ -39,7 +39,8 @@
   color: #e4c800;
   border: none;
   width: 40%;
-  padding: 1% 0;
+  outline: none;
+  padding: 24px 0;
   transition: background-color 0.4s, color 0.4s;
 }
 @media (min-width: 576px) and (max-width: 991.98px) {
