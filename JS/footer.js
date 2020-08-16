@@ -4,6 +4,7 @@ $(window).on('load resize', function() {
     if (widowWidth <= 1024){
         if(!$('#demo').hasClass('collapse')){
             $('#demo').addClass('collapse');
+            $('.dropdown-toggle').addClass('caret-up');
             $('.demo').attr('data-toggle', 'collapse');
         }
         if(!$('#demoOne').hasClass('collapse')){
@@ -18,16 +19,13 @@ $(window).on('load resize', function() {
             $('#demoThree').addClass('collapse');
             $('.demoThree').attr('data-toggle', 'collapse');
         }
-        // if(!$('#demoFour').hasClass('collapse')){
-        //     $('#demoFour').addClass('collapse');
-        //     $('.demoFour').attr('data-toggle', 'collapse');
-        // }
     } else {
             $('.demo').attr('data-toggle', '');
             $('.demoOne').attr('data-toggle', '');
             $('.demoTwo').attr('data-toggle', '');
             $('.demoThree').attr('data-toggle', '');
-            // $('.demoFour').attr('data-toggle', '');
+
+            $('.dropdown-toggle.collapsed').removeClass('caret-up');
 
     }
 });
