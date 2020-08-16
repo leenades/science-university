@@ -7,8 +7,7 @@ html, body{
     margin: 0;
     overflow-x: hidden;
     font-family: OpenSans;
-    line-break: anywhere;
-    word-break: break-all;
+    word-wrap: break-word;
 }
 
 section:not(.secondary-footer) {

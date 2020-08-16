@@ -101,13 +101,11 @@
 }
 @media (max-width: 991.98px) {
   .events-section .blogs-styles .blurb-column-events .events-blurbs-description .v1 {
-    margin-right: 10rem;
     margin-left: 10rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .events-section .blogs-styles .blurb-column-events .events-blurbs-description .v1 {
-    margin-right: 10rem;
     margin-left: 11rem;
   }
 }
@@ -189,7 +187,7 @@
   background: none;
   text-transform: uppercase;
   color: #021a4f;
-  margin: 30px 20px 15px 0;
+  margin: 0 16px 13px 0;
 }
 .events-section .blogs-styles .blurb-column-events .events-blurb-description-btn:hover {
   color: #a7b0c2;
