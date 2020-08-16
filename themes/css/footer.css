@@ -13,10 +13,6 @@
     text-align: center;
   }
 }
-.footer-section .footer-row .caret-up {
-  border-top-width: 0;
-  border-bottom: 4px solid;
-}
 .footer-section .footer-row .v-line-divider {
   border-left: 1px solid #4d4d4d;
   margin: 7px 0;
