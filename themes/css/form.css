@@ -16,7 +16,7 @@
   width: 48%;
   float: left;
 }
-@media (min-width: 576px) and (max-width: 1199.98px) {
+@media (max-width: 1199.98px) {
   .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-name {
     width: 100%;
     float: unset;
@@ -33,7 +33,7 @@
   width: 48%;
   float: right;
 }
-@media (min-width: 576px) and (max-width: 1199.98px) {
+@media (max-width: 1199.98px) {
   .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number .form-phone {
     width: 100%;
     margin-bottom: 1rem;

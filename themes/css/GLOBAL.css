@@ -3,13 +3,12 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
   font-family: OpenSans;
+  line-break: anywhere;
+  word-break: break-all;
 }
 
 section:not(.secondary-footer) {
   padding: 80px 0;
-}
-
-.noScrollMobileView {
-  overflow: hidden;
 }

@@ -96,12 +96,19 @@
   border-left: 2px solid #979797a3;
   height: 19px;
   position: absolute;
-  left: 46%;
+  margin: 0 9rem;
   top: 0%;
 }
-@media (min-width: 576px) and (max-width: 1199.98px) {
+@media (max-width: 991.98px) {
   .events-section .blogs-styles .blurb-column-events .events-blurbs-description .v1 {
-    left: 25%;
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .events-section .blogs-styles .blurb-column-events .events-blurbs-description .v1 {
+    margin-right: 10rem;
+    margin-left: 11rem;
   }
 }
 .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-blurb-description-time {
@@ -113,7 +120,7 @@
   line-height: 1.64;
   letter-spacing: normal;
 }
-@media (min-width: 576px) and (max-width: 1199.98px) {
+@media (max-width: 1199.98px) {
   .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-blurb-description-time {
     font-size: 16px;
   }
@@ -130,7 +137,7 @@
   line-height: 1.64;
   letter-spacing: normal;
 }
-@media (min-width: 576px) and (max-width: 1199.98px) {
+@media (max-width: 1199.98px) {
   .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-blurb-description-location {
     left: calc(30% - 20%);
     font-size: 16px;
@@ -147,7 +154,7 @@
 .events-section .blogs-styles .blurb-column-events .events-blurbs-description > a .events-description-title:hover {
   color: #a7b0c2;
 }
-@media (min-width: 576px) and (max-width: 1199.98px) {
+@media (max-width: 1199.98px) {
   .events-section .blogs-styles .blurb-column-events .events-blurbs-description > a .events-description-title {
     font-size: 18px;
   }
@@ -161,7 +168,7 @@
   line-height: 1.63;
   letter-spacing: normal;
 }
-@media (min-width: 576px) and (max-width: 1199.98px) {
+@media (max-width: 1199.98px) {
   .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-description-paragraph {
     font-size: 18px;
   }
@@ -187,7 +194,7 @@
 .events-section .blogs-styles .blurb-column-events .events-blurb-description-btn:hover {
   color: #a7b0c2;
 }
-@media (min-width: 576px) and (max-width: 1199.98px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .events-section .blogs-styles .blurb-column-events .events-blurb-description-btn {
     font-size: 15px;
   }

@@ -28,6 +28,9 @@
                 text-align: center;
                 color: $greenVogue;
                 text-shadow: 0 2px 4px rgba(83, 83, 83, 0.48);
+                @include media-breakpoint-down(md){
+                    font-size: 30px;
+                }
             }
         }
     }
@@ -53,7 +56,10 @@
                 outline: none;
                 padding: 24px 0;
                 transition: background-color .4s, color .4s;
-                @include media-breakpoint-between(sm, lg){
+                @include media-breakpoint-down(md){
+                    font-size: 20px;
+                }
+                @include media-breakpoint-between(md, lg){
                     font-size: 2rem;
                 }
             }

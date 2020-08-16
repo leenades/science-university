@@ -16,7 +16,7 @@
     .blogs-styles
     {
         position: relative;
-        @include media-breakpoint-between(xs, lg){
+        @include media-breakpoint-down(lg){
             flex-direction: column;
             display: block;
         }
@@ -29,7 +29,7 @@
             transition: all .4s ease-in-out;
             border-top: none;
             position: relative;
-            @include media-breakpoint-between(xs, lg){
+            @include media-breakpoint-down(lg){
                 margin-bottom: 7%;
             }
             .img-icon-container 
@@ -116,10 +116,15 @@
                     border-left: 2px solid #979797a3;
                     height: 19px;
                     position: absolute;
-                    left: 46%;
+                    margin: 0 9rem;
                     top: 0%;
-                    @include media-breakpoint-between(sm, lg){
-                        left: 25%;
+                    @include media-breakpoint-down(md){
+                        margin-right: 10rem;
+                        margin-left: 10rem;
+                    }
+                    @include media-breakpoint-between(md, lg){
+                        margin-right: 10rem;
+                        margin-left: 11rem;
                     }
                 }
                 .events-blurb-description-time
@@ -131,7 +136,7 @@
                     font-style: normal;
                     line-height: 1.64;
                     letter-spacing: normal;
-                    @include media-breakpoint-between(sm, lg){
+                    @include media-breakpoint-down(lg){
                         font-size: 16px;
                     }
                 } 
@@ -147,7 +152,7 @@
                     font-style: normal;
                     line-height: 1.64;
                     letter-spacing: normal;
-                    @include media-breakpoint-between(sm, lg){
+                    @include media-breakpoint-down(lg){
                         left: calc(30% - 20%);
                         font-size: 16px;
                     }
@@ -166,7 +171,7 @@
                         &:hover{
                             color: #a7b0c2;
                         }
-                        @include media-breakpoint-between(sm, lg){
+                        @include media-breakpoint-down(lg){
                         font-size: 18px;
                     }
                     }
@@ -180,7 +185,7 @@
                     font-style: normal;
                     line-height: 1.63;
                     letter-spacing: normal;
-                    @include media-breakpoint-between(sm, lg){
+                    @include media-breakpoint-down(lg){
                         font-size: 18px;
                     }
                 }
@@ -206,7 +211,7 @@
                     &:hover{
                         color: #a7b0c2;
                     }
-                    @include media-breakpoint-between(sm, lg){
+                    @include media-breakpoint-between(md, lg){
                         font-size: 15px;
                     }
                 }

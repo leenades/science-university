@@ -29,9 +29,9 @@ $('#btn-menu').click(function(){
     navbarButton.toggleClass('transitionNavBar');
 
     if (navbarButton.hasClass('transitionNavBar')) {
-        document.body.style.overflow = 'hidden';
+        $('body').css('overflowY', 'hidden');
     } else {
-        document.body.style.overflow = 'visible';
+        $('body').css('overflowY', 'visible');
     }
 });
 
