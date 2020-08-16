@@ -62,6 +62,8 @@
     color: #30446f;
     margin-bottom: 16px;
     margin-right: 13px;
+    top: 0rem;
+    margin-top: 15px;
   }
 }
 .navbar-styles .btn-menu-burger i {
@@ -80,6 +82,8 @@
     margin-right: 4.5rem;
     bottom: 0rem;
     margin-bottom: 16px;
+    top: 0rem;
+    margin-top: 15px;
   }
 }
 .navbar-styles .search-social-container .social-media-icon {
@@ -112,6 +116,7 @@
 @media (max-width: 1199.98px) {
   .navbar-styles .search-social-container .search-box-container .social-media-icon-search > i {
     font-size: 1.5rem;
+    padding-right: 1.71px;
   }
 }
 .navbar-styles .search-social-container .search-box-container .search-box-field {

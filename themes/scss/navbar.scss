@@ -59,6 +59,8 @@
             color: #30446f;
             margin-bottom: 16px;
             margin-right: 13px;
+            top: 0rem;
+            margin-top: 15px;
         }
         i {
             font-size: 2rem;
@@ -75,6 +77,8 @@
             margin-right: 4.5rem;
             bottom: 0rem;
             margin-bottom: 16px;
+            top: 0rem;
+            margin-top: 15px;
         }
         .social-media-icon
         {
@@ -105,6 +109,7 @@
                     text-align: center;
                     @include media-breakpoint-down(lg){
                         font-size: 1.5rem;
+                        padding-right: 1.71px;
                     }
 
                 }
