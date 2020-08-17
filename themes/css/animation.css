@@ -60,3 +60,16 @@ a:hover {
     justify-content: center;
   }
 }
+
+.search-box-transition {
+  background-color: white;
+  transform: scale(0);
+  width: 0;
+  height: 0;
+  transform-origin: 100% 50%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.search-box-transition-after {
+  transform: scale(1.7);
+}

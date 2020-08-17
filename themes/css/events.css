@@ -98,11 +98,13 @@
 @media (max-width: 991.98px) {
   .events-section .blogs-styles .blurb-column-events .events-blurbs-description .v1 {
     margin-left: 10rem;
+    margin-right: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .events-section .blogs-styles .blurb-column-events .events-blurbs-description .v1 {
     margin-left: 11rem;
+    margin-right: 0;
   }
 }
 .events-section .blogs-styles .blurb-column-events .events-blurbs-description .events-blurb-description-time {

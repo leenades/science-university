@@ -120,9 +120,11 @@
                     top: 0%;
                     @include media-breakpoint-down(md){
                         margin-left: 10rem;
+                        margin-right: 0;
                     }
                     @include media-breakpoint-between(md, lg){
                         margin-left: 11rem;
+                        margin-right: 0;
                     }
                 }
                 .events-blurb-description-time
