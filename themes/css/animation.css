@@ -21,8 +21,8 @@ a:hover {
   color: white;
 }
 .caret .fa-angle-up {
-  transform: rotate(180deg);
-  transition: transform 0.3s ease;
+  transform: rotateX(180deg);
+  transition: transform 0.4s ease;
 }
 @media (min-width: 1200px) {
   .caret {
@@ -30,8 +30,8 @@ a:hover {
   }
 }
 
-.caret-up .caret.caret-up .fa-angle-up {
-  transform: rotate(0);
+.caret-up .fa-angle-up {
+  transform: rotateX(0);
 }
 @media (min-width: 1200px) {
   .caret-up {
