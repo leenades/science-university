@@ -5,12 +5,6 @@ $(window).on('load resize', function() {
         if(!$('#demo').hasClass('collapse')){
             $('#demo').addClass('collapse');
             $('.demo').attr('data-toggle', 'collapse');
-
-            // $('.demo').addClass('caret');
-            // if(!$('#demo').hasClass('collapse') && $('.demo').hasClass('caret')){
-            //     $('.demo').removeClass('caret');
-            //     $('.demo').addClass('caret-up');
-            // }
         }
         if(!$('#demoOne').hasClass('collapse')){
             $('#demoOne').addClass('collapse');
@@ -25,9 +19,9 @@ $(window).on('load resize', function() {
             $('.demoThree').attr('data-toggle', 'collapse');
         }
     } else {
-            $('.demo').attr('data-toggle', '');
-            $('.demoOne').attr('data-toggle', '');
-            $('.demoTwo').attr('data-toggle', '');
-            $('.demoThree').attr('data-toggle', '');
+        $('.demo').attr('data-toggle', '');
+        $('.demoOne').attr('data-toggle', '');
+        $('.demoTwo').attr('data-toggle', '');
+        $('.demoThree').attr('data-toggle', '');
     }
 });

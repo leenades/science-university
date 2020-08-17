@@ -15,7 +15,6 @@
 }
 .footer-section .footer-row .v-line-divider {
   border-left: 1px solid #4d4d4d;
-  margin: 7px 0;
 }
 .footer-section .footer-row .footer-subtitles {
   color: #e4c800;
@@ -27,6 +26,11 @@
   line-height: normal;
   letter-spacing: 0.93px;
   margin-bottom: 15px;
+}
+@media (max-width: 1199.98px) {
+  .footer-section .footer-row .footer-subtitles {
+    margin-right: 12px;
+  }
 }
 .footer-section .footer-row .footer-list {
   list-style: none;

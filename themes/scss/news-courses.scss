@@ -17,7 +17,6 @@
             margin-right: 29px;
             @include media-breakpoint-down(lg){
                 margin-bottom: 40px;
-                padding: 0;
             }
             .courses-row-first{
                 margin-bottom: 30px;
@@ -83,94 +82,98 @@
         }
         .news-div 
         {
-            background-color: #f3f3f3;
+            .background-color-news-container{
+                background-color: #f3f3f3;
             padding: 20px 15px;
             box-shadow: 10px 9px 10px #9a98985e;
-            .news 
-            {
-                padding: 20px 0;
-                position: relative;
-                > .news-btn 
+                .news 
                 {
-                    float: right;
-                    font-family: OpenSans;
-                    font-size: 14px;
-                    font-weight: bold;
-                    color: #021a4f;
-                    background: none;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: normal;
-                    letter-spacing: 0.35px;
-                    border: none;
-                    &:hover{
-                        color: #a7b0c2;
-                    }
-                    @include media-breakpoint-down(md){
+                    padding: 20px 0;
+                    position: relative;
+                    > .news-btn 
+                    {
+                        float: right;
+                        font-family: OpenSans;
                         font-size: 14px;
+                        font-weight: bold;
+                        color: #021a4f;
+                        background: none;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: 0.35px;
+                        border: none;
+                        &:hover{
+                            color: #a7b0c2;
+                        }
+                        @include media-breakpoint-down(md){
+                            font-size: 14px;
+                        }
+                        @include media-breakpoint-between(md, lg){
+                            font-size: 18px;
+                        }
                     }
-                    @include media-breakpoint-between(md, lg){
-                        font-size: 18px;
+                    .news-date
+                    {
+                        font-family: OpenSans;
+                        font-size: 14px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.64;
+                        letter-spacing: normal;
+                        color: $greenVogue;
+                        @include media-breakpoint-down(md){
+                            font-size: 16px;
+                        }
+                        @include media-breakpoint-between(md, lg){
+                            font-size: 18px;
+                        }
                     }
-                }
-                .news-date
-                {
-                    font-family: OpenSans;
-                    font-size: 14px;
-                    font-weight: normal;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 1.64;
-                    letter-spacing: normal;
-                    color: $greenVogue;
-                    @include media-breakpoint-down(md){
+                    .news-title
+                    {
+                        font-family: OpenSans;
                         font-size: 16px;
+                        font-weight: 600;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: 0.4px;
+                        color: $greenVogue;
+                        &:hover{
+                            color: #a7b0c2;
+                        }
+                        @include media-breakpoint-down(md){
+                            font-size: 16px;
+                        }
+                        @include media-breakpoint-between(md, lg){
+                            font-size: 22px;
+                        }
                     }
-                    @include media-breakpoint-between(md, lg){
-                        font-size: 18px;
-                    }
-                }
-                .news-title
-                {
-                    font-family: OpenSans;
-                    font-size: 16px;
-                    font-weight: 600;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: normal;
-                    letter-spacing: 0.4px;
-                    color: $greenVogue;
-                    &:hover{
-                        color: #a7b0c2;
-                    }
-                    @include media-breakpoint-down(md){
+                    .news-content
+                    {
+                        font-family: OpenSans;
                         font-size: 16px;
-                    }
-                    @include media-breakpoint-between(md, lg){
-                        font-size: 22px;
-                    }
-                }
-                .news-content
-                {
-                    font-family: OpenSans;
-                    font-size: 16px;
-                    font-weight: normal;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 1.63;
-                    letter-spacing: normal;
-                    color: $eventsDescriptionParagraph;
-                    @include media-breakpoint-down(md){
-                        font-size: 16px;
-                    }
-                    @include media-breakpoint-between(md, lg){
-                        font-size: 22px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.63;
+                        letter-spacing: normal;
+                        color: $eventsDescriptionParagraph;
+                        @include media-breakpoint-down(md){
+                            font-size: 16px;
+                        }
+                        @include media-breakpoint-between(md, lg){
+                            font-size: 22px;
+                        }
                     }
                 }
             }
         }
     }
 }
+
+
 .blurb-news
 {
     .title-style 

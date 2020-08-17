@@ -20,7 +20,7 @@
 
 .events-section{
     .blogs-styles{
-        .blurb-column-events{
+        .events-container-bg{
             &:hover {
                 transform: scale(1.03);
                 z-index: 9;
@@ -45,6 +45,10 @@ a {
     border-bottom: 0;
     border-left: .3em solid transparent;
     color: #e4c800;
+    margin-top: 8px;
+    @include media-breakpoint-up(xl){
+        display: none;
+    }
 }
 .caret-up{
     display: inline-block;
@@ -53,9 +57,19 @@ a {
     content: "";
     border-top: .3em solid;
     border-right: .3em solid transparent;
-    border-bottom: 0;
     border-left: .3em solid transparent;
     border-top-width: 0;
     border-bottom: 4px solid;
     color: #e4c800;
+    margin-bottom: 25px;
+    @include media-breakpoint-up(xl){
+        display: none;
+    }
+}
+
+.footer-title-caret-container{
+    @include media-breakpoint-down(lg){
+        display: flex;
+        justify-content: center;
+    }
 }

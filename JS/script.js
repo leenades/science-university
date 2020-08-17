@@ -27,12 +27,6 @@ $('#btn-menu').click(function(){
         navbarButton.addClass('mobileTransition');
     }
     navbarButton.toggleClass('transitionNavBar');
-
-    if (navbarButton.hasClass('transitionNavBar')) {
-        $('body').css('overflowY', 'hidden');
-    } else {
-        $('body').css('overflowY', 'visible');
-    }
 });
 
 $('#searchBox').on('click', function() {

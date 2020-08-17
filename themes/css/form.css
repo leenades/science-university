@@ -1,5 +1,5 @@
-.form-section .form-row-contain .form-col-container {
-  padding: 80px 0;
+.form-section .form-row-contain .form-col-container .form-bg-container {
+  padding: 80px 15px;
   background-color: #f7f7f7;
 }
 .form-section .form-row-contain .form-col-container .blurb-news {
@@ -7,7 +7,6 @@
 }
 .form-section .form-row-contain .form-col-container .form-style {
   width: 100%;
-  margin: 0 20%;
 }
 .form-section .form-row-contain .form-col-container .form-style .full-name-phone-number {
   width: 100%;

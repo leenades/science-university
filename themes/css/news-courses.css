@@ -10,7 +10,6 @@
 @media (max-width: 1199.98px) {
   .news-programmes-container .courses-div .col-first {
     margin-bottom: 40px;
-    padding: 0;
   }
 }
 .news-programmes-container .courses-div .col-first .courses-row-first {
@@ -73,16 +72,16 @@
   position: relative;
   top: 25%;
 }
-.news-programmes-container .courses-div .news-div {
+.news-programmes-container .courses-div .news-div .background-color-news-container {
   background-color: #f3f3f3;
   padding: 20px 15px;
   box-shadow: 10px 9px 10px #9a98985e;
 }
-.news-programmes-container .courses-div .news-div .news {
+.news-programmes-container .courses-div .news-div .background-color-news-container .news {
   padding: 20px 0;
   position: relative;
 }
-.news-programmes-container .courses-div .news-div .news > .news-btn {
+.news-programmes-container .courses-div .news-div .background-color-news-container .news > .news-btn {
   float: right;
   font-family: OpenSans;
   font-size: 14px;
@@ -95,20 +94,20 @@
   letter-spacing: 0.35px;
   border: none;
 }
-.news-programmes-container .courses-div .news-div .news > .news-btn:hover {
+.news-programmes-container .courses-div .news-div .background-color-news-container .news > .news-btn:hover {
   color: #a7b0c2;
 }
 @media (max-width: 991.98px) {
-  .news-programmes-container .courses-div .news-div .news > .news-btn {
+  .news-programmes-container .courses-div .news-div .background-color-news-container .news > .news-btn {
     font-size: 14px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199.98px) {
-  .news-programmes-container .courses-div .news-div .news > .news-btn {
+  .news-programmes-container .courses-div .news-div .background-color-news-container .news > .news-btn {
     font-size: 18px;
   }
 }
-.news-programmes-container .courses-div .news-div .news .news-date {
+.news-programmes-container .courses-div .news-div .background-color-news-container .news .news-date {
   font-family: OpenSans;
   font-size: 14px;
   font-weight: normal;
@@ -119,16 +118,16 @@
   color: #021a4f;
 }
 @media (max-width: 991.98px) {
-  .news-programmes-container .courses-div .news-div .news .news-date {
+  .news-programmes-container .courses-div .news-div .background-color-news-container .news .news-date {
     font-size: 16px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199.98px) {
-  .news-programmes-container .courses-div .news-div .news .news-date {
+  .news-programmes-container .courses-div .news-div .background-color-news-container .news .news-date {
     font-size: 18px;
   }
 }
-.news-programmes-container .courses-div .news-div .news .news-title {
+.news-programmes-container .courses-div .news-div .background-color-news-container .news .news-title {
   font-family: OpenSans;
   font-size: 16px;
   font-weight: 600;
@@ -138,20 +137,20 @@
   letter-spacing: 0.4px;
   color: #021a4f;
 }
-.news-programmes-container .courses-div .news-div .news .news-title:hover {
+.news-programmes-container .courses-div .news-div .background-color-news-container .news .news-title:hover {
   color: #a7b0c2;
 }
 @media (max-width: 991.98px) {
-  .news-programmes-container .courses-div .news-div .news .news-title {
+  .news-programmes-container .courses-div .news-div .background-color-news-container .news .news-title {
     font-size: 16px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199.98px) {
-  .news-programmes-container .courses-div .news-div .news .news-title {
+  .news-programmes-container .courses-div .news-div .background-color-news-container .news .news-title {
     font-size: 22px;
   }
 }
-.news-programmes-container .courses-div .news-div .news .news-content {
+.news-programmes-container .courses-div .news-div .background-color-news-container .news .news-content {
   font-family: OpenSans;
   font-size: 16px;
   font-weight: normal;
@@ -162,12 +161,12 @@
   color: #4a4a4a;
 }
 @media (max-width: 991.98px) {
-  .news-programmes-container .courses-div .news-div .news .news-content {
+  .news-programmes-container .courses-div .news-div .background-color-news-container .news .news-content {
     font-size: 16px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199.98px) {
-  .news-programmes-container .courses-div .news-div .news .news-content {
+  .news-programmes-container .courses-div .news-div .background-color-news-container .news .news-content {
     font-size: 22px;
   }
 }

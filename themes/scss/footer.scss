@@ -19,7 +19,6 @@
         .v-line-divider 
         {
             border-left: 1px solid #4d4d4d;
-            margin: 7px 0;
         }
     .footer-subtitles 
     {
@@ -32,6 +31,9 @@
         line-height: normal;
         letter-spacing: 0.93px;
         margin-bottom: 15px;
+        @include media-breakpoint-down(lg){
+           margin-right: 12px;
+        }
     }
     .footer-list 
     {

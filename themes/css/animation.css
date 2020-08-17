@@ -8,7 +8,7 @@
   z-index: 9;
 }
 
-.events-section .blogs-styles .blurb-column-events:hover {
+.events-section .blogs-styles .events-container-bg:hover {
   transform: scale(1.03);
   z-index: 9;
 }
@@ -27,6 +27,12 @@ a:hover {
   border-bottom: 0;
   border-left: 0.3em solid transparent;
   color: #e4c800;
+  margin-top: 8px;
+}
+@media (min-width: 1200px) {
+  .caret {
+    display: none;
+  }
 }
 
 .caret-up {
@@ -36,9 +42,21 @@ a:hover {
   content: "";
   border-top: 0.3em solid;
   border-right: 0.3em solid transparent;
-  border-bottom: 0;
   border-left: 0.3em solid transparent;
   border-top-width: 0;
   border-bottom: 4px solid;
   color: #e4c800;
+  margin-bottom: 25px;
+}
+@media (min-width: 1200px) {
+  .caret-up {
+    display: none;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .footer-title-caret-container {
+    display: flex;
+    justify-content: center;
+  }
 }
