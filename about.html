@@ -19,7 +19,7 @@
 
     </head>
     <body>
-       
+        <div class="search-box-transition"></div>
         <script
   src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="search-box-container">
-                <input type="text" class="search-box-field" id="searchBox" placeholder="Search...">
+                <input type="search" class="search-box-field" id="searchBox" placeholder="Search...">
                 <a class="social-media-icon-search" id="searchIcon">
                 <i class="fa fa-search"></i></a>
             </div>
@@ -228,13 +228,16 @@
         <!-- Why Science Uni END -->
 
         
-      <!-- Footer Section Start -->
-      <footer class="footer-section">
+       <!-- Footer Section Start -->
+       <footer class="footer-section">
         <div class="container footer-container">
             <div class="row footer-row">
                 <div class="v-line-divider"></div>
                 <div class="col explore">
-                    <h6 class="footer-subtitles demo" data-toggle="collapse" data-target="#demo" aria-expanded="true">Explore</h6>
+                    <div class="footer-title-caret-container">
+                        <h6 class="footer-subtitles demo" data-toggle="collapse" data-target="#demo" aria-expanded="true">Explore</h6>
+                        <span class="caret caret-explore"></span>
+                    </div>
                     <ul class="footer-list" id="demo">
                         <li><a href="#" aria-label="Privacy and cookies">Privacy and cookies</a></li>
                         <li><a href="#" aria-label="Legal Information">Legal Information</a></li>
@@ -250,14 +253,20 @@
                 <div class="v-line-divider"></div>
 
                 <div class="col quick-links-using-our-site">
-                    <h6 class="footer-subtitles demoOne" data-toggle="collapse" data-target="#demoOne" aria-expanded="true">Quick Links</h6>
+                    <div class="footer-title-caret-container">
+                        <h6 class="footer-subtitles demoOne" data-toggle="collapse" data-target="#demoOne" aria-expanded="true">Quick Links</h6>
+                        <span class="caret caret-quick-links"></span>
+                    </div>
                     <ul class="footer-list" id="demoOne">
                         <li><a href="#" aria-label="Online Payment">Online Payment</a></li>
                         <li><a href="#" aria-label="Library">Library</a></li>
                         <li><a href="#" aria-label="Alumni">Alumni</a></li>
                         <li><a href="#" aria-label="Community Information">Community Information</a></li>
                     </ul>
-                    <h6 class="footer-subtitles demoTwo" data-toggle="collapse" data-target="#demoTwo">Using our Site</h6>
+                    <div class="footer-title-caret-container">
+                        <h6 class="footer-subtitles demoTwo" data-toggle="collapse" data-target="#demoTwo">Using our Site</h6>
+                        <span class="caret caret-using-our-site"></span>
+                    </div>
                     <ul class="footer-list" id="demoTwo">
                         <li><a href="#" class="hover-over-style" aria-label="Accessibility">Accessibility</a></li>
                         <li><a href="#" class="hover-over-style" aria-label="Freedom of Information">Freedom of Information</a></li>
@@ -267,7 +276,10 @@
                 <div class="v-line-divider"></div>
 
                 <div class="col how-to-find-us">
-                    <h6 class="footer-subtitles demoThree" data-toggle="collapse" data-target="#demoThree" aria-expanded="true">How to find us</h6>
+                    <div class="footer-title-caret-container">
+                        <h6 class="footer-subtitles demoThree" data-toggle="collapse" data-target="#demoThree" aria-expanded="true">How to find us</h6>
+                        <span class="caret caret-how-to-find-us"></span>
+                    </div>
                     <ul class="footer-list" id="demoThree">
                         <li>
                             <span><i class="fa fa-phone"></i></span>
@@ -329,5 +341,6 @@
 
         <script src="JS/script.js"></script>
         <script src="JS/footer.js"></script>    
+        <script src="JS/footerCaret.js"></script>    
     </body>
 </html>

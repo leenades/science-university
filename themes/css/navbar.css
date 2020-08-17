@@ -2,7 +2,7 @@
   position: fixed;
   width: 100%;
   background: white;
-  z-index: 9999999;
+  z-index: 9999;
   padding: 0;
 }
 @media (max-width: 991.98px) {
@@ -102,7 +102,7 @@
   color: #b6b6b6;
 }
 .navbar-styles .search-social-container .search-box-container {
-  z-index: 9999;
+  z-index: 99999999;
 }
 .navbar-styles .search-social-container .search-box-container .social-media-icon-search {
   color: #b6b6b6;
@@ -120,6 +120,7 @@
   }
 }
 .navbar-styles .search-social-container .search-box-container .search-box-field {
+  z-index: 99999;
   border: none;
   border-bottom: 3px solid #b6b6b6;
   outline: none;
@@ -139,6 +140,9 @@
     height: 100%;
     border-bottom-width: 3px;
   }
+}
+.navbar-styles .navbar-container {
+  z-index: 999;
 }
 .navbar-styles .navbar-container.collapsing {
   position: static;

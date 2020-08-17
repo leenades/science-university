@@ -11,6 +11,8 @@ $('.demoFour').attr('data-toggle', '');
 $('#searchIcon').click(function(event){
     event.preventDefault();
     element.toggleClass('search-box-field-new');
+    $('div.search-box-transition').toggleClass('search-box-transition-after');
+
 });
 $(window).resize(function(){
     navbarButton.removeClass('mobileTransition');

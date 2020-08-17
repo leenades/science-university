@@ -75,13 +75,32 @@ a {
 }
 
 .search-box-transition{
-    background-color: white;
+    position: absolute;
     transform: scale(0);
     width: 0;
     height: 0;
-    transform-origin: 100% 50%;
-    transition: transform .4s ease-in-out;
+    transform-origin: 100% 0%;
+    transition: all 0.6s ease-in-out;
+    z-index: 9999;
+    border-radius: 100%;
+    background: white;
+    left: 55rem;
+    bottom: 90rem;
+    @include media-breakpoint-down(lg){
+        left: 38rem;
+        bottom: 85rem;
+    }
 }
 .search-box-transition-after{
     transform: scale(1.7);
+    width: 100%;
+    // width making search box and button flow to the right in mobile view
+    height: 100%;
+    left: 50rem;
+    bottom: 27rem;
+    overflow: hidden;
+    @include media-breakpoint-down(lg){
+        left: 13rem;
+        bottom: 18rem;
+    }
 }
