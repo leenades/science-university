@@ -114,27 +114,6 @@
 
                 }
             }
-            .search-box-field 
-            {
-                z-index: 99999;
-                border: none;
-                border-bottom: 3px solid #b6b6b6;
-                outline: none;
-                transform: scaleX(0);
-                width: 0;
-                height: 100%;
-                transition: transform .7s, width .7s, height .7s ease-in-out;
-                background-color: transparent;
-                transform-origin: 100% 50%;
-            }
-            .search-box-field-new{
-                transform: scaleX(1);
-                width: 200px;
-                @include media-breakpoint-down(lg){
-                    height: 100%;
-                    border-bottom-width: 3px;
-                }
-            }
         }
     }
     .navbar-container {

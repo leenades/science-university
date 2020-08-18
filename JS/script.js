@@ -8,12 +8,32 @@ $('.demoTwo').attr('data-toggle', '');
 $('.demoThree').attr('data-toggle', '');
 $('.demoFour').attr('data-toggle', '');
 
+// On click the search icon toggle transition of search box
 $('#searchIcon').click(function(event){
-    event.preventDefault();
-    element.toggleClass('search-box-field-new');
-    $('div.search-box-transition').toggleClass('search-box-transition-after');
 
+    event.preventDefault();
+    $('div.search-box-transition').toggleClass('search-box-transition-after');
+    if($('div.search-box-transition').hasClass('search-box-transition-after')){
+        $('body').addClass('overflowY');
+    }
+    if($('div.search-box-transition').hasClass('search-box-transition-after') && navbarButton.hasClass('transitionNavBar')){
+        $('body').addClass('overflowY');
+    }
 });
+
+// Add overflowY hidden to body when search box is shown
+$('#close-search-box').click(function(){
+    $('div.search-box-transition').removeClass('search-box-transition-after');
+    
+    if(!$('div.search-box-transition').hasClass('search-box-transition-after') && navbarButton.hasClass('transitionNabBar')){
+        $('body').addClass('overflowY');
+    }
+    if(!$('div.search-box-transition').hasClass('search-box-transition-after') && !navbarButton.hasClass('transitionNabBar')){
+        $('body').removeClass('overflowY');
+    }
+});
+
+// remove classes when window on resize
 $(window).resize(function(){
     navbarButton.removeClass('mobileTransition');
     navbarButton.removeClass('transitionNavBar');
@@ -25,11 +45,17 @@ $(window).resize(function(){
 });
 
 $('#btn-menu').click(function(){
+    $('body').removeClass('overflowY');
     if(!navbarButton.hasClass('mobileTransition')){
         navbarButton.addClass('mobileTransition');
     }
     navbarButton.toggleClass('transitionNavBar');
+    
+    if(navbarButton.hasClass('transitionNavBar')){
+        $('body').addClass('overflowY');
+    }
 });
+
 
 $('#searchBox').on('click', function() {
     $('#searchBox').addClass('clicked');
