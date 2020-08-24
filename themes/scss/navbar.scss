@@ -99,6 +99,9 @@
         .search-box-container
         {
             z-index: 99999999;
+            @include media-breakpoint-down(lg){
+                margin-top: 10px;
+            }
             .social-media-icon-search
             {
                 color: #b6b6b6;

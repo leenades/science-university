@@ -104,6 +104,11 @@
 .navbar-styles .search-social-container .search-box-container {
   z-index: 99999999;
 }
+@media (max-width: 1199.98px) {
+  .navbar-styles .search-social-container .search-box-container {
+    margin-top: 10px;
+  }
+}
 .navbar-styles .search-social-container .search-box-container .social-media-icon-search {
   color: #b6b6b6;
   cursor: pointer;

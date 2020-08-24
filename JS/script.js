@@ -24,11 +24,6 @@ $('#searchIcon').click(function(event){
 // Add overflowY hidden to body when search box is shown
 $('#close-search-box').click(function(){
     $('div.search-box-transition').removeClass('search-box-transition-after');
-    // $('body').toggleClass('overflowY');
-
-    // if(!$('div.search-box-transition').hasClass('search-box-transition-after') && navbarButton.hasClass('transitionNabBar')){
-    //     $('body').addClass('overflowY');
-    // }
     if(!navbarButton.get().hasClass('transitionNabBar')){
         $('body').removeClass('overflowY');
     }
