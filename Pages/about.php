@@ -1,7 +1,9 @@
-<?php 
+<?php
+require_once '../database/database.php';
+ 
 include_once '../includes/navbar.php';
+include_once '..includes/aboutPageScript.php';
 ?>
-
     <!-- ABOUT SECTION HEADER START -->
         <section class="about-header-section">
             <div class="about-header-img">

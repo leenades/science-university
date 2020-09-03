@@ -3,7 +3,7 @@
     <head>
         <title>Science University</title>
         <meta charser="utf-8">
-        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../bootstrap-4.5.0\dist\css\bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -43,7 +43,7 @@
         <!-- NAVBAR Section START -->
         <nav class="navbar navbar-expand-xl navbar-styles">
             <div class="navbar-brand-container">
-                <a class="navbar-brand" href="index.php"><img src="../Assets/Images/sciences-uni-logo.png" alt="science-university-logo"></a>
+                <a class="navbar-brand" href="../Pages/index.php"><img src="../Assets/Images/sciences-uni-logo.png" alt="science-university-logo"></a>
             </div>
             <button 
             id="btn-menu"
@@ -80,7 +80,7 @@
                     <div class="row navbar-links">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="../about.php" aria-label="About">About</a>
+                                <a class="nav-link" href="../Pages/about.php" aria-label="About">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" aria-label="Academics">Academics</a>

@@ -1,5 +1,11 @@
-<?php 
+<?php
+require_once '../database/database.php';
+ 
 include_once '../includes/navbar.php';
+include_once '../includes/indexPageScript.php';
+
+$sql = "SELECT header.image_path_file, header.header_title, header.order_ 
+FROM db_science_university_header header";
 ?>
         <!-- Section header Start -->
         <section class="image-slider">
