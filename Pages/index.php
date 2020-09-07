@@ -10,68 +10,42 @@ FROM db_science_university_header header";
         <!-- Section header Start -->
         <section class="image-slider">
             <div id="myCarousel" class="carousel slide carousel-slider" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                    <li data-target="#myCarousel" data-slide-to="4"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <picture class="header-picture-responsive">
-                            <source media="(min-width:992px)" srcset="../Assets/Images/group_8.jpg">
-                            <source media="(min-width:650px)" srcset="../Assets/Images/headersun1.jpg">
-                            <img src="../Assets/Images/group_8.jpg" alt="First image">
-                        </picture>
-                        <div class="header-title-container">
-                            <h2 class="header-title">One of the Top 10 Universities in Design</h2>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <picture class="header-picture-responsive">
-                            <source media="(min-width:992px)" srcset="../Assets/Images/group_8.jpg">
-                            <source media="(min-width:650px)" srcset="../Assets/Images/headersun1.jpg">
-                            <img src="../Assets/Images/group_8.jpg" alt="Second image">
-                        </picture>
-                        <div class="header-title-container">
-                            <h2 class="header-title">One of the Top 10 Universities in Design</h2>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <picture class="header-picture-responsive">
-                            <source media="(min-width:992px)" srcset="../Assets/Images/group_8.jpg">
-                            <source media="(min-width:650px)" srcset="../Assets/Images/headersun1.jpg">
-                            <img src="../Assets/Images/group_8.jpg" alt="Fourth image">
-                        </picture>
-                        <div class="header-title-container">
-                            <h2 class="header-title">One of the Top 10 Universities in Design</h2>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <picture class="header-picture-responsive">
-                            <source media="(min-width:992px)" srcset="../Assets/Images/group_8.jpg">
-                            <source media="(min-width:650px)" srcset="../Assets/Images/headersun1.jpg">
-                            <img src="../Assets/Images/group_8.jpg" alt="Fifth image">
-                        </picture>
-                        <div class="header-title-container">
-                            <h2 class="header-title">One of the Top 10 Universities in Design</h2>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <picture class="header-picture-responsive">
-                            <source media="(min-width:992px)" srcset="../Assets/Images/group_8.jpg">
-                            <source media="(min-width:650px)" srcset="../Assets/Images/headersun1.jpg">
-                            <img src="../Assets/Images/group_8.jpg" alt="Sixth image">
-                        </picture>
-                        <div class="header-title-container">
-                            <h2 class="header-title">One of the Top 10 Universities in Design</h2>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="header-title-container">
-                    <h2 class="header-title">One of the Top 10 Universities in Design</h2>
-                </div> -->
+                <?php
+                echo "<ol class='carousel-indicators'>";
+                $headerSQL = "SELECT header.image_path_file, header.header_title, header.header_text, header.order_ FROM db_science_university_header header ORDER BY order_ ASC";
+                $headerResult = $conn->query($headerSQL);
+                $headerResult->execute();
+             
+                $results = $headerResult->fetchAll();
+                foreach($results as $row){
+                    echo "<li data-target='#myCarousel' data-slide-to=$row[order_] class=active>";
+                    echo "</li>";
+                }
+                echo "</ol>";
+                echo "<div class='carousel-inner'>";
+                                  
+                foreach($results as $key => $row){
+                    // var_dump($row['order_']); //string
+                    // var_dump($key); //int
+                    $COUNTER = 0;
+                    if($COUNTER === $key ){
+                        $active = "active";
+                        echo "<div class='carousel-item $active'>";
+                        echo "<picture class='header-picture-responsive'>";
+                        echo "<source media='(min-width:992px)' srcset=../Assets/Images/$row[image_path_file]>";
+                        echo "<source media='(min-width:650px)' srcset='../Assets/Images/headersun1.jpg'>";
+                        echo "<img src='../Assets/Images/group_8.jpg' alt='$row[header_title]'>";
+                        echo "</picture>";
+                        echo "<div class='header-title-container'>";
+                        echo "<h2 class='header-title'>";
+                        echo $row['header_text'];
+                        echo "</h2>";
+                        echo "</div>";
+                        echo "</div>";
+                    }
+                }
+                ?>
+                    
             </div>
         </section>
         <!-- Section header End -->
@@ -84,53 +58,101 @@ FROM db_science_university_header header";
                 <div class="row courses-div">
                     <div class="col col-first">
                         <div class="row courses-row-first">
-                            <div class="col-6">
-                                <div class="blurb ug-courses">
-                                    <a href="#">
-                                        <img 
-                                        src="../Assets/Images/undergraduate/undergraduate.jpg" 
-                                        alt="Undergraduate Courses" 
-                                        class="section-news-images">
-                                        <h4 class="section-news-images-title">Undergraduate Courses</h4>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="blurb grad-courses">
-                                    <a href="#">
-                                        <img 
-                                        src="../Assets/Images/graduation/graduatestudents.jpg" 
-                                        alt="Graduate Courses" 
-                                        class="section-news-images">
-                                        <h4 class="section-news-images-title">Graduate Courses</h4>
-                                    </a>
-                                </div>
-                            </div>
+                        <?php
+                        $firstRowCoursesSQL = "SELECT course.category_title, course.course_image, course.course_link 
+                        FROM db_science_university_courses course 
+                        WHERE course.category_title='Undergraduate Courses'";
+                        $firstRowCourses = $conn->query($firstRowCoursesSQL);
+                        $firstRowCourses->execute();
+                        $result = $firstRowCourses->fetchAll();
+                        foreach($result as $row ){
+                            echo "<div class='col-6'>";
+                            echo "<div class=blurb ug-courses>";
+                            echo "<a href='$row[course_link]'>";
+                            echo "<img 
+                            src='../Assets/Images/undergraduate/$row[course_image]'; 
+                            alt='$row[category_title]' 
+                            class='section-news-images'>";
+                            echo "<h4 class='section-news-images-title'>";
+                            echo $row['category_title'];
+                            echo "</h4>";
+                            echo "</a>";
+                            echo "</div>";
+                            echo "</div>";
+                        } 
+                        ?>
+                        <?php
+                        $firstRowCoursesSQL = "SELECT course.category_title, course.course_image, course.course_link 
+                        FROM db_science_university_courses course 
+                        WHERE course.category_title='GRADUATE COURSES'";
+                        $firstRowCourses = $conn->query($firstRowCoursesSQL);
+                        $firstRowCourses->execute();
+                        $result = $firstRowCourses->fetchAll();
+                        foreach($result as $row ){
+                            echo "<div class='col-6'>";
+                            echo "<div class=blurb grad-courses>";
+                            echo "<a href='$row[course_link]'>";
+                            echo "<img 
+                            src='../Assets/Images/graduation/$row[course_image]'; 
+                            alt='$row[category_title]' 
+                            class='section-news-images'>";
+                            echo "<h4 class='section-news-images-title'>";
+                            echo $row['category_title'];
+                            echo "</h4>";
+                            echo "</a>";
+                            echo "</div>";
+                            echo "</div>";
+                        } 
+                        ?>
                         </div>
                         <div class="w-100"></div>
                         <div class="row courses-row-second">
-                            <div class="col-6">
-                                <div class="blurb inter-studies">
-                                    <a href="#">
-                                        <img 
-                                        src="../Assets/Images/student-photo/student_photo.jpg" 
-                                        alt="International Students" 
-                                        class="section-news-images">
-                                        <h4 class="section-news-images-title">International Students</h4>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="blurb scholarships">
-                                    <a href="#">
-                                        <img 
-                                        src="../Assets/Images/student-applying/student_applying.jpg" 
-                                        alt="International Students" 
-                                        class="section-news-images">
-                                        <h4 class="section-news-images-title">scholarships</h4>
-                                    </a>
-                                </div>
-                            </div>
+                        <?php
+                        $secondRowCoursesSQL = "SELECT course.category_title, course.course_image, course.course_link 
+                        FROM db_science_university_courses course 
+                        WHERE course.category_title='INTERNATIONAL STUDENTS'";
+                        $secondRowCourses = $conn->query($secondRowCoursesSQL);
+                        $secondRowCourses->execute();
+                        $result = $secondRowCourses->fetchAll();
+                        foreach($result as $row ){
+                            echo "<div class='col-6'>";
+                            echo "<div class=blurb inter-studies>";
+                            echo "<a href='$row[course_link]'>";
+                            echo "<img 
+                            src='../Assets/Images/student-photo/$row[course_image]'; 
+                            alt='$row[category_title]' 
+                            class='section-news-images'>";
+                            echo "<h4 class='section-news-images-title'>";
+                            echo $row['category_title'];
+                            echo "</h4>";
+                            echo "</a>";
+                            echo "</div>";
+                            echo "</div>";
+                        } 
+                        ?>
+                        <?php
+                        $secondRowCoursesSQL = "SELECT course.category_title, course.course_image, course.course_link 
+                        FROM db_science_university_courses course 
+                        WHERE course.category_title='SCOLARSHIPS'";
+                        $secondRowCourses = $conn->query($secondRowCoursesSQL);
+                        $secondRowCourses->execute();
+                        $result = $secondRowCourses->fetchAll();
+                        foreach($result as $row ){
+                            echo "<div class='col-6'>";
+                            echo "<div class=blurb scholarships>";
+                            echo "<a href='$row[course_link]'>";
+                            echo "<img 
+                            src='../Assets/Images/student-applying/$row[course_image]'; 
+                            alt='$row[category_title]' 
+                            class='section-news-images'>";
+                            echo "<h4 class='section-news-images-title'>";
+                            echo $row['category_title'];
+                            echo "</h4>";
+                            echo "</a>";
+                            echo "</div>";
+                            echo "</div>";
+                        } 
+                        ?>
                         </div>
                     </div> 
                         <!-- Courses and programmes column END  -->
@@ -139,34 +161,39 @@ FROM db_science_university_header header";
                     <div class="col news-div col-second">
                         <div class="background-color-news-container">
                             <div class="blurb-news">
-                                <h4 class="title-style">News</h4>    
+                            <a href="news/"><h4 class="title-style">News</h4></a>    
                             </div>
-                            <div class="news">
-                                <h6 class="news-date">January 06, 2017</h6>
-                                <a 
-                                href="#" 
-                                aria-label="Smart Exhibition Upends Classical Style"><h5 class="news-title">Smart Exhibition Upends Classical Style</h5></a>
-                                <p class="news-content">Even the most casual observer is probably acquainted with the Classical style, that aesthetic anchored in the ancient…</p>
-                                <button class="news-btn">READ MORE</button>
-                            </div>
-                            <hr>
-                            <div class="news">
-                                <h6 class="news-date">December 13, 2016</h6>
-                                <a 
-                                href="#" 
-                                aria-label="Sciences University To Offer Now Undergraduate Major In Creative Writing"><h5 class="news-title">Sciences University To Offer Now Undergraduate Major In Creative Writing</h5></a>
-                                <p class="news-content">The Department of English Language and Literature will offer a new undergraduate major in creative writing, beginning…</p>
-                                <button class="news-btn">READ MORE</button>
-                            </div>
-                            <hr>
-                            <div class="news">
-                                <h6 class="news-date">November 13, 2016</h6>
-                                <a 
-                                href="#" 
-                                aria-label="New Method Uses Heat Flow To Levitate Variety Of Objects"><h5 class="news-title">New Method Uses Heat Flow To Levitate Variety Of Objects</h5></a>
-                                <p class="news-content">Even the most casual observer is probably acquainted with the Classical style, that aesthetic anchored in the ancient…</p>
-                                <button class="news-btn">READ MORE</button>
-                            </div>
+                            <?php
+                            $SQL = "SELECT news.news_title, news.news_description, MONTHNAME(news.news_date), YEAR(news.news_date), DAY(news.news_date), news.news_link FROM db_science_university_news news";
+                            $resultSQL = $conn->query($SQL);
+                            $resultSQL->execute();
+                            $result = $resultSQL->fetchAll();
+                            $COUNTER = 1;
+                            foreach($result as $row){
+                                if($COUNTER <= 3){
+                                    echo "<div class='news'>";
+                                    echo "<h6 class='news-date'>";
+                                    echo $row["MONTHNAME(news.news_date)"]. " ";
+                                    echo $row["DAY(news.news_date)"]. ", ";
+                                    echo $row["YEAR(news.news_date)"];
+                                    echo "</h6>";
+                                    echo "<a href='$row[news_link]' aria-label='$row[news_title]'>";
+                                    echo "<h5 class='news-title'>";
+                                    echo $row['news_title'];
+                                    echo "</h5>";
+                                    echo "</a>";
+                                    echo "<p class='news-content'>";
+                                    echo $row['news_description'];
+                                    echo "</p>";
+                                    echo  "<button class='news-btn'>READ MORE</button>";
+                                    echo "</div>";
+                                    if($COUNTER <=2){
+                                        echo "<hr>";
+                                    }
+                                }
+                                $COUNTER++;
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -335,12 +362,13 @@ FROM db_science_university_header header";
                             </div>
                             <div class="row justify-content-center">
                                 <div class="col col-lg-8 col-md-8 col-sm-4">
-                                    <form class="form-style">
+                                    <form class="form-style" method="POST" action="../form/form.php">
                                         <div class="full-name-phone-number">
                                             <div class="form-group form-name">
                                                 <input 
                                                 type="text"
                                                 for="fullName" 
+                                                name="fullName"
                                                 placeholder="Full Name" required>
                                             </div>
                                             <div class="form-group form-phone">
@@ -359,16 +387,18 @@ FROM db_science_university_header header";
                                             <input
                                             type="email"
                                             for="email"
+                                            name="email"
                                             placeholder="Email" required>
                                         </div>
                                         <div class="form-group txtarea">
                                             <textarea 
                                             rows="5" 
                                             cols="80" 
+                                            name="message"
                                             placeholder="Message" required></textarea>
                                         </div>
                                         <div class="form-group form-btn">
-                                            <button class="button-animation">
+                                            <button class="button-animation" id="submitForm" name="submitForm">
                                                 submit
                                             </button>
                                         </div>

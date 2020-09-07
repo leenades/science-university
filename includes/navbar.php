@@ -1,3 +1,12 @@
+<?php
+require_once '../database/database.php';
+
+$sql = "SELECT config.config_name, config.config_value, config.is_active FROM db_science_university_config config";
+$result = $conn->query($sql);
+$result->setFetchMode(PDO::FETCH_ASSOC);
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -43,7 +52,14 @@
         <!-- NAVBAR Section START -->
         <nav class="navbar navbar-expand-xl navbar-styles">
             <div class="navbar-brand-container">
-                <a class="navbar-brand" href="../Pages/index.php"><img src="../Assets/Images/sciences-uni-logo.png" alt="science-university-logo"></a>
+            <?php
+                $row = $result->fetch();
+                if($row['config_name'] === "Logo" && $row['is_active'] == "1"){
+                    echo "<a class='navbar-brand' href='../Pages/index.php'>";
+                    echo "<img src=../Assets/Images/$row[config_value] alt=science-university-logo>";
+                    echo "</a>";
+                }
+            ?>
             </div>
             <button 
             id="btn-menu"
@@ -62,11 +78,20 @@
                 <div class="logo-socials-row">
                     <div class="col social-media-icons-col">
                         <div class="social-media-container">
-                            <a class="social-media-icon" href="#" aria-label="Linkedin Social Media Icon"><i class="fa fa-linkedin"></i></a>
-                            <a class="social-media-icon" href="#" aria-label="Youtube Social Media Icon"><i class="fa fa-youtube"></i></a>
-                            <a class="social-media-icon" href="#" aria-label="Instagram Social Media Icon"><i class="fa fa-instagram"></i></a>
-                            <a class="social-media-icon" href="#" aria-label="Twitter Social Media Icon"><i class="fa fa-twitter"></i></a>
-                            <a class="social-media-icon" href="#" aria-label="Facebook Social Media Icon"><i class="fa fa-facebook"></i></a>
+                        <?php 
+                        $socialMediaMenuSQL = "SELECT menu.title, menu.text, menu.url, menu.icon, menu.parent, menu.type FROM db_science_university_menu menu WHERE menu.icon=''";
+                        $smMenuResult = $conn->query($socialMediaMenuSQL);
+                        $smMenuResult->execute();
+                        $result = $smMenuResult->fetchAll();
+                        foreach($result as $row){
+                            echo "<a class='social-media-icon mr-1' href='$row[url]' aria-label='$row[text]'>";
+                            echo "<i class='$row[title]'>";
+                            echo "</i>";
+                            echo "</a>";
+                        }
+                        
+                        ?>
+                            
                         </div>
                     </div>
                 </div>
@@ -79,24 +104,21 @@
                 <div class="container-fluid container-nav-links">
                     <div class="row navbar-links">
                         <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../Pages/about.php" aria-label="About">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" aria-label="Academics">Academics</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" aria-label="Admission">Admissions</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" aria-label="International">International</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" aria-label="Events">Events</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" aria-label="Contact Us">Contact Us</a>
-                            </li>
+                        <?php
+                        $navSQL = "SELECT nav.nav_title, nav.nav_link FROM db_science_university_navbar nav";
+                        $navbarResult = $conn->query($navSQL);
+                        $navbarResult->execute();
+                        $navResult = $navbarResult->fetchAll();
+                        foreach($navResult as $row){
+
+                            // var_dump($row['nav_link']);
+                            echo "<li class='nav-item'>";
+                            echo "<a class='nav-link' href='../Pages/$row[nav_link]'>";
+                            echo $row['nav_title'];
+                            echo "</a>";
+                            echo "</li>";
+                        }
+                        ?>
                             <div class="logo-socials-row-mobile d-xl-none">
                                 <div class="social-media-icons-col">
                                     <div class="social-media-container">
