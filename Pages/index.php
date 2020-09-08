@@ -204,40 +204,40 @@ FROM db_science_university_header header";
         <section class="section-ticker">
             <div class="container">
                 <div class="row div-ticker">
-                    <div class="col-sm ticker-col">
-                        <img 
-                        src="../Assets/Images/icon-man/icon-man.png" 
-                        alt="icon of man"
-                        width="69px"
-                        height="70px">
-                        <div class="ticker-header-title">
-                        <h3 class="counterInc" data-target="90">90</h3><h3>+</h3>
-                        </div>
-                        <h4>Profession-ready degree programs</h4>
-                    </div>
-                    <div class="col-sm ticker-col">
-                        <img 
-                        src="../Assets/Images/letter-icon/lettericon.png"
-                        alt="icon of opened letter"
-                        width="93px"
-                        height="70px">
-                        <div class="ticker-header-title">
-                        <h3>#</h3>
-                        <h3 class="counterDecr" data-target="1">1</h3>
-                        </div>
-                        <h4>Our MBA for salary-to-debt ratio</h4>
-                    </div>
-                    <div class="col-sm ticker-col">
-                        <img
-                        src="../Assets/Images/grad-cap/gradcap.png"
-                        alt="icon of a graduation cap"
-                        width="86px"
-                        height="70px">
-                        <div class="ticker-header-title">
-                        <h3 class="counterInc" data-target="100000">100000</h3>
-                        </div>
-                        <h4>Sciences University alumni worldwide</h4>
-                    </div>
+                <?php
+                $SQL = "SELECT icon_image, number_, inc_or_decr, description_, db_science_university_users_id 
+                FROM db_science_university_ticker";
+                $resultSQL = $conn->query($SQL);
+                $resultSQL->execute();
+                $result = $resultSQL->fetchAll();
+                $COUNTER = 1;
+                foreach($result as $row){
+                    if($COUNTER <= 3){
+                        echo "<div class='col-sm ticker-col'>";
+                        echo "<img 
+                                src='../Assets/Images/icon-man/$row[icon_image]' 
+                                alt='icon of man'
+                                width='69px'
+                                height='70px'>";
+                        echo "<div class='ticker-header-title'>";
+                        if($row['inc_or_decr'] == "Increment"){
+                            echo "<h3 class='counterInc' data-target='$row[number_]'>";
+                        }
+                        if($row['inc_or_decr'] == "Decrement"){
+                            echo "<h3 class='counterDecr' data-target='1'>";
+                        }
+                        echo $row['number_'];
+                        echo "</h3>";
+                        // echo "<h3>+</h3>";
+                        echo "</div>";
+                        echo "<h4>";
+                        echo $row['description_'];
+                        echo "</h4>";
+                        echo "</div>";
+                    }
+                    $COUNTER++;
+                }
+                ?>
                 </div>
             </div>
         </section>
@@ -248,85 +248,66 @@ FROM db_science_university_header header";
             <div class="container">
                 <div class="row  blurb-news"><h4 class="title-style">Events</h4></div>
                 <div class="row blogs-styles">
-                    <div class="col-sm blurb-column-events">
-                        <div class="events-container-bg">
-                            <div class="blurb blurb-container">
-                                <div class="img-icon-container">
-                                    <img 
-                                    src="../Assets/Images/postgrad-events/postgrad_event.jpg"
-                                    alt="postgraduate drop-in evening">
-                                    <span class="icon-container">
-                                        <span class="icon-text"><h5>18</h5><h6>March</h6></span>
-                                        <img 
-                                        src="../Assets/Images/icon-calendar/icon-calendar.png" 
-                                        alt="icon calendar">
-                                    </span>
-                                </div>
-                                <div class="events-blurbs-description">
-                                    <h6 class="events-blurb-description-time">2:00 P.M - 4:00 P.M.</h6>
-                                    <div class="v1"></div>
-                                    <h6 class="events-blurb-description-location">Irbed Campus</h6>
-                                    <a href="#" aria-label="Postgraduate Drop-in Evening"><span class="events-description-title "><h5>Postgraduate Drop-in Evening</h5></span></a>
-                                    <span><p class="events-description-paragraph">Our Postgraduate Drop-in Evenings are an excellent opportunity for you to meet our staff and talk to current students…</p></span>
-                                </div>
-                            </div>
-                            <button class="events-blurb-description-btn">Learn More</button>
-                        </div>
-                    </div>
-                    <div class="col-sm blurb-column-events">
-                        <div class="events-container-bg">
-                            <div class="blurb blurb-container">
-                                <div class="img-icon-container">
-                                    <img 
-                                    src="../Assets/Images/events-music-open-day/events_music_openday.jpg"
-                                    alt="undergraduate music open day"
-                                    >
-                                    <span class="icon-container">
-                                        <span class="icon-text"><h5>07</h5><h6>May</h6></span>
-                                        <!-- <i class="fa fa-calendar-o fa-4x" aria-hidden="true"></i> -->
-                                        <img 
-                                        src="../Assets/Images/icon-calendar/icon-calendar.png" 
-                                        alt="icon calendar">
-                                    </span>
-                                </div>
-                                <div class="events-blurbs-description">
-                                    <h6 class="events-blurb-description-time">4:00 P.M - 6:00 P.M.</h6>
-                                    <div class="v1"></div>
-                                    <h6 class="events-blurb-description-location">Amman Campus</h6>
-                                    <a href="#" aria-label="Undergraduate Music Open Day"><span class="events-description-title "><h5>Undergraduate Music Open Day</h5></span></a>
-                                    <span><p class="events-description-paragraph">Music open days are aimed at candidates who have made Kingston University one of their university choices…</p></span>
-                                </div>
-                            </div>
-                            <button class="events-blurb-description-btn">Learn More</button>
-                        </div>
-                    </div>
-                    <div class="col-sm blurb-column-events">
-                        <div class="events-container-bg">
-                            <div class="blurb blurb-container">
-                                <div class="img-icon-container">
-                                    <img 
-                                    src="../Assets/Images/making-nature-event/making_nature_event.jpg"
-                                    alt="making nature' exhibition at welcome collection"
-                                    >
-                                    <span class="icon-container">
-                                        <span class="icon-text"><h5>20</h5><h6>August</h6></span>
-                                        <!-- <i class="fa fa-calendar-o fa-4x" aria-hidden="true"></i> -->
-                                        <img 
-                                        src="../Assets/Images/icon-calendar/icon-calendar.png" 
-                                        alt="icon calendar">
-                                    </span>
-                                </div>
-                                <div class="events-blurbs-description">
-                                    <h6 class="events-blurb-description-time">2:00 P.M - 4:00 P.M.</h6>
-                                    <div class="v1"></div>
-                                    <h6 class="events-blurb-description-location">Ajlun Campus</h6>
-                                    <a href="#" aria-label="Making Nature’ Exhibition At Wellcome Collection"><span class="events-description-title"><h5>Making Nature’ Exhibition At Wellcome Collection</h5></span></a>
-                                    <span><p class="events-description-paragraph">The question of how humans relate to other animals has captivated, scientists, ethicists and artists for centuries...</p></span>
-                                </div>
-                            </div>
-                            <button class="events-blurb-description-btn">Learn More</button>
-                        </div>
-                    </div>
+                <?php
+                $SQL = "SELECT event_title, event_description, event_image, DAY(event_date), MONTHNAME(event_date), event_start_time, event_end_time, event_location, event_category_category_id 
+                FROM db_science_university_events";
+                $resultSQL = $conn->query($SQL);
+                $resultSQL->execute();
+                $result = $resultSQL->fetchAll();
+                $COUNTER = 1;
+                foreach($result as $row){
+                    if($COUNTER <= 3){
+                        echo "<div class='col-sm blurb-column-events'>";
+                        echo "<div class='events-container-bg'>";
+                        echo "<div class='blurb blurb-container'>";
+                        echo "<div class='img-icon-container'>";
+                         echo "<img 
+                            src='../Assets/Images/postgrad-events/$row[event_image]'
+                            alt=''>";
+                        echo "<span class='icon-container'>";
+                        echo "<span class='icon-text'>";
+                        echo "<h5>";
+                        echo $row['DAY(event_date)'];
+                        echo "</h5>";
+                        echo "<h6>";
+                        echo $row['MONTHNAME(event_date)'];
+                        echo "</h6>";
+                        echo "</span>";
+                        echo "<img 
+                                src='../Assets/Images/icon-calendar/icon-calendar.png' 
+                                alt='icon calendar'>";
+                        echo "</span>";
+                        echo "</div>";
+                        echo "<div class='events-blurbs-description'>";
+                        echo "<h6 class='events-blurb-description-time'>";
+                        echo $row['event_start_time'];
+                        echo "-";
+                        echo $row['event_end_time'];
+                        echo "</h6>";
+                        echo "<div class='v1'></div>";
+                        echo "<h6 class='events-blurb-description-location'>";
+                        echo $row['event_location'];
+                        echo "</h6>";
+                        echo "<a href='' aria-label='Postgraduate Drop-in Evening'>";
+                        echo "<span class='events-description-title'>";
+                        echo "<h5>";
+                        echo $row['event_title'];
+                        echo "</h5>";
+                        echo "</span>";
+                        echo "</a>";
+                        echo "<span><p class='events-description-paragraph'>";
+                        echo $row['event_description'];
+                        echo "</p></span>";
+                        echo "</div>";
+                        echo "</div>";
+                        echo "<button class='events-blurb-description-btn'>Learn More</button>";
+                        echo "</div>";
+                        echo "</div>";
+                    }
+                    $COUNTER++;
+                }
+                ?>
+                   
                 </div>
             </div>
         </section>
