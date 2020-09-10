@@ -15,27 +15,31 @@ FROM db_science_university_header header";
                 $headerSQL = "SELECT header.image_path_file, header.header_title, header.header_text, header.order_ FROM db_science_university_header header ORDER BY order_ ASC";
                 $headerResult = $conn->query($headerSQL);
                 $headerResult->execute();
-             
                 $results = $headerResult->fetchAll();
                 foreach($results as $row){
-                    echo "<li data-target='#myCarousel' data-slide-to=$row[order_] class=active>";
+                    echo "<li data-target='#myCarousel' data-slide-to='$row[order_]' class='active'>";
                     echo "</li>";
                 }
                 echo "</ol>";
                 echo "<div class='carousel-inner'>";
-                                  
+                ?>
+                <?php 
+                $count = 0;    
                 foreach($results as $key => $row){
-                    // var_dump($row['order_']); //string
-                    // var_dump($key); //int
-                    $COUNTER = 0;
-                    if($COUNTER === $key ){
-                        $active = "active";
-                        echo "<div class='carousel-item $active'>";
+                ?>
+                <div class='carousel-item <?php 
+                if($count == 0){
+                    echo 'active';
+                } else {
+                    echo '';
+                } ?> data-interval="2000"'>
+                <?php 
                         echo "<picture class='header-picture-responsive'>";
                         echo "<source media='(min-width:992px)' srcset=../Assets/Images/$row[image_path_file]>";
                         echo "<source media='(min-width:650px)' srcset='../Assets/Images/headersun1.jpg'>";
                         echo "<img src='../Assets/Images/group_8.jpg' alt='$row[header_title]'>";
                         echo "</picture>";
+                        $count++;
                         echo "<div class='header-title-container'>";
                         echo "<h2 class='header-title'>";
                         echo $row['header_text'];
@@ -43,7 +47,6 @@ FROM db_science_university_header header";
                         echo "</div>";
                         echo "</div>";
                     }
-                }
                 ?>
                     
             </div>
@@ -60,98 +63,30 @@ FROM db_science_university_header header";
                         <div class="row courses-row-first">
                         <?php
                         $firstRowCoursesSQL = "SELECT course.category_title, course.course_image, course.course_link 
-                        FROM db_science_university_courses course 
-                        WHERE course.category_title='Undergraduate Courses'";
+                        FROM db_science_university_courses course";
                         $firstRowCourses = $conn->query($firstRowCoursesSQL);
                         $firstRowCourses->execute();
                         $result = $firstRowCourses->fetchAll();
+                        $COUNTER = 1;
+                        $evenNumCounter = 0;
                         foreach($result as $row ){
-                            echo "<div class='col-6'>";
-                            echo "<div class=blurb ug-courses>";
-                            echo "<a href='$row[course_link]'>";
-                            echo "<img 
-                            src='../Assets/Images/undergraduate/$row[course_image]'; 
-                            alt='$row[category_title]' 
-                            class='section-news-images'>";
-                            echo "<h4 class='section-news-images-title'>";
-                            echo $row['category_title'];
-                            echo "</h4>";
-                            echo "</a>";
-                            echo "</div>";
-                            echo "</div>";
-                        } 
-                        ?>
-                        <?php
-                        $firstRowCoursesSQL = "SELECT course.category_title, course.course_image, course.course_link 
-                        FROM db_science_university_courses course 
-                        WHERE course.category_title='GRADUATE COURSES'";
-                        $firstRowCourses = $conn->query($firstRowCoursesSQL);
-                        $firstRowCourses->execute();
-                        $result = $firstRowCourses->fetchAll();
-                        foreach($result as $row ){
-                            echo "<div class='col-6'>";
-                            echo "<div class=blurb grad-courses>";
-                            echo "<a href='$row[course_link]'>";
-                            echo "<img 
-                            src='../Assets/Images/graduation/$row[course_image]'; 
-                            alt='$row[category_title]' 
-                            class='section-news-images'>";
-                            echo "<h4 class='section-news-images-title'>";
-                            echo $row['category_title'];
-                            echo "</h4>";
-                            echo "</a>";
-                            echo "</div>";
-                            echo "</div>";
-                        } 
-                        ?>
-                        </div>
-                        <div class="w-100"></div>
-                        <div class="row courses-row-second">
-                        <?php
-                        $secondRowCoursesSQL = "SELECT course.category_title, course.course_image, course.course_link 
-                        FROM db_science_university_courses course 
-                        WHERE course.category_title='INTERNATIONAL STUDENTS'";
-                        $secondRowCourses = $conn->query($secondRowCoursesSQL);
-                        $secondRowCourses->execute();
-                        $result = $secondRowCourses->fetchAll();
-                        foreach($result as $row ){
-                            echo "<div class='col-6'>";
-                            echo "<div class=blurb inter-studies>";
-                            echo "<a href='$row[course_link]'>";
-                            echo "<img 
-                            src='../Assets/Images/student-photo/$row[course_image]'; 
-                            alt='$row[category_title]' 
-                            class='section-news-images'>";
-                            echo "<h4 class='section-news-images-title'>";
-                            echo $row['category_title'];
-                            echo "</h4>";
-                            echo "</a>";
-                            echo "</div>";
-                            echo "</div>";
-                        } 
-                        ?>
-                        <?php
-                        $secondRowCoursesSQL = "SELECT course.category_title, course.course_image, course.course_link 
-                        FROM db_science_university_courses course 
-                        WHERE course.category_title='SCOLARSHIPS'";
-                        $secondRowCourses = $conn->query($secondRowCoursesSQL);
-                        $secondRowCourses->execute();
-                        $result = $secondRowCourses->fetchAll();
-                        foreach($result as $row ){
-                            echo "<div class='col-6'>";
-                            echo "<div class=blurb scholarships>";
-                            echo "<a href='$row[course_link]'>";
-                            echo "<img 
-                            src='../Assets/Images/student-applying/$row[course_image]'; 
-                            alt='$row[category_title]' 
-                            class='section-news-images'>";
-                            echo "<h4 class='section-news-images-title'>";
-                            echo $row['category_title'];
-                            echo "</h4>";
-                            echo "</a>";
-                            echo "</div>";
-                            echo "</div>";
-                        } 
+                            if($COUNTER<=4){
+                                echo "<div class='col-6 mb-4'>";
+                                echo "<div class=blurb ug-courses>";
+                                echo "<a href='$row[course_link]'>";
+                                echo "<img 
+                                src='../Assets/Images/undergraduate/$row[course_image]'; 
+                                alt='$row[category_title]' 
+                                class='section-news-images'>";
+                                echo "<h4 class='section-news-images-title'>";
+                                echo $row['category_title'];
+                                echo "</h4>";
+                                echo "</a>";
+                                echo "</div>";
+                                echo "</div>";
+                            }
+                            $COUNTER++;
+                        }
                         ?>
                         </div>
                     </div> 
@@ -205,7 +140,7 @@ FROM db_science_university_header header";
             <div class="container">
                 <div class="row div-ticker">
                 <?php
-                $SQL = "SELECT icon_image, number_, inc_or_decr, description_, db_science_university_users_id 
+                $SQL = "SELECT icon_image, number_, inc_or_decr, description_, data_target, character_
                 FROM db_science_university_ticker";
                 $resultSQL = $conn->query($SQL);
                 $resultSQL->execute();
@@ -221,14 +156,14 @@ FROM db_science_university_header header";
                                 height='70px'>";
                         echo "<div class='ticker-header-title'>";
                         if($row['inc_or_decr'] == "Increment"){
-                            echo "<h3 class='counterInc' data-target='$row[number_]'>";
+                            echo "<h3 class='counterInc' data-target='$row[data_target]'>";
                         }
                         if($row['inc_or_decr'] == "Decrement"){
-                            echo "<h3 class='counterDecr' data-target='1'>";
+                            echo "<h3 class='counterDecr' data-target='$row[data_target]'>";
                         }
                         echo $row['number_'];
                         echo "</h3>";
-                        // echo "<h3>+</h3>";
+                        echo "<h3>$row[character_]</h3>";
                         echo "</div>";
                         echo "<h4>";
                         echo $row['description_'];

@@ -1,98 +1,190 @@
-      
+<?php
+require_once '../database/database.php';
+?>
         <!-- Footer Section Start -->
         <footer class="footer-section">
             <div class="container footer-container">
                 <div class="row footer-row">
                     <div class="v-line-divider"></div>
                     <div class="col explore">
-                        <div class="footer-title-caret-container">
-                            <h6 class="footer-subtitles demo" data-toggle="collapse" data-target="#demo" aria-expanded="true">Explore</h6>
-                            <span class="caret caret-explore"><i class="fa fa-angle-up"></i></span>
-                        </div>
-                        <ul class="footer-list" id="demo">
-                            <li><a href="#" aria-label="Privacy and cookies">Privacy and cookies</a></li>
-                            <li><a href="#" aria-label="Legal Information">Legal Information</a></li>
-                            <li><a href="#" aria-label="About the University">About the University</a></li>
-                            <li><a href="#" aria-label="News and Events">News and Events</a></li>
-                            <li><a href="#" aria-label="Research">Research</a></li>
-                            <li><a href="#" aria-label="Schools and Departments">Schools and Departments</a></li>
-                            <li><a href="#" aria-label="International">International</a></li>
-                            <li><a href="#" aria-label="Job Vacancies">Job Vacancies</a></li>
-                        </ul>
+                    <?php 
+                    $sql = "SELECT footer.parent_title, footer.item_list, footer.item_link, footer.item_icon, footer.image_, footer.is_active
+                    FROM db_science_university_footer as footer
+                    WHERE parent_title='Explore' and is_active=1";
+
+                    $sqlResult = $conn->query($sql);
+                    $sqlResult->execute();
+                    $result = $sqlResult->fetchAll();
+                    $COUNTER = 1; 
+                    foreach($result as $row){
+                        if($COUNTER == 1){
+                            echo "<div class='footer-title-caret-container'>";
+                            echo "<h6 class='footer-subtitles demo' data-toggle='collapse' data-target='#demo' aria-expanded='true'>";
+                            echo $row['parent_title'];
+                            echo "</h6>";
+                            echo "<span class='caret caret-explore'><i class='fa fa-angle-up'></i></span>";
+                            echo "</div>";
+                            $COUNTER++;
+                        }
+                        echo "<ul class='footer-list' id='demo'>";
+                        echo "<li><a href='$row[item_link]' aria-label='$row[item_list]'>";
+                        echo $row['item_list'];
+                        echo "</a></li>";
+                        echo "</ul>";
+                            
+                        }
+                    ?>
                     </div>
                         
                     <div class="v-line-divider"></div>
 
                     <div class="col quick-links-using-our-site">
-                        <div class="footer-title-caret-container">
-                            <h6 class="footer-subtitles demoOne" data-toggle="collapse" data-target="#demoOne" aria-expanded="true">Quick Links</h6>
-                            <span class="caret caret-quick-links"><i class="fa fa-angle-up"></i></span>
-                        </div>
-                        <ul class="footer-list" id="demoOne">
-                            <li><a href="#" aria-label="Online Payment">Online Payment</a></li>
-                            <li><a href="#" aria-label="Library">Library</a></li>
-                            <li><a href="#" aria-label="Alumni">Alumni</a></li>
-                            <li><a href="#" aria-label="Community Information">Community Information</a></li>
-                        </ul>
-                        <div class="footer-title-caret-container">
-                            <h6 class="footer-subtitles demoTwo" data-toggle="collapse" data-target="#demoTwo">Using our Site</h6>
-                            <span class="caret caret-using-our-site"><i class="fa fa-angle-up"></i></span>
-                        </div>
-                        <ul class="footer-list" id="demoTwo">
-                            <li><a href="#" class="hover-over-style" aria-label="Accessibility">Accessibility</a></li>
-                            <li><a href="#" class="hover-over-style" aria-label="Freedom of Information">Freedom of Information</a></li>
-                        </ul>
+
+                    <?php 
+                    $sql = "SELECT footer.parent_title, footer.item_list, footer.item_link, footer.item_icon, footer.image_, footer.is_active
+                    FROM db_science_university_footer as footer
+                    WHERE parent_title='QUICK LINKS' and is_active=1";
+
+                    $sqlResult = $conn->query($sql);
+                    $sqlResult->execute();
+                    $result = $sqlResult->fetchAll();
+                    $COUNTER = 1; 
+                    foreach($result as $row){
+                        if($COUNTER == 1){
+                            echo "<div class='footer-title-caret-container'>";
+                            echo "<h6 class='footer-subtitles demoOne' data-toggle='collapse' data-target='#demoOne' aria-expanded='true'>";
+                            echo $row['parent_title'];
+                            echo "</h6>";
+                            echo "<span class='caret caret-quick-links'><i class='fa fa-angle-up'></i></span>";
+                            echo "</div>";
+                            $COUNTER++;
+                        }
+                        echo "<ul class='footer-list' id='demoOne'>";
+                        echo "<li><a href='$row[item_link]' aria-label='$row[item_list]'>";
+                        echo $row['item_list'];
+                        echo "</a></li>";
+                        echo "</ul>";
+                            
+                        }
+                    ?>
+                    <?php 
+                    $sql = "SELECT footer.parent_title, footer.item_list, footer.item_link, footer.item_icon, footer.image_, footer.is_active
+                    FROM db_science_university_footer as footer
+                    WHERE parent_title='USING OUR SITE' and is_active=1";
+
+                    $sqlResult = $conn->query($sql);
+                    $sqlResult->execute();
+                    $result = $sqlResult->fetchAll();
+                    $COUNTER = 1; 
+                    foreach($result as $row){
+                        if($COUNTER == 1){
+                            echo "<div class='footer-title-caret-container'>";
+                            echo "<h6 class='footer-subtitles demoTwo' data-toggle='collapse' data-target='#demoTwo' aria-expanded='true'>";
+                            echo $row['parent_title'];
+                            echo "</h6>";
+                            echo "<span class='caret caret-using-our-site'><i class='fa fa-angle-up'></i></span>";
+                            echo "</div>";
+                            $COUNTER++;
+                        }
+                        echo "<ul class='footer-list' id='demoTwo'>";
+                        echo "<li><a href='$row[item_link]'class='hover-over-style' aria-label='$row[item_list]'>";
+                        echo $row['item_list'];
+                        echo "</a></li>";
+                        echo "</ul>";
+                            
+                        }
+                    ?>
                     </div>
                
                     <div class="v-line-divider"></div>
 
                     <div class="col how-to-find-us">
-                        <div class="footer-title-caret-container">
-                            <h6 class="footer-subtitles demoThree" data-toggle="collapse" data-target="#demoThree" aria-expanded="true">How to find us</h6>
-                            <span class="caret caret-how-to-find-us"><i class="fa fa-angle-up"></i></span>
-                        </div>
-                        <ul class="footer-list" id="demoThree">
-                            <li>
-                                <span><i class="fa fa-phone"></i></span>
-                                <a href="tel:+ 1 (408) 703 8738" aria-label="+ 1 (408) 703 8738">+ 1 (408) 703 8738</a>
-                            </li>
-                            <li>
-                                <span><i class="fa fa-phone"></i></span>
-                                <a href="tel:+ 962 6 581 7612" aria-label="+ 962 6 581 7612">+ 962 6 581 7612</a>
-                            </li>
-                            <li>
-                                <span><i class="fa fa-envelope"></i></span>
-                                <a href="mailto:info@SciencesUniversity.edu" aria-label="info@SciencesUniversity.edu">info@SciencesUniversity.edu</a>
-                            </li>
-                            <li>
-                                <span><i class="fa fa-envelope"></i></span>
-                                <a href="#" aria-label="Contact Us">Contact Us</a>
-                            </li>
-                            <li>
-                                <span><i class="fa fa-map-marker fa-lg"></i></span>
-                                <a href="#" aria-label="Find Us">Find Us</a>
-                            </li>
-                        </ul>
+                    <?php 
+                    $sql = "SELECT footer.parent_title, footer.item_list, footer.item_link, footer.item_icon, footer.image_, footer.is_active
+                    FROM db_science_university_footer as footer
+                    WHERE parent_title='HOW TO FIND US' and is_active=1";
+
+                    $sqlResult = $conn->query($sql);
+                    $sqlResult->execute();
+                    $result = $sqlResult->fetchAll();
+                    $COUNTER = 1; 
+                    foreach($result as $row){
+                        if($COUNTER == 1){
+                            echo "<div class='footer-title-caret-container'>";
+                            echo "<h6 class='footer-subtitles demoThree' data-toggle='collapse' data-target='#demoThree' aria-expanded='true'>";
+                            echo $row['parent_title'];
+                            echo "</h6>";
+                            echo "<span class='caret caret-how-to-find-us'><i class='fa fa-angle-up'></i></span>";
+                            echo "</div>";
+                            $COUNTER++;
+                        }
+                        echo "<ul class='footer-list' id='demoThree'>";
+                        echo "<li>";
+                        if($row['item_icon'] == 'fa fa-phone'){
+                            echo "<span><i class='$row[item_icon]'></i></span>";
+                            echo "<a href='tel:$row[item_list]' aria-label='$row[item_list]'>";
+                        }
+                        if($row['item_icon'] == 'fa fa-envelope'){
+                            echo "<span><i class='$row[item_icon]'></i></span>";
+                            echo "<a href='mailto:$row[item_list]' aria-label='$row[item_list]'>";
+
+                        }
+                        if($row['item_icon'] == 'fa fa-map-marker'){
+                            echo "<span><i class='$row[item_icon] fa-lg'></i></span>";
+                            echo "<a href='$row[item_list]' aria-label='$row[item_list]'>";
+
+                        }
+                        echo $row['item_list'];
+                        echo "</a>";
+                        echo "</li>";
+                        echo "</ul>";
+                        }
+                    ?>
                     </div>
 
                     <div class="v-line-divider"></div>
 
                     <div class="col follow-us">
+                    <?php
+                    $sql = "SELECT config.config_name, config.config_value
+                    FROM db_science_university_config as config
+                    WHERE config_name='footer icon' and is_active=1";
+
+                    $sqlResult = $conn->query($sql);
+                    $sqlResult->execute();
+                    $result = $sqlResult->fetchAll();
+                    foreach($result as $row){
+                        echo "<div class='row follow-us-row'>";
+                        echo "<img 
+                        src='../Assets/Images/$row[config_value]'
+                        alt='$row[config_name]'
+                        >"; 
+                        echo "</div>";
+                    }
+
+                    ?>
                         <div class="row follow-us-row">
-                            <img 
-                            src="../Assets/Images/footer-icon/icon-footer.png"
-                            alt="Science University Logo"
-                            > <!-- logo image -->
-                        </div>
-                        <div class="row follow-us-row">
-                            <h6 class="d-inline-block w-100 footer-subtitles">Follow Us</h6>
-                            <div class="social-media-follow-us">
-                                <a href="#" class="social-media-icon hover-over-style" aria-label="Linkedin Social Media Icon"><i class="fa fa-linkedin"></i></a>
-                                <a href="#" class="social-media-icon hover-over-style" aria-label="Youtube Social Media Icon"><i class="fa fa-youtube"></i></a>
-                                <a href="#" class="social-media-icon hover-over-style" aria-label="Instagram Social Media Icon"><i class="fa fa-instagram"></i></a>
-                                <a href="#" class="social-media-icon hover-over-style" aria-label="Twitter Social Media Icon"><i class="fa fa-twitter"></i></a>
-                                <a href="#" class="social-media-icon hover-over-style" aria-label="Facebook Social Media Icon"><i class="fa fa-facebook"></i></a>
-                            </div>
+                        <?php
+                        $sql = "SELECT footer.parent_title, footer.item_list, footer.item_link, footer.item_icon, footer.image_, footer.is_active
+                        FROM db_science_university_footer as footer
+                        WHERE parent_title='FOLLOW US' and is_active=1";
+    
+                        $sqlResult = $conn->query($sql);
+                        $sqlResult->execute();
+                        $result = $sqlResult->fetchAll();
+                        $COUNTER = 1; 
+                        foreach($result as $row){
+                            if($COUNTER == 1){
+                                echo "<h6 class='d-inline-block w-100 footer-subtitles'>";
+                                echo $row['parent_title'];
+                                echo "</h6>";
+                                $COUNTER++;
+                            }
+                            echo "<div class='social-media-follow-us'>";
+                            echo "<a href='$row[item_link]' class='social-media-icon hover-over-style' aria-label='$row[item_list]'><i class='$row[item_icon]'></i></a>";
+                            echo "</div>";
+                            }
+                        ?>
                         </div>
                     </div>
                 </div>

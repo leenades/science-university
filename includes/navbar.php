@@ -79,7 +79,7 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
                     <div class="col social-media-icons-col">
                         <div class="social-media-container">
                         <?php 
-                        $socialMediaMenuSQL = "SELECT menu.title, menu.text, menu.url, menu.icon, menu.parent, menu.type FROM db_science_university_menu menu WHERE menu.icon=''";
+                        $socialMediaMenuSQL = "SELECT menu.title, menu.text, menu.url, menu.icon, menu.type_ FROM db_science_university_menu menu WHERE menu.icon=''";
                         $smMenuResult = $conn->query($socialMediaMenuSQL);
                         $smMenuResult->execute();
                         $result = $smMenuResult->fetchAll();
@@ -121,12 +121,20 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
                         ?>
                             <div class="logo-socials-row-mobile d-xl-none">
                                 <div class="social-media-icons-col">
+                                
                                     <div class="social-media-container">
-                                        <a class="social-media-icon" href="#" aria-label="Linkedin Social Media Icon"><i class="fa fa-linkedin"></i></a>
-                                        <a class="social-media-icon" href="#" aria-label="Youtube Social Media Icon"><i class="fa fa-youtube"></i></a>
-                                        <a class="social-media-icon" href="#" aria-label="Instagram Social Media Icon"><i class="fa fa-instagram"></i></a>
-                                        <a class="social-media-icon" href="#" aria-label="Twitter Social Media Icon"><i class="fa fa-twitter"></i></a>
-                                        <a class="social-media-icon" href="#" aria-label="Facebook Social Media Icon"><i class="fa fa-facebook"></i></a>
+                                    <?php 
+                                        $socialMediaMenuSQL = "SELECT menu.title, menu.text, menu.url, menu.icon, menu.type_ FROM db_science_university_menu menu WHERE menu.icon=''";
+                                        $smMenuResult = $conn->query($socialMediaMenuSQL);
+                                        $smMenuResult->execute();
+                                        $result = $smMenuResult->fetchAll();
+                                        foreach($result as $row){
+                                            echo "<a class='social-media-icon mr-1' href='$row[url]' aria-label='$row[text]'>";
+                                            echo "<i class='$row[title]'>";
+                                            echo "</i>";
+                                            echo "</a>";
+                                        }
+                                    ?>
                                     </div>
                                 </div>
                             </div>
