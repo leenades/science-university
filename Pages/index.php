@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once '../database/database.php';
  
 include_once '../includes/navbar.php';
@@ -7,6 +8,7 @@ include_once '../includes/indexPageScript.php';
 $sql = "SELECT header.image_path_file, header.header_title, header.order_ 
 FROM db_science_university_header header";
 ?>
+
         <!-- Section header Start -->
         <section class="image-slider">
             <div id="myCarousel" class="carousel slide carousel-slider" data-ride="carousel">
@@ -24,11 +26,11 @@ FROM db_science_university_header header";
                 echo "<div class='carousel-inner'>";
                 ?>
                 <?php 
-                $count = 0;    
+                $count = 1;    
                 foreach($results as $key => $row){
                 ?>
                 <div class='carousel-item <?php 
-                if($count == 0){
+                if($count == 1){
                     echo 'active';
                 } else {
                     echo '';
@@ -39,19 +41,28 @@ FROM db_science_university_header header";
                         echo "<source media='(min-width:650px)' srcset='../Assets/Images/headersun1.jpg'>";
                         echo "<img src='../Assets/Images/group_8.jpg' alt='$row[header_title]'>";
                         echo "</picture>";
-                        $count++;
                         echo "<div class='header-title-container'>";
                         echo "<h2 class='header-title'>";
                         echo $row['header_text'];
                         echo "</h2>";
                         echo "</div>";
                         echo "</div>";
+                        $count++;
                     }
                 ?>
                     
             </div>
         </section>
         <!-- Section header End -->
+        
+<?php if(isset($_SESSION['message_form'])): ?>
+    <div class="alert alert-<?=$_SESSION['msg_type']?> mr-4 ml-4 mt-5">
+        <?php
+        echo $_SESSION['message_form'];
+        unset($_SESSION['message_form']);
+        ?>
+    </div>
+<?php endif ?>
 
         <!-- Section news and programmes Start -->
         <section class="section-two">
@@ -140,7 +151,7 @@ FROM db_science_university_header header";
             <div class="container">
                 <div class="row div-ticker">
                 <?php
-                $SQL = "SELECT icon_image, number_, inc_or_decr, description_, data_target, character_
+                $SQL = "SELECT icon_image, number_, inc_or_decr, description_, data_target, character_, character_before_number
                 FROM db_science_university_ticker";
                 $resultSQL = $conn->query($SQL);
                 $resultSQL->execute();
@@ -155,6 +166,9 @@ FROM db_science_university_header header";
                                 width='69px'
                                 height='70px'>";
                         echo "<div class='ticker-header-title'>";
+                        if($row['character_before_number'] == "on"){
+                            echo "<h3>$row[character_]</h3>";
+                        }
                         if($row['inc_or_decr'] == "Increment"){
                             echo "<h3 class='counterInc' data-target='$row[data_target]'>";
                         }
@@ -163,7 +177,9 @@ FROM db_science_university_header header";
                         }
                         echo $row['number_'];
                         echo "</h3>";
-                        echo "<h3>$row[character_]</h3>";
+                        if($row['character_before_number'] == ""){
+                            echo "<h3>$row[character_]</h3>";
+                        }
                         echo "</div>";
                         echo "<h4>";
                         echo $row['description_'];
@@ -215,9 +231,9 @@ FROM db_science_university_header header";
                         echo "</div>";
                         echo "<div class='events-blurbs-description'>";
                         echo "<h6 class='events-blurb-description-time'>";
-                        echo $row['event_start_time'];
-                        echo "-";
-                        echo $row['event_end_time'];
+                        echo date('h:i A', strtotime($row['event_start_time']));
+                        echo " - ";
+                        echo date('h:i A', strtotime($row['event_end_time']));
                         echo "</h6>";
                         echo "<div class='v1'></div>";
                         echo "<h6 class='events-blurb-description-location'>";
@@ -251,16 +267,39 @@ FROM db_science_university_header header";
         <!-- Section Admission Start -->
         <section class="admission-section">
             <div class="container">
-                <div class="row addmission-row-title">
-                    <div class="col addmission-title">  
-                        <h2>ADMISSIONS ARE NOW OPEN FOR 2017/2018 INTAKE</h2>
-                    </div>
-                </div>
-                <div class="row admission-row-btn">
-                    <div class="col admission-btn">
-                        <button class="button-animation">apply now</button>
-                    </div>
-                </div>
+            <?php
+            $sql = "SELECT admission.admission_id, admission.admission_text, admission.admission_button, admission.button_link, admission.is_active
+            FROM db_science_university_admission as admission
+            WHERE is_active=1";
+            $resultSQL = $conn->query($sql);
+            $resultSQL->execute();
+            $result = $resultSQL->fetchAll();
+            $COUNTER = 1;
+            foreach($result as $row){
+                if($COUNTER == 1){
+                    echo "<div class='row addmission-row-title'>";
+                    echo "<div class='col addmission-title'>";  
+                    echo "<h2>$row[admission_text]</h2>";
+                    echo "</div>";
+                    echo "</div>";
+                    echo "<div class='row admission-row-btn'>";
+                    echo "<div class='col admission-btn'>";
+                    echo "<button class='button-animation' onclick='relocate_home($row[button_link]);'>";
+                    echo $row['admission_button'];
+                    echo "</button>";
+                    echo "</div>";
+                    echo "</div>";
+                    
+                    
+                }
+            }
+            ?>
+            <script>
+            function relocate_home(this_site)
+            {
+                 location.href = this_site;
+            } 
+            </script>
             </div>
         </section>
         <!-- Section Admission End -->

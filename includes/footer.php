@@ -194,7 +194,7 @@ require_once '../database/database.php';
                 <div class="container">
                     <div class="row justify-content-center">
                         <span><i class="fa fa-copyright" aria-hidden="true"></i></span>
-                        <h6 class="hover-over-style">2020 Sciences University. All Rights Reserved.</h6>
+                        <h6 class="hover-over-style"><?php echo date('Y');?> Sciences University. All Rights Reserved.</h6>
                     </div>
                 </div>
             </section>
