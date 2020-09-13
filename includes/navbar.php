@@ -105,7 +105,9 @@ $result->setFetchMode(PDO::FETCH_ASSOC);
                     <div class="row navbar-links">
                         <ul class="navbar-nav">
                         <?php
-                        $navSQL = "SELECT nav.nav_title, nav.nav_link FROM db_science_university_navbar nav";
+                        $navSQL = "SELECT nav.nav_title, nav.nav_link, nav.is_active 
+                        FROM db_science_university_navbar nav
+                        WHERE is_active='1'";
                         $navbarResult = $conn->query($navSQL);
                         $navbarResult->execute();
                         $navResult = $navbarResult->fetchAll();

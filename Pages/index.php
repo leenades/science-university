@@ -14,7 +14,9 @@ FROM db_science_university_header header";
             <div id="myCarousel" class="carousel slide carousel-slider" data-ride="carousel">
                 <?php
                 echo "<ol class='carousel-indicators'>";
-                $headerSQL = "SELECT header.image_path_file, header.header_title, header.header_text, header.order_ FROM db_science_university_header header ORDER BY order_ ASC";
+                $headerSQL = "SELECT header.image_path_file, header.header_title, header.header_text, header.order_, header.is_active 
+                FROM db_science_university_header header WHERE is_active='1'
+                ORDER BY order_ ASC";
                 $headerResult = $conn->query($headerSQL);
                 $headerResult->execute();
                 $results = $headerResult->fetchAll();
@@ -73,8 +75,9 @@ FROM db_science_university_header header";
                     <div class="col col-first">
                         <div class="row courses-row-first">
                         <?php
-                        $firstRowCoursesSQL = "SELECT course.category_title, course.course_image, course.course_link 
-                        FROM db_science_university_courses course";
+                        $firstRowCoursesSQL = "SELECT course.category_title, course.course_image, course.course_link, course.is_active
+                        FROM db_science_university_courses course
+                        WHERE is_active='1'";
                         $firstRowCourses = $conn->query($firstRowCoursesSQL);
                         $firstRowCourses->execute();
                         $result = $firstRowCourses->fetchAll();
@@ -110,7 +113,9 @@ FROM db_science_university_header header";
                             <a href="news/"><h4 class="title-style">News</h4></a>    
                             </div>
                             <?php
-                            $SQL = "SELECT news.news_title, news.news_description, MONTHNAME(news.news_date), YEAR(news.news_date), DAY(news.news_date), news.news_link FROM db_science_university_news news";
+                            $SQL = "SELECT news.news_title, news.news_description, MONTHNAME(news.news_date), YEAR(news.news_date), DAY(news.news_date), news.news_link, news.is_active 
+                            FROM db_science_university_news news
+                            WHERE is_active='1'";
                             $resultSQL = $conn->query($SQL);
                             $resultSQL->execute();
                             $result = $resultSQL->fetchAll();
@@ -151,8 +156,9 @@ FROM db_science_university_header header";
             <div class="container">
                 <div class="row div-ticker">
                 <?php
-                $SQL = "SELECT icon_image, number_, inc_or_decr, description_, data_target, character_, character_before_number
-                FROM db_science_university_ticker";
+                $SQL = "SELECT icon_image, number_, inc_or_decr, description_, data_target, character_, character_before_number, is_active
+                FROM db_science_university_ticker
+                WHERE is_active='1'";
                 $resultSQL = $conn->query($SQL);
                 $resultSQL->execute();
                 $result = $resultSQL->fetchAll();
@@ -200,8 +206,9 @@ FROM db_science_university_header header";
                 <div class="row  blurb-news"><h4 class="title-style">Events</h4></div>
                 <div class="row blogs-styles">
                 <?php
-                $SQL = "SELECT event_title, event_description, event_image, DAY(event_date), MONTHNAME(event_date), event_start_time, event_end_time, event_location, event_category_category_id 
-                FROM db_science_university_events";
+                $SQL = "SELECT event_title, event_description, event_image, DAY(event_date), MONTHNAME(event_date), event_start_time, event_end_time, event_location, event_category_category_id, is_active 
+                FROM db_science_university_events
+                WHERE is_active='1'";
                 $resultSQL = $conn->query($SQL);
                 $resultSQL->execute();
                 $result = $resultSQL->fetchAll();

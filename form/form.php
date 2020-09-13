@@ -17,7 +17,7 @@ if(isset($_POST['submitForm'])){
         $sqlResult = $conn->prepare($sql);
         $runQuery = $sqlResult->execute([$fullName, $phone, $email, $msg]);
         if($runQuery){
-            header('Location: ../Pages/index.php');
+            header('Location: ../Pages/index.php?status=successful');
         } else {
             header('Location: ../Pages/index.php?status=failed');
             $_SESSION['message_form'] = 'Message was not sent. Try again!';
